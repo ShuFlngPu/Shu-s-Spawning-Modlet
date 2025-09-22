@@ -1,0 +1,67 @@
+<config>
+	<!-- 
+	===================================================================
+	== LBD ITEMS FILE (Reverted) ==
+	This file reverts the trigger item back to a more stable base. It
+	now extends "blankNoteMaster". Its stability will be ensured by the
+	simplified CVar-based buffs that will be implemented in buffs.xml.
+	===================================================================
+	-->
+	
+	<append xpath="/items">
+		<item name="itemLBDManual">
+			<property name="Extends" value="blankNoteMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="foodCanSham"/>
+			<property name="ItemTypeIcon" value="book"/>
+			<property name="AltItemTypeIcon" value="book_read"/>
+			<property name="CustomIconTint" value="255,175,0"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="DescriptionKey" value="itemLBDManualDesc"/>
+			<property name="Candrop" value="false"/>
+			
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Sound_start" value="read_mod"/>
+			</property>
+			
+			<effect_group name="LBD_System_Activation">
+				<!-- Apply THE FOUR Status Screen Buffs -->
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffLBDStatus_Tools"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffLBDStatus_Melee"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffLBDStatus_Ranged"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffLBDStatus_Utility"/>
+				
+				<!-- Apply Tool Tracker Buffs -->
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffHarvestingToolsTracker"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffRepairToolsTracker"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffSalvageToolsTracker"/>
+				
+				<!-- Apply Melee Tracker Buffs -->
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffBladesTracker"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffClubsTracker"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffSpearsTracker"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffSledgehammersTracker"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffKnucklesTracker"/>
+				
+				<!-- Apply Ranged & Robotics Tracker Buffs -->
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffRoboticsTracker"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffHandgunsTracker"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffShotgunsTracker"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffRiflesTracker"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffMachineGunsTracker"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffBowsTracker"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExplosivesTracker"/>
+				
+				<!-- Apply Utility Tracker Buffs -->
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffMedicalTracker"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffElectricianTracker"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffFoodTracker"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffLootingTracker"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffFarmingTracker"/>
+			</effect_group>
+		</item>
+	</append>
+
+</config>

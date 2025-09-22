@@ -1,0 +1,83 @@
+<configs>
+	<append xpath="/entitygroups">
+
+		<entitygroup name="ShuSpawningALLday">
+			zombieSpider
+			zombieSpiderFeral, .1
+			zombieBoe
+			zombieBoeFeral, .1
+			zombieJoe
+			zombieJoeFeral, .1
+			zombieSteve
+			zombieSteveFeral, .1
+			zombieTomClark
+			zombieTomClarkFeral, .1
+			zombieMoe
+			zombieMoeFeral, .1
+			zombieYo
+			zombieYoFeral, .1
+			zombieBusinessMan
+			zombieBusinessManFeral, .1
+			zombieArlene
+			zombieArleneFeral, .1
+			zombieDarlene
+			zombieDarleneFeral, .1
+			zombieMarlene
+			zombieMarleneFeral, .1
+			zombieNurse
+			zombieNurseFeral, .1
+			zombiePartyGirl
+			zombiePartyGirlFeral, .1
+			zombieFatHawaiian
+			zombieFatHawaiianFeral, .05
+			zombieBowler, .1
+			zombieBowlerFeral, .1
+			zombieSteveCrawlerFeral, .1
+			zombieFatCop
+			zombieFatCopFeral, .05
+			zombieSoldier
+			zombieSoldierFeral, .05
+			animalZombieDog
+			animalDireWolf, .05
+			animalWolf, .1
+		</entitygroup>
+
+
+	<entitygroup name="ShuSpawningALLnight">
+		zombieSpider
+		zombieSpiderFeral, .3
+		zombieBoe
+		zombieBoeFeral, .3
+		zombieJoe
+		zombieJoeFeral, .3
+		zombieSteve
+		zombieTomClark
+		zombieSteveFeral, .3
+		zombieTomClarkFeral, .3
+		zombieMoe
+		zombieMoeFeral, .3
+		zombieYo
+		zombieYoFeral, .3
+		zombieBusinessMan
+		zombieBusinessManFeral, .3
+		zombieArlene
+		zombieArleneFeral, .3
+		zombieDarlene
+		zombieDarleneFeral, .3
+		zombieMarlene
+		zombieMarleneFeral, .3
+		zombieLumberjack
+		zombieLumberjackFeral,.3
+		zombieNurse
+		zombieNurseFeral, .3
+		animalZombieDog, .15
+		animalDireWolf, .05
+		zombieSteveCrawler
+		zombieFatHawaiian
+		zombieFatHawaiianFeral, .25
+		zombieBowler, .1
+		zombieBowlerFeral, .1
+	</entitygroup>
+	
+	</append>
+</configs>

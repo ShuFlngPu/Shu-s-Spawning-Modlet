@@ -1,0 +1,51 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+LBD_harvestingTools_skillUp,,,,,Harvesting Tools skill increased!
+LBD_repairTools_skillUp,,,,,Repair Tools skill increased!
+LBD_salvageTools_skillUp,,,,,Salvage Tools skill increased!
+LBD_blades_skillUp,,,,,Blades skill increased!
+LBD_clubs_skillUp,,,,,Clubs skill increased!
+LBD_spears_skillUp,,,,,Spears skill increased!
+LBD_sledgehammers_skillUp,,,,,Sledgehammers skill increased!
+LBD_knuckles_skillUp,,,,,Knuckles skill increased!
+LBD_robotics_skillUp,,,,,Robotics skill increased!
+LBD_handguns_skillUp,,,,,Handguns skill increased!
+LBD_shotguns_skillUp,,,,,Shotguns skill increased!
+LBD_rifles_skillUp,,,,,Rifles skill increased!
+LBD_machineGuns_skillUp,,,,,Machine Guns skill increased!
+LBD_bows_skillUp,,,,,Bows skill increased!
+LBD_explosives_skillUp,,,,,Explosives skill increased!
+LBD_medical_skillUp,,,,,Medical skill increased!
+LBD_electrician_skillUp,,,,,Electrician skill increased!
+LBD_food_skillUp,,,,,Food skill increased!
+LBD_looting_skillUp,,,,,Looting skill increased!
+LBD_farming_skillUp,,,,,Farming skill increased!
+itemLBDManualName,,,,,Learn by Doing Manual
+itemLBDManualDesc,,,,,Reading this manual will activate the Learn by Doing system, allowing you to gain skill by performing actions.
+LBD_Status_Tools_Name,,,,,LBD: Tool Skills
+LBD_Status_Tools_Desc,,,,,Harvesting Tools: {craftingHarvestingToolsShuLDBexp|0}/{craftingHarvestingToolsShuLDBThreshold|0}\nRepair Tools: {craftingRepairToolsShuLDBexp|0}/{craftingRepairToolsShuLDBThreshold|0}\nSalvage Tools: {craftingSalvageToolsShuLDBexp|0}/{craftingSalvageToolsShuLDBThreshold|0}
+LBD_Status_Melee_Name,,,,,LBD: Melee Skills
+LBD_Status_Melee_Desc,,,,,Blades: {craftingBladesShuLDBexp|0}/{craftingBladesShuLDBThreshold|0}\nClubs: {craftingClubsShuLDBexp|0}/{craftingClubsShuLDBThreshold|0}\nSpears: {craftingSpearsShuLDBexp|0}/{craftingSpearsShuLDBThreshold|0}\nSledgehammers: {craftingSledgehammersShuLDBexp|0}/{craftingSledgehammersShuLDBThreshold|0}\nKnuckles: {craftingKnucklesShuLDBexp|0}/{craftingKnucklesShuLDBThreshold|0}
+LBD_Status_Ranged_Name,,,,,LBD: Ranged Skills
+LBD_Status_Ranged_Desc,,,,,Robotics: {craftingRoboticsShuLDBexp|0}/{craftingRoboticsShuLDBThreshold|0}\nHandguns: {craftingHandgunsShuLDBexp|0}/{craftingHandgunsShuLDBThreshold|0}\nShotguns: {craftingShotgunsShuLDBexp|0}/{craftingShotgunsShuLDBThreshold|0}\nRifles: {craftingRiflesShuLDBexp|0}/{craftingRiflesShuLDBThreshold|0}\nMachine Guns: {craftingMachineGunsShuLDBexp|0}/{craftingMachineGunsShuLDBThreshold|0}\nBows: {craftingBowsShuLDBexp|0}/{craftingBowsShuLDBThreshold|0}\nExplosives: {craftingExplosivesShuLDBexp|0}/{craftingExplosivesShuLDBThreshold|0}
+LBD_Status_Utility_Name,,,,,LBD: Utility Skills
+LBD_Status_Utility_Desc,,,,,Medical: {craftingMedicalShuLDBexp|0}/{craftingMedicalShuLDBThreshold|0}\nElectrician: {craftingElectricianShuLDBexp|0}/{craftingElectricianShuLDBThreshold|0}\nFood: {craftingFoodShuLDBexp|0}/{craftingFoodShuLDBThreshold|0}\nLooting: {lootCraftingLBDShuLDBexp|0}/{lootCraftingLBDShuLDBThreshold|0}\nFarming: {craftingFarmingLBDShuLDBexp|0}/{craftingFarmingLBDShuLDBThreshold|0}
+LBD_harvestingTools_checkpoint,,,,,You have gained 25 Harvesting Tools EXP!
+LBD_repairTools_checkpoint,,,,,You have gained 25 Repair Tools EXP!
+LBD_salvageTools_checkpoint,,,,,You have gained 25 Salvage Tools EXP!
+LBD_blades_checkpoint,,,,,You have gained 25 Blades EXP!
+LBD_clubs_checkpoint,,,,,You have gained 25 Clubs EXP!
+LBD_spears_checkpoint,,,,,You have gained 25 Spears EXP!
+LBD_sledgehammers_checkpoint,,,,,You have gained 25 Sledgehammers EXP!
+LBD_knuckles_checkpoint,,,,,You have gained 25 Knuckles EXP!
+LBD_robotics_checkpoint,,,,,You have gained 25 Robotics EXP!
+LBD_handguns_checkpoint,,,,,You have gained 25 Handguns EXP!
+LBD_shotguns_checkpoint,,,,,You have gained 25 Shotguns EXP!
+LBD_rifles_checkpoint,,,,,You have gained 25 Rifles EXP!
+LBD_machineGuns_checkpoint,,,,,You have gained 25 Machine Guns EXP!
+LBD_bows_checkpoint,,,,,You have gained 25 Bows EXP!
+LBD_explosives_checkpoint,,,,,You have gained 25 Explosives EXP!
+LBD_medical_checkpoint,,,,,You have gained 25 Medical EXP!
+LBD_electrician_checkpoint,,,,,You have gained 25 Electrician EXP!
+LBD_food_checkpoint,,,,,You have gained 25 Food EXP!
+LBD_looting_checkpoint,,,,,You have gained 25 Looting EXP!
+LBD_farming_checkpoint,,,,,You have gained 25 Farming EXP!
