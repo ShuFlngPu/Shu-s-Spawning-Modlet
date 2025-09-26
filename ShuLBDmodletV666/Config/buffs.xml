@@ -2,7 +2,116 @@
 	<append xpath="/buffs">
 
 		<!-- =============================================================================== -->
-		<!-- LBD TRACKER BUFFS                                                               -->
+		<!-- LBD MANAGER BUFF (Multi-Flag System)                                            -->
+		<!-- This single buff runs constantly to check all tags of the player's held item.   -->
+		<!-- It sets multiple boolean (0/1) flags that other buffs use to activate their     -->
+		<!-- logic, allowing for multi-purpose tools and complex action detection.         -->
+		<!-- =============================================================================== -->
+		<buff name="buffLBDManager" hidden="true" remove_on_death="false">
+			<stack_type value="ignore"/>
+			<duration value="999999"/>
+			<update_rate value="1"/>
+			
+			<effect_group>
+				<!-- This group first resets ALL flags to 0 (inactive) every second. -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="LBD_isBlade" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="LBD_isClub" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="LBD_isSledge" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="LBD_isKnuckle" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="LBD_isSpear" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="LBD_isHandgun" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="LBD_isShotgun" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="LBD_isRifle" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="LBD_isMachineGun" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="LBD_isExplosive" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="LBD_isBow" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="LBD_isRobotics" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="LBD_canHarvest" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="LBD_canRepair" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="LBD_canSalvage" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="LBD_isMedical" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="LBD_isElectrician" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="LBD_isFood" operation="set" value="0"/>
+			</effect_group>
+			
+			<!-- Each subsequent group checks for a specific item tag and sets the relevant flag to 1. -->
+			<effect_group>
+				<requirements><requirement name="HoldingItemHasTags" tags="bladeSkill"/></requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="LBD_isBlade" operation="set" value="1"/>
+			</effect_group>
+			<effect_group>
+				<requirements><requirement name="HoldingItemHasTags" tags="clubSkill"/></requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="LBD_isClub" operation="set" value="1"/>
+			</effect_group>
+			<effect_group>
+				<requirements><requirement name="HoldingItemHasTags" tags="sledgeSkill"/></requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="LBD_isSledge" operation="set" value="1"/>
+			</effect_group>
+			<effect_group>
+				<requirements><requirement name="HoldingItemHasTags" tags="knuckleSkill"/></requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="LBD_isKnuckle" operation="set" value="1"/>
+			</effect_group>
+			<effect_group>
+				<requirements><requirement name="HoldingItemHasTags" tags="spearSkill"/></requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="LBD_isSpear" operation="set" value="1"/>
+			</effect_group>
+			<effect_group>
+				<requirements><requirement name="HoldingItemHasTags" tags="handgunSkill"/></requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="LBD_isHandgun" operation="set" value="1"/>
+			</effect_group>
+			<effect_group>
+				<requirements><requirement name="HoldingItemHasTags" tags="shotgunSkill"/></requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="LBD_isShotgun" operation="set" value="1"/>
+			</effect_group>
+			<effect_group>
+				<requirements><requirement name="HoldingItemHasTags" tags="rifleSkill"/></requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="LBD_isRifle" operation="set" value="1"/>
+			</effect_group>
+			<effect_group>
+				<requirements><requirement name="HoldingItemHasTags" tags="machinegunSkill"/></requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="LBD_isMachineGun" operation="set" value="1"/>
+			</effect_group>
+			<effect_group>
+				<requirements><requirement name="HoldingItemHasTags" tags="explosiveSkill"/></requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="LBD_isExplosive" operation="set" value="1"/>
+			</effect_group>
+			<effect_group>
+				<requirements><requirement name="HoldingItemHasTags" tags="bowSkill"/></requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="LBD_isBow" operation="set" value="1"/>
+			</effect_group>
+			<effect_group>
+				<requirements><requirement name="HoldingItemHasTags" tags="roboticsSkill"/></requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="LBD_isRobotics" operation="set" value="1"/>
+			</effect_group>
+			<effect_group>
+				<requirements><requirement name="HoldingItemHasTags" tags="harvestingSkill"/></requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="LBD_canHarvest" operation="set" value="1"/>
+			</effect_group>
+			<effect_group>
+				<requirements><requirement name="HoldingItemHasTags" tags="repairTool"/></requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="LBD_canRepair" operation="set" value="1"/>
+			</effect_group>
+			<effect_group>
+				<requirements><requirement name="HoldingItemHasTags" tags="salvageTool"/></requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="LBD_canSalvage" operation="set" value="1"/>
+			</effect_group>
+			<effect_group>
+				<requirements><requirement name="HoldingItemHasTags" tags="medical"/></requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="LBD_isMedical" operation="set" value="1"/>
+			</effect_group>
+			<effect_group>
+				<requirements><requirement name="HoldingItemHasTags" tags="electricianSkill"/></requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="LBD_isElectrician" operation="set" value="1"/>
+			</effect_group>
+			<effect_group>
+				<requirements><requirement name="HoldingItemHasTags" tags="foodSkill"/></requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="LBD_isFood" operation="set" value="1"/>
+			</effect_group>
+		</buff>
+
+		<!-- =============================================================================== -->
+		<!-- LBD TRACKER BUFFS (Multi-Flag System)                                           -->
+		<!-- These buffs' EXP logic only runs when their specific flag is set to 1.          -->
 		<!-- =============================================================================== -->
 
 		<!-- HARVESTING TOOLS -->
@@ -10,12 +119,9 @@
 			<stack_type value="ignore"/>
 			<duration value="999999"/>
 			<effect_group>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="craftingHarvestingToolsShuLDBexp" operation="set" value="0"/>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="craftingHarvestingToolsShuLDBThreshold" operation="set" value="100"/>
-			</effect_group>
-			<effect_group>
 				<requirements>
-					<requirement name="HoldingItemHasTags" tags="harvestingSkill"/>
+					<requirement name="CVarCompare" cvar="LBD_canHarvest" operation="Equals" value="1"/>
+					<requirement name="!TriggerHasTags" tags="farmerFoodBonus"/>
 				</requirements>
 				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="craftingHarvestingToolsShuLDBexp" operation="add" value="1"/>
 				<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" cvar="craftingHarvestingToolsShuLDBexp" operation="add" value="1"/>
@@ -24,8 +130,8 @@
 				<requirements>
 					<requirement name="CVarCompare" cvar="craftingHarvestingToolsShuLDBexp" operation="GTE" value="@craftingHarvestingToolsShuLDBThreshold"/>
 				</requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingHarvestingToolsShuLDBexp" operation="subtract" value="@craftingHarvestingToolsShuLDBThreshold"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingHarvestingToolsShuLDBThreshold" operation="multiply" value="1.10"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingHarvestingToolsShuLDBexp" operation="set" value="0"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddProgressionLevel" progression_name="craftingHarvestingTools" level="1"/>
 			</effect_group>
 		</buff>
@@ -35,21 +141,20 @@
 			<stack_type value="ignore"/>
 			<duration value="999999"/>
 			<effect_group>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="craftingRepairToolsShuLDBexp" operation="set" value="0"/>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="craftingRepairToolsShuLDBThreshold" operation="set" value="100"/>
-			</effect_group>
-			<effect_group>
 				<requirements>
-					<requirement name="HoldingItemHasTags" tags="repairTool"/>
+					<requirement name="CVarCompare" cvar="LBD_canRepair" operation="Equals" value="1"/>
 				</requirements>
+				<!-- Standard repair action -->
 				<triggered_effect trigger="onSelfRepairBlock" action="ModifyCVar" cvar="craftingRepairToolsShuLDBexp" operation="add" value="1"/>
+				<!-- Special case for Stone Axe secondary action -->
+				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="craftingRepairToolsShuLDBexp" operation="add" value="1"/>
 			</effect_group>
 			<effect_group>
 				<requirements>
 					<requirement name="CVarCompare" cvar="craftingRepairToolsShuLDBexp" operation="GTE" value="@craftingRepairToolsShuLDBThreshold"/>
 				</requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingRepairToolsShuLDBexp" operation="subtract" value="@craftingRepairToolsShuLDBThreshold"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingRepairToolsShuLDBThreshold" operation="multiply" value="1.10"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingRepairToolsShuLDBexp" operation="set" value="0"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddProgressionLevel" progression_name="craftingRepairTools" level="1"/>
 			</effect_group>
 		</buff>
@@ -59,12 +164,8 @@
 			<stack_type value="ignore"/>
 			<duration value="999999"/>
 			<effect_group>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="craftingSalvageToolsShuLDBexp" operation="set" value="0"/>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="craftingSalvageToolsShuLDBThreshold" operation="set" value="100"/>
-			</effect_group>
-			<effect_group>
 				<requirements>
-					<requirement name="HoldingItemHasTags" tags="salvageTool"/>
+					<requirement name="CVarCompare" cvar="LBD_canSalvage" operation="Equals" value="1"/>
 				</requirements>
 				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="craftingSalvageToolsShuLDBexp" operation="add" value="1"/>
 				<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" cvar="craftingSalvageToolsShuLDBexp" operation="add" value="1"/>
@@ -73,8 +174,8 @@
 				<requirements>
 					<requirement name="CVarCompare" cvar="craftingSalvageToolsShuLDBexp" operation="GTE" value="@craftingSalvageToolsShuLDBThreshold"/>
 				</requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingSalvageToolsShuLDBexp" operation="subtract" value="@craftingSalvageToolsShuLDBThreshold"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingSalvageToolsShuLDBThreshold" operation="multiply" value="1.10"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingSalvageToolsShuLDBexp" operation="set" value="0"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddProgressionLevel" progression_name="craftingSalvageTools" level="1"/>
 			</effect_group>
 		</buff>
@@ -83,22 +184,35 @@
 		<buff name="buffBladesTracker" hidden="true" remove_on_death="false">
 			<stack_type value="ignore"/>
 			<duration value="999999"/>
-			<effect_group>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="craftingBladesShuLDBexp" operation="set" value="0"/>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="craftingBladesShuLDBThreshold" operation="set" value="100"/>
-			</effect_group>
+			<!-- Standard Attack -->
 			<effect_group>
 				<requirements>
-					<requirement name="HoldingItemHasTags" tags="bladeSkill"/>
+					<requirement name="CVarCompare" cvar="LBD_isBlade" operation="Equals" value="1"/>
 				</requirements>
 				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="craftingBladesShuLDBexp" operation="add" value="1"/>
 			</effect_group>
+			<!-- Power Attack -->
+			<effect_group>
+				<requirements>
+					<requirement name="CVarCompare" cvar="LBD_isBlade" operation="Equals" value="1"/>
+				</requirements>
+				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="craftingBladesShuLDBexp" operation="add" value="1"/>
+			</effect_group>
+			<!-- Headshot Bonus -->
+			<effect_group>
+				<requirements>
+					<requirement name="CVarCompare" cvar="LBD_isBlade" operation="Equals" value="1"/>
+					<requirement name="HitLocation" body_parts="Head"/>
+				</requirements>
+				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="craftingBladesShuLDBexp" operation="add" value="2"/>
+			</effect_group>
+			<!-- Level Up Logic -->
 			<effect_group>
 				<requirements>
 					<requirement name="CVarCompare" cvar="craftingBladesShuLDBexp" operation="GTE" value="@craftingBladesShuLDBThreshold"/>
 				</requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingBladesShuLDBexp" operation="subtract" value="@craftingBladesShuLDBThreshold"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingBladesShuLDBThreshold" operation="multiply" value="1.10"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingBladesShuLDBexp" operation="set" value="0"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddProgressionLevel" progression_name="craftingBlades" level="1"/>
 			</effect_group>
 		</buff>
@@ -107,22 +221,35 @@
 		<buff name="buffClubsTracker" hidden="true" remove_on_death="false">
 			<stack_type value="ignore"/>
 			<duration value="999999"/>
-			<effect_group>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="craftingClubsShuLDBexp" operation="set" value="0"/>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="craftingClubsShuLDBThreshold" operation="set" value="100"/>
-			</effect_group>
+			<!-- Standard Attack -->
 			<effect_group>
 				<requirements>
-					<requirement name="HoldingItemHasTags" tags="clubSkill"/>
+					<requirement name="CVarCompare" cvar="LBD_isClub" operation="Equals" value="1"/>
 				</requirements>
 				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="craftingClubsShuLDBexp" operation="add" value="1"/>
 			</effect_group>
+			<!-- Power Attack -->
+			<effect_group>
+				<requirements>
+					<requirement name="CVarCompare" cvar="LBD_isClub" operation="Equals" value="1"/>
+				</requirements>
+				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="craftingClubsShuLDBexp" operation="add" value="1"/>
+			</effect_group>
+			<!-- Headshot Bonus -->
+			<effect_group>
+				<requirements>
+					<requirement name="CVarCompare" cvar="LBD_isClub" operation="Equals" value="1"/>
+					<requirement name="HitLocation" body_parts="Head"/>
+				</requirements>
+				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="craftingClubsShuLDBexp" operation="add" value="2"/>
+			</effect_group>
+			<!-- Level Up Logic -->
 			<effect_group>
 				<requirements>
 					<requirement name="CVarCompare" cvar="craftingClubsShuLDBexp" operation="GTE" value="@craftingClubsShuLDBThreshold"/>
 				</requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingClubsShuLDBexp" operation="subtract" value="@craftingClubsShuLDBThreshold"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingClubsShuLDBThreshold" operation="multiply" value="1.10"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingClubsShuLDBexp" operation="set" value="0"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddProgressionLevel" progression_name="craftingClubs" level="1"/>
 			</effect_group>
 		</buff>
@@ -131,22 +258,35 @@
 		<buff name="buffSledgehammersTracker" hidden="true" remove_on_death="false">
 			<stack_type value="ignore"/>
 			<duration value="999999"/>
-			<effect_group>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="craftingSledgehammersShuLDBexp" operation="set" value="0"/>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="craftingSledgehammersShuLDBThreshold" operation="set" value="100"/>
-			</effect_group>
+			<!-- Standard Attack -->
 			<effect_group>
 				<requirements>
-					<requirement name="HoldingItemHasTags" tags="sledgeSkill"/>
+					<requirement name="CVarCompare" cvar="LBD_isSledge" operation="Equals" value="1"/>
 				</requirements>
 				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="craftingSledgehammersShuLDBexp" operation="add" value="1"/>
 			</effect_group>
+			<!-- Power Attack -->
+			<effect_group>
+				<requirements>
+					<requirement name="CVarCompare" cvar="LBD_isSledge" operation="Equals" value="1"/>
+				</requirements>
+				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="craftingSledgehammersShuLDBexp" operation="add" value="1"/>
+			</effect_group>
+			<!-- Headshot Bonus -->
+			<effect_group>
+				<requirements>
+					<requirement name="CVarCompare" cvar="LBD_isSledge" operation="Equals" value="1"/>
+					<requirement name="HitLocation" body_parts="Head"/>
+				</requirements>
+				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="craftingSledgehammersShuLDBexp" operation="add" value="2"/>
+			</effect_group>
+			<!-- Level Up Logic -->
 			<effect_group>
 				<requirements>
 					<requirement name="CVarCompare" cvar="craftingSledgehammersShuLDBexp" operation="GTE" value="@craftingSledgehammersShuLDBThreshold"/>
 				</requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingSledgehammersShuLDBexp" operation="subtract" value="@craftingSledgehammersShuLDBThreshold"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingSledgehammersShuLDBThreshold" operation="multiply" value="1.10"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingSledgehammersShuLDBexp" operation="set" value="0"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddProgressionLevel" progression_name="craftingSledgehammers" level="1"/>
 			</effect_group>
 		</buff>
@@ -155,22 +295,35 @@
 		<buff name="buffKnucklesTracker" hidden="true" remove_on_death="false">
 			<stack_type value="ignore"/>
 			<duration value="999999"/>
-			<effect_group>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="craftingKnucklesShuLDBexp" operation="set" value="0"/>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="craftingKnucklesShuLDBThreshold" operation="set" value="100"/>
-			</effect_group>
+			<!-- Standard Attack -->
 			<effect_group>
 				<requirements>
-					<requirement name="HoldingItemHasTags" tags="knuckleSkill"/>
+					<requirement name="CVarCompare" cvar="LBD_isKnuckle" operation="Equals" value="1"/>
 				</requirements>
 				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="craftingKnucklesShuLDBexp" operation="add" value="1"/>
 			</effect_group>
+			<!-- Power Attack -->
+			<effect_group>
+				<requirements>
+					<requirement name="CVarCompare" cvar="LBD_isKnuckle" operation="Equals" value="1"/>
+				</requirements>
+				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="craftingKnucklesShuLDBexp" operation="add" value="1"/>
+			</effect_group>
+			<!-- Headshot Bonus -->
+			<effect_group>
+				<requirements>
+					<requirement name="CVarCompare" cvar="LBD_isKnuckle" operation="Equals" value="1"/>
+					<requirement name="HitLocation" body_parts="Head"/>
+				</requirements>
+				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="craftingKnucklesShuLDBexp" operation="add" value="2"/>
+			</effect_group>
+			<!-- Level Up Logic -->
 			<effect_group>
 				<requirements>
 					<requirement name="CVarCompare" cvar="craftingKnucklesShuLDBexp" operation="GTE" value="@craftingKnucklesShuLDBThreshold"/>
 				</requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingKnucklesShuLDBexp" operation="subtract" value="@craftingKnucklesShuLDBThreshold"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingKnucklesShuLDBThreshold" operation="multiply" value="1.10"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingKnucklesShuLDBexp" operation="set" value="0"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddProgressionLevel" progression_name="craftingKnuckles" level="1"/>
 			</effect_group>
 		</buff>
@@ -179,22 +332,35 @@
 		<buff name="buffSpearsTracker" hidden="true" remove_on_death="false">
 			<stack_type value="ignore"/>
 			<duration value="999999"/>
-			<effect_group>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="craftingSpearsShuLDBexp" operation="set" value="0"/>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="craftingSpearsShuLDBThreshold" operation="set" value="100"/>
-			</effect_group>
+			<!-- Standard Attack -->
 			<effect_group>
 				<requirements>
-					<requirement name="HoldingItemHasTags" tags="spearSkill"/>
+					<requirement name="CVarCompare" cvar="LBD_isSpear" operation="Equals" value="1"/>
 				</requirements>
 				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="craftingSpearsShuLDBexp" operation="add" value="1"/>
 			</effect_group>
+			<!-- Power Attack (Throw) -->
+			<effect_group>
+				<requirements>
+					<requirement name="CVarCompare" cvar="LBD_isSpear" operation="Equals" value="1"/>
+				</requirements>
+				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="craftingSpearsShuLDBexp" operation="add" value="1"/>
+			</effect_group>
+			<!-- Headshot Bonus -->
+			<effect_group>
+				<requirements>
+					<requirement name="CVarCompare" cvar="LBD_isSpear" operation="Equals" value="1"/>
+					<requirement name="HitLocation" body_parts="Head"/>
+				</requirements>
+				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="craftingSpearsShuLDBexp" operation="add" value="2"/>
+			</effect_group>
+			<!-- Level Up Logic -->
 			<effect_group>
 				<requirements>
 					<requirement name="CVarCompare" cvar="craftingSpearsShuLDBexp" operation="GTE" value="@craftingSpearsShuLDBThreshold"/>
 				</requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingSpearsShuLDBexp" operation="subtract" value="@craftingSpearsShuLDBThreshold"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingSpearsShuLDBThreshold" operation="multiply" value="1.10"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingSpearsShuLDBexp" operation="set" value="0"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddProgressionLevel" progression_name="craftingSpears" level="1"/>
 			</effect_group>
 		</buff>
@@ -204,21 +370,24 @@
 			<stack_type value="ignore"/>
 			<duration value="999999"/>
 			<effect_group>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="craftingHandgunsShuLDBexp" operation="set" value="0"/>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="craftingHandgunsShuLDBThreshold" operation="set" value="100"/>
-			</effect_group>
-			<effect_group>
 				<requirements>
-					<requirement name="HoldingItemHasTags" tags="handgunSkill"/>
+					<requirement name="CVarCompare" cvar="LBD_isHandgun" operation="Equals" value="1"/>
 				</requirements>
 				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="craftingHandgunsShuLDBexp" operation="add" value="1"/>
 			</effect_group>
 			<effect_group>
 				<requirements>
+					<requirement name="CVarCompare" cvar="LBD_isHandgun" operation="Equals" value="1"/>
+					<requirement name="HitLocation" body_parts="Head"/>
+				</requirements>
+				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="craftingHandgunsShuLDBexp" operation="add" value="2"/>
+			</effect_group>
+			<effect_group>
+				<requirements>
 					<requirement name="CVarCompare" cvar="craftingHandgunsShuLDBexp" operation="GTE" value="@craftingHandgunsShuLDBThreshold"/>
 				</requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingHandgunsShuLDBexp" operation="subtract" value="@craftingHandgunsShuLDBThreshold"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingHandgunsShuLDBThreshold" operation="multiply" value="1.10"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingHandgunsShuLDBexp" operation="set" value="0"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddProgressionLevel" progression_name="craftingHandguns" level="1"/>
 			</effect_group>
 		</buff>
@@ -228,21 +397,24 @@
 			<stack_type value="ignore"/>
 			<duration value="999999"/>
 			<effect_group>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="craftingShotgunsShuLDBexp" operation="set" value="0"/>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="craftingShotgunsShuLDBThreshold" operation="set" value="100"/>
-			</effect_group>
-			<effect_group>
 				<requirements>
-					<requirement name="HoldingItemHasTags" tags="shotgunSkill"/>
+					<requirement name="CVarCompare" cvar="LBD_isShotgun" operation="Equals" value="1"/>
 				</requirements>
 				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="craftingShotgunsShuLDBexp" operation="add" value="1"/>
 			</effect_group>
 			<effect_group>
 				<requirements>
+					<requirement name="CVarCompare" cvar="LBD_isShotgun" operation="Equals" value="1"/>
+					<requirement name="HitLocation" body_parts="Head"/>
+				</requirements>
+				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="craftingShotgunsShuLDBexp" operation="add" value="2"/>
+			</effect_group>
+			<effect_group>
+				<requirements>
 					<requirement name="CVarCompare" cvar="craftingShotgunsShuLDBexp" operation="GTE" value="@craftingShotgunsShuLDBThreshold"/>
 				</requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingShotgunsShuLDBexp" operation="subtract" value="@craftingShotgunsShuLDBThreshold"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingShotgunsShuLDBThreshold" operation="multiply" value="1.10"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingShotgunsShuLDBexp" operation="set" value="0"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddProgressionLevel" progression_name="craftingShotguns" level="1"/>
 			</effect_group>
 		</buff>
@@ -252,21 +424,24 @@
 			<stack_type value="ignore"/>
 			<duration value="999999"/>
 			<effect_group>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="craftingRiflesShuLDBexp" operation="set" value="0"/>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="craftingRiflesShuLDBThreshold" operation="set" value="100"/>
-			</effect_group>
-			<effect_group>
 				<requirements>
-					<requirement name="HoldingItemHasTags" tags="rifleSkill"/>
+					<requirement name="CVarCompare" cvar="LBD_isRifle" operation="Equals" value="1"/>
 				</requirements>
 				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="craftingRiflesShuLDBexp" operation="add" value="1"/>
 			</effect_group>
 			<effect_group>
 				<requirements>
+					<requirement name="CVarCompare" cvar="LBD_isRifle" operation="Equals" value="1"/>
+					<requirement name="HitLocation" body_parts="Head"/>
+				</requirements>
+				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="craftingRiflesShuLDBexp" operation="add" value="2"/>
+			</effect_group>
+			<effect_group>
+				<requirements>
 					<requirement name="CVarCompare" cvar="craftingRiflesShuLDBexp" operation="GTE" value="@craftingRiflesShuLDBThreshold"/>
 				</requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingRiflesShuLDBexp" operation="subtract" value="@craftingRiflesShuLDBThreshold"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingRiflesShuLDBThreshold" operation="multiply" value="1.10"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingRiflesShuLDBexp" operation="set" value="0"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddProgressionLevel" progression_name="craftingRifles" level="1"/>
 			</effect_group>
 		</buff>
@@ -276,21 +451,24 @@
 			<stack_type value="ignore"/>
 			<duration value="999999"/>
 			<effect_group>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="craftingMachineGunsShuLDBexp" operation="set" value="0"/>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="craftingMachineGunsShuLDBThreshold" operation="set" value="100"/>
-			</effect_group>
-			<effect_group>
 				<requirements>
-					<requirement name="HoldingItemHasTags" tags="machinegunSkill"/>
+					<requirement name="CVarCompare" cvar="LBD_isMachineGun" operation="Equals" value="1"/>
 				</requirements>
 				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="craftingMachineGunsShuLDBexp" operation="add" value="1"/>
 			</effect_group>
 			<effect_group>
 				<requirements>
+					<requirement name="CVarCompare" cvar="LBD_isMachineGun" operation="Equals" value="1"/>
+					<requirement name="HitLocation" body_parts="Head"/>
+				</requirements>
+				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="craftingMachineGunsShuLDBexp" operation="add" value="2"/>
+			</effect_group>
+			<effect_group>
+				<requirements>
 					<requirement name="CVarCompare" cvar="craftingMachineGunsShuLDBexp" operation="GTE" value="@craftingMachineGunsShuLDBThreshold"/>
 				</requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingMachineGunsShuLDBexp" operation="subtract" value="@craftingMachineGunsShuLDBThreshold"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingMachineGunsShuLDBThreshold" operation="multiply" value="1.10"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingMachineGunsShuLDBexp" operation="set" value="0"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddProgressionLevel" progression_name="craftingMachineGuns" level="1"/>
 			</effect_group>
 		</buff>
@@ -299,44 +477,100 @@
 		<buff name="buffExplosivesTracker" hidden="true" remove_on_death="false">
 			<stack_type value="ignore"/>
 			<duration value="999999"/>
-			<effect_group>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="craftingExplosivesShuLDBexp" operation="set" value="0"/>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="craftingExplosivesShuLDBThreshold" operation="set" value="100"/>
-			</effect_group>
+			<!-- Standard "hit" from explosion -->
 			<effect_group>
 				<requirements>
-					<requirement name="HoldingItemHasTags" tags="explosiveSkill"/>
+					<requirement name="CVarCompare" cvar="LBD_isExplosive" operation="Equals" value="1"/>
 				</requirements>
 				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="craftingExplosivesShuLDBexp" operation="add" value="1"/>
 			</effect_group>
+			<!-- Lighting the fuse -->
+			<effect_group>
+				<requirements>
+					<requirement name="CVarCompare" cvar="LBD_isExplosive" operation="Equals" value="1"/>
+				</requirements>
+				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="craftingExplosivesShuLDBexp" operation="add" value="1"/>
+			</effect_group>
+			<!-- Headshot Bonus (for completeness, though unlikely) -->
+			<effect_group>
+				<requirements>
+					<requirement name="CVarCompare" cvar="LBD_isExplosive" operation="Equals" value="1"/>
+					<requirement name="HitLocation" body_parts="Head"/>
+				</requirements>
+				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="craftingExplosivesShuLDBexp" operation="add" value="2"/>
+			</effect_group>
+			<!-- Level Up Logic -->
 			<effect_group>
 				<requirements>
 					<requirement name="CVarCompare" cvar="craftingExplosivesShuLDBexp" operation="GTE" value="@craftingExplosivesShuLDBThreshold"/>
 				</requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingExplosivesShuLDBexp" operation="subtract" value="@craftingExplosivesShuLDBThreshold"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingExplosivesShuLDBThreshold" operation="multiply" value="1.10"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingExplosivesShuLDBexp" operation="set" value="0"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddProgressionLevel" progression_name="craftingExplosives" level="1"/>
 			</effect_group>
 		</buff>
 
-		<!-- ARMOR -->
-		<buff name="buffArmorTracker" hidden="true" remove_on_death="false">
+		<!-- BOWS -->
+		<buff name="buffBowsTracker" hidden="true" remove_on_death="false">
 			<stack_type value="ignore"/>
 			<duration value="999999"/>
 			<effect_group>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="craftingArmorShuLDBexp" operation="set" value="0"/>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="craftingArmorShuLDBThreshold" operation="set" value="100"/>
-			</effect_group>
-			<effect_group>
-				<triggered_effect trigger="onSelfDamagedSelf" action="ModifyCVar" cvar="craftingArmorShuLDBexp" operation="add" value="1"/>
+				<requirements>
+					<requirement name="CVarCompare" cvar="LBD_isBow" operation="Equals" value="1"/>
+				</requirements>
+				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="craftingBowsShuLDBexp" operation="add" value="1"/>
 			</effect_group>
 			<effect_group>
 				<requirements>
-					<requirement name="CVarCompare" cvar="craftingArmorShuLDBexp" operation="GTE" value="@craftingArmorShuLDBThreshold"/>
+					<requirement name="CVarCompare" cvar="LBD_isBow" operation="Equals" value="1"/>
+					<requirement name="HitLocation" body_parts="Head"/>
 				</requirements>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingArmorShuLDBThreshold" operation="multiply" value="1.10"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingArmorShuLDBexp" operation="set" value="0"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="AddProgressionLevel" progression_name="craftingArmor" level="1"/>
+				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="craftingBowsShuLDBexp" operation="add" value="2"/>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="CVarCompare" cvar="craftingBowsShuLDBexp" operation="GTE" value="@craftingBowsShuLDBThreshold"/>
+				</requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingBowsShuLDBexp" operation="subtract" value="@craftingBowsShuLDBThreshold"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingBowsShuLDBThreshold" operation="multiply" value="1.10"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddProgressionLevel" progression_name="craftingBows" level="1"/>
+			</effect_group>
+		</buff>
+
+		<!-- ROBOTICS -->
+		<buff name="buffRoboticsTracker" hidden="true" remove_on_death="false">
+			<stack_type value="ignore"/>
+			<duration value="999999"/>
+			<!-- Baton Standard Attack -->
+			<effect_group>
+				<requirements>
+					<requirement name="CVarCompare" cvar="LBD_isRobotics" operation="Equals" value="1"/>
+				</requirements>
+				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="craftingRoboticsShuLDBexp" operation="add" value="1"/>
+			</effect_group>
+			<!-- Baton Power Attack / Deploying Turret -->
+			<effect_group>
+				<requirements>
+					<requirement name="CVarCompare" cvar="LBD_isRobotics" operation="Equals" value="1"/>
+				</requirements>
+				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="craftingRoboticsShuLDBexp" operation="add" value="1"/>
+			</effect_group>
+			<!-- Headshot Bonus -->
+			<effect_group>
+				<requirements>
+					<requirement name="CVarCompare" cvar="LBD_isRobotics" operation="Equals" value="1"/>
+					<requirement name="HitLocation" body_parts="Head"/>
+				</requirements>
+				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="craftingRoboticsShuLDBexp" operation="add" value="2"/>
+			</effect_group>
+			<!-- Level Up Logic -->
+			<effect_group>
+				<requirements>
+					<requirement name="CVarCompare" cvar="craftingRoboticsShuLDBexp" operation="GTE" value="@craftingRoboticsShuLDBThreshold"/>
+				</requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingRoboticsShuLDBexp" operation="subtract" value="@craftingRoboticsShuLDBThreshold"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingRoboticsShuLDBThreshold" operation="multiply" value="1.10"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddProgressionLevel" progression_name="craftingRobotics" level="1"/>
 			</effect_group>
 		</buff>
 
@@ -345,12 +579,8 @@
 			<stack_type value="ignore"/>
 			<duration value="999999"/>
 			<effect_group>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="craftingMedicalShuLDBexp" operation="set" value="0"/>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="craftingMedicalShuLDBThreshold" operation="set" value="100"/>
-			</effect_group>
-			<effect_group>
 				<requirements>
-					<requirement name="HoldingItemHasTags" tags="medical"/>
+					<requirement name="CVarCompare" cvar="LBD_isMedical" operation="Equals" value="1"/>
 				</requirements>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingMedicalShuLDBexp" operation="add" value="1"/>
 			</effect_group>
@@ -358,8 +588,8 @@
 				<requirements>
 					<requirement name="CVarCompare" cvar="craftingMedicalShuLDBexp" operation="GTE" value="@craftingMedicalShuLDBThreshold"/>
 				</requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingMedicalShuLDBexp" operation="subtract" value="@craftingMedicalShuLDBThreshold"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingMedicalShuLDBThreshold" operation="multiply" value="1.10"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingMedicalShuLDBexp" operation="set" value="0"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddProgressionLevel" progression_name="craftingMedical" level="1"/>
 			</effect_group>
 		</buff>
@@ -369,12 +599,8 @@
 			<stack_type value="ignore"/>
 			<duration value="999999"/>
 			<effect_group>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="craftingElectricianShuLDBexp" operation="set" value="0"/>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="craftingElectricianShuLDBThreshold" operation="set" value="100"/>
-			</effect_group>
-			<effect_group>
 				<requirements>
-					<requirement name="HoldingItemHasTags" tags="electricianSkill"/>
+					<requirement name="CVarCompare" cvar="LBD_isElectrician" operation="Equals" value="1"/>
 				</requirements>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingElectricianShuLDBexp" operation="add" value="1"/>
 			</effect_group>
@@ -382,8 +608,8 @@
 				<requirements>
 					<requirement name="CVarCompare" cvar="craftingElectricianShuLDBexp" operation="GTE" value="@craftingElectricianShuLDBThreshold"/>
 				</requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingElectricianShuLDBexp" operation="subtract" value="@craftingElectricianShuLDBThreshold"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingElectricianShuLDBThreshold" operation="multiply" value="1.10"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingElectricianShuLDBexp" operation="set" value="0"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddProgressionLevel" progression_name="craftingElectrician" level="1"/>
 			</effect_group>
 		</buff>
@@ -393,42 +619,137 @@
 			<stack_type value="ignore"/>
 			<duration value="999999"/>
 			<effect_group>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="craftingFoodShuLDBexp" operation="set" value="0"/>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="craftingFoodShuLDBThreshold" operation="set" value="100"/>
-			</effect_group>
-			<effect_group>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingFoodShuLDBexp" operation="add" value="1">
-					<requirement name="HoldingItemHasTags" tags="foodSkill"/>
-				</triggered_effect>
+				<requirements>
+					<requirement name="CVarCompare" cvar="LBD_isFood" operation="Equals" value="1"/>
+				</requirements>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingFoodShuLDBexp" operation="add" value="1"/>
 			</effect_group>
 			<effect_group>
 				<requirements>
 					<requirement name="CVarCompare" cvar="craftingFoodShuLDBexp" operation="GTE" value="@craftingFoodShuLDBThreshold"/>
 				</requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingFoodShuLDBexp" operation="subtract" value="@craftingFoodShuLDBThreshold"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingFoodShuLDBThreshold" operation="multiply" value="1.10"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingFoodShuLDBexp" operation="set" value="0"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddProgressionLevel" progression_name="craftingFood" level="1"/>
 			</effect_group>
 		</buff>
 
+		<!-- =============================================================================== -->
+		<!-- NON-ITEM-BASED TRACKERS (No Change in Logic)                                    -->
+		<!-- =============================================================================== -->
+		
 		<!-- SEEDS -->
 		<buff name="buffSeedsTracker" hidden="true" remove_on_death="false">
 			<stack_type value="ignore"/>
 			<duration value="999999"/>
+			<!-- Standard plant harvesting with fists -->
 			<effect_group>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="craftingSeedsShuLDBexp" operation="set" value="0"/>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="craftingSeedsShuLDBThreshold" operation="set" value="100"/>
-			</effect_group>
-			<effect_group>
+				<requirements>
+					<requirement name="TriggerHasTags" tags="farmerFoodBonus"/>
+					<requirement name="!HoldingItemHasTags" tags="harvestingSkill,bladeSkill"/>
+				</requirements>
 				<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" cvar="craftingSeedsShuLDBexp" operation="add" value="1"/>
 			</effect_group>
+			<!-- Special case for harvesting plants with an Axe -->
+			<effect_group>
+				<requirements>
+					<requirement name="CVarCompare" cvar="LBD_canHarvest" operation="Equals" value="1"/>
+					<requirement name="TriggerHasTags" tags="farmerFoodBonus"/>
+				</requirements>
+				<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" cvar="craftingSeedsShuLDBexp" operation="add" value="1"/>
+			</effect_group>
+			<!-- Special case for harvesting plants with a Knife -->
+			<effect_group>
+				<requirements>
+					<requirement name="CVarCompare" cvar="LBD_isBlade" operation="Equals" value="1"/>
+					<requirement name="TriggerHasTags" tags="farmerFoodBonus"/>
+				</requirements>
+				<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" cvar="craftingSeedsShuLDBexp" operation="add" value="1"/>
+			</effect_group>
+			<!-- Level Up Logic -->
 			<effect_group>
 				<requirements>
 					<requirement name="CVarCompare" cvar="craftingSeedsShuLDBexp" operation="GTE" value="@craftingSeedsShuLDBThreshold"/>
 				</requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingSeedsShuLDBexp" operation="subtract" value="@craftingSeedsShuLDBThreshold"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingSeedsShuLDBThreshold" operation="multiply" value="1.10"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingSeedsShuLDBexp" operation="set" value="0"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddProgressionLevel" progression_name="craftingSeeds" level="1"/>
+			</effect_group>
+		</buff>
+		
+		<!-- ARMOR -->
+		<buff name="buffArmorTracker" hidden="true" remove_on_death="false">
+			<stack_type value="ignore"/>
+			<duration value="999999"/>
+			<update_rate value="1"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$inCombatLBDtimer" operation="set" value="0"/>
+			</effect_group>
+			<effect_group>
+				<triggered_effect trigger="onCombatEntered" action="ModifyCVar" cvar="$inCombatLBDtimer" operation="set" value="20"/>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="CVarCompare" cvar="$inCombatLBDtimer" operation="GT" value="0"/>
+				</requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingArmorShuLDBexp" operation="add" value="1"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$inCombatLBDtimer" operation="subtract" value="1"/>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="CVarCompare" cvar="craftingArmorShuLDBexp" operation="GTE" value="@craftingArmorShuLDBThreshold"/>
+				</requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingArmorShuLDBexp" operation="subtract" value="@craftingArmorShuLDBThreshold"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingArmorShuLDBThreshold" operation="multiply" value="1.10"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddProgressionLevel" progression_name="craftingArmor" level="1"/>
+			</effect_group>
+		</buff>
+
+		<!-- WORKSTATIONS -->
+		<buff name="buffWorkstationsTracker" hidden="true" remove_on_death="false">
+			<stack_type value="ignore"/>
+			<duration value="999999"/>
+			<update_rate value="1"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$LBD_totalCrafts_lastCheck" operation="set" value="@_totalItemsCrafted"/>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="CVarCompare" cvar="_totalItemsCrafted" operation="GT" value="@$LBD_totalCrafts_lastCheck"/>
+				</requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$LBD_newCrafts" operation="set" value="@_totalItemsCrafted"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$LBD_newCrafts" operation="subtract" value="@$LBD_totalCrafts_lastCheck"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingWorkstationsShuLDBexp" operation="add" value="@$LBD_newCrafts"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$LBD_totalCrafts_lastCheck" operation="set" value="@_totalItemsCrafted"/>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="CVarCompare" cvar="craftingWorkstationsShuLDBexp" operation="GTE" value="@craftingWorkstationsShuLDBThreshold"/>
+				</requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingWorkstationsShuLDBexp" operation="subtract" value="@craftingWorkstationsShuLDBThreshold"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingWorkstationsShuLDBThreshold" operation="multiply" value="1.10"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddProgressionLevel" progression_name="craftingWorkstations" level="1"/>
+			</effect_group>
+		</buff>
+		
+		<!-- VEHICLES -->
+		<buff name="buffVehiclesTracker" hidden="true" remove_on_death="false">
+			<stack_type value="ignore"/>
+			<duration value="999999"/>
+			<update_rate value="1"/>
+			<effect_group>
+				<requirements>
+					<requirement name="EntityHasMovementTag" tags="driving"/>
+				</requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingVehiclesShuLDBexp" operation="add" value="1"/>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="CVarCompare" cvar="craftingVehiclesShuLDBexp" operation="GTE" value="@craftingVehiclesShuLDBThreshold"/>
+				</requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingVehiclesShuLDBexp" operation="subtract" value="@craftingVehiclesShuLDBThreshold"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingVehiclesShuLDBThreshold" operation="multiply" value="1.10"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddProgressionLevel" progression_name="craftingVehicles" level="1"/>
 			</effect_group>
 		</buff>
 

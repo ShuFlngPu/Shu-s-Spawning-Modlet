@@ -3,17 +3,17 @@
 
 		<entitygroup name="ShuSpawningALLday">
 			zombieSpider
-			zombieSpiderFeral, .1
+			zombieSpiderFeral, .08
 			zombieBoe
-			zombieBoeFeral, .1
+			zombieBoeFeral, .08
 			zombieJoe
-			zombieJoeFeral, .1
+			zombieJoeFeral, .08
 			zombieSteve
 			zombieSteveFeral, .1
 			zombieTomClark
 			zombieTomClarkFeral, .1
 			zombieMoe
-			zombieMoeFeral, .1
+			zombieMoeFeral, .06
 			zombieYo
 			zombieYoFeral, .1
 			zombieBusinessMan
@@ -30,8 +30,8 @@
 			zombiePartyGirlFeral, .1
 			zombieFatHawaiian
 			zombieFatHawaiianFeral, .05
-			zombieBowler, .1
-			zombieBowlerFeral, .1
+			zombieBowler
+			zombieBowlerFeral, .05
 			zombieSteveCrawlerFeral, .1
 			zombieFatCop
 			zombieFatCopFeral, .05
@@ -39,7 +39,7 @@
 			zombieSoldierFeral, .05
 			animalZombieDog
 			animalDireWolf, .05
-			animalWolf, .1
+			animalWolf, 0.1
 		</entitygroup>
 
 
@@ -70,12 +70,12 @@
 		zombieLumberjackFeral,.3
 		zombieNurse
 		zombieNurseFeral, .3
-		animalZombieDog, .15
+		animalZombieDog
 		animalDireWolf, .05
 		zombieSteveCrawler
 		zombieFatHawaiian
 		zombieFatHawaiianFeral, .25
-		zombieBowler, .1
+		zombieBowler
 		zombieBowlerFeral, .1
 	</entitygroup>
 	
