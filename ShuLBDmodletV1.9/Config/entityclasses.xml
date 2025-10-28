@@ -1,0 +1,75 @@
+<config>
+
+	<!-- LOGIC FIX: Changed target from 'zombieStandard' (child) to 'zombieTemplateMale' (parent) -->
+	<append xpath="/entity_classes/entity_class[@name='zombieTemplateMale']">
+		<!-- Effect Group to apply the Nearby Ally Bonus buff -->
+		<effect_group name="Nearby Ally Bonus MOD">
+			<passive_effect name="BuffResistance" operation="base_set" value="0" tags="buffZombieAllyBonusMOD"/>
+			<!-- FIXED: Corrected buff name typo from buffZombieAllyBonusMOD to buffZombieLeaderAura_T1 -->
+			<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" buff="buffZombieLeaderAura_T1"/>
+		</effect_group>
+	</append>
+	
+	<!--===================================================================
+	== LBD ENTITYCLASSES FILE ==
+	This file has been reverted to use an item-based trigger. The
+	unreliable "BuffsOnEnterGame" property has been removed, and the
+	"itemLBDManual" has been added back to the player's starting
+	inventory.
+	===================================================================
+	-->
+
+	<!-- Modify Male Player Inventory to include the LBD Manual -->
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvival']/@value">drinkJarBoiledWater=2,foodCanChili,medicalFirstAidBandage,meleeToolTorch,noteDuke01,itemLBDManual</set>
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvivalSP']/@value">drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,meleeToolTorch,itemLBDManual</set>
+
+    <!-- SYNTAX FIX: Corrected whitespace on this append tag -->
+    <append xpath="/entity_classes/entity_class[@name='junkTurretGun']">
+        <effect_group name="GrantRoboticsXP_ToOwner">
+            <!-- Trigger when the turret damages another entity -->
+            <triggered_effect trigger="onSelfDamagedOther" action="AddBuff" buff="buffGrantRoboticsXP" target="selfAOE" range="16" target_tags="player">
+                <!-- Requirement: Grant XP unless the target hit is neutral, an NPC, or another deployed object -->
+                <requirement name="!EntityTagCompare" target="other" tags="neutral,npc,turret,vehicle,drone"/>
+            </triggered_effect>
+        </effect_group>
+    </append>
+
+    <!-- SYNTAX FIX: Corrected whitespace on this append tag -->
+    <append xpath="/entity_classes/entity_class[@name='junkTurretSledge']">
+        <effect_group name="GrantRoboticsXP_ToOwner">
+            <!-- Trigger when the turret damages another entity -->
+            <triggered_effect trigger="onSelfDamagedOther" action="AddBuff" buff="buffGrantRoboticsXP" target="selfAOE" range="16" target_tags="player">
+                 <!-- Requirement: Grant XP unless the target hit is neutral, an NPC, or another deployed object -->
+               <requirement name="!EntityTagCompare" target="other" tags="neutral,npc,turret,vehicle,drone"/>
+            </triggered_effect>
+        </effect_group>
+    </append>
+
+	<!--
+	PATCH 3: entityJunkDrone
+	This entity DOES have a vanilla <effect_group> for its stats.
+	We will append our logic INSIDE its existing group to preserve it.
+	-->
+	<!-- SYNTAX FIX: Regenerated this block from scratch to remove hidden whitespace characters -->
+	<append xpath="/entity_classes/entity_class[@name='entityJunkDrone']/effect_group">
+		<!-- LBD MOD: Grant Robotics XP to owner when damaging valid targets -->
+		<!-- MODIFIED: Replaced 'compare_type="or"' with separate triggers for base hits and headshots -->
+
+		<!-- +1 XP for hitting an Animal -->
+		<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" target="selfOtherPlayers" cvar="craftingRoboticsShuLDBexp" operation="add" value="1">
+			<requirement name="TargetIsAnimal"/>
+		</triggered_effect>
+
+		<!-- +1 XP for hitting a Zombie (base) -->
+		<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" target="selfOtherPlayers" cvar="craftingRoboticsShuLDBexp" operation="add" value="1">
+			<requirement name="TargetIsZombie"/>
+		</triggered_effect>
+
+		<!-- +2 XP BONUS for hitting a Zombie Head -->
+		<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" target="selfOtherPlayers" cvar="craftingRoboticsShuLDBexp" operation="add" value="2">
+			<requirement name="TargetIsZombie"/>
+			<requirement name="HitLocation" body_parts="Head"/>
+		</triggered_effect>
+	</append>
+
+</config>

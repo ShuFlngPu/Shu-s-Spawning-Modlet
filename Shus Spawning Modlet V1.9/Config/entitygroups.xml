@@ -1,0 +1,422 @@
+<config>
+	<append xpath="/entitygroups">
+
+		<!-- ============================================================================ -->
+		<!-- MODIFIED ZOMBIE GROUPS FOR BIOME SPAWNING -->
+		<!-- V4: Scaled nighttime desert feral probabilities up from .25 base -->
+		<!-- ============================================================================ -->
+
+		<!-- DAYTIME ZOMBIE SPAWNS FOR FOREST BIOMES (NO DEMOLISHERS) -->
+		<!-- Feral probabilities adjusted per user example -->
+		<entitygroup name="MOD_Forest_Day">
+			<entity name="zombieSpider"/>
+			<entity name="zombieSpiderFeral" prob=".10"/> <!-- Changed from .08 -->
+			<entity name="zombieBoe"/>
+			<entity name="zombieBoeFeral" prob=".15"/> <!-- Changed from .08 -->
+			<entity name="zombieJoe"/>
+			<entity name="zombieJoeFeral" prob=".15"/> <!-- Changed from .08 -->
+			<entity name="zombieSteve"/>
+			<entity name="zombieSteveFeral" prob=".15"/> <!-- Unchanged -->
+			<entity name="zombieTomClark"/>
+			<entity name="zombieTomClarkFeral" prob=".15"/> <!-- Unchanged -->
+			<entity name="zombieMoe"/>
+			<entity name="zombieMoeFeral" prob=".15"/> <!-- Changed from .06 -->
+			<entity name="zombieYo"/>
+			<entity name="zombieYoFeral" prob=".15"/> <!-- Unchanged -->
+			<entity name="zombieBusinessMan"/>
+			<entity name="zombieBusinessManFeral" prob=".15"/> <!-- Unchanged -->
+			<entity name="zombieArlene"/>
+			<entity name="zombieArleneFeral" prob=".15"/> <!-- Unchanged -->
+			<entity name="zombieDarlene"/>
+			<entity name="zombieDarleneFeral" prob=".15"/> <!-- Unchanged -->
+			<entity name="zombieMarlene"/>
+			<entity name="zombieMarleneFeral" prob=".15"/> <!-- Unchanged -->
+			<entity name="zombieNurse"/>
+			<entity name="zombieNurseFeral" prob=".15"/> <!-- Unchanged -->
+			<entity name="zombieMaleHazmat"/>
+			<entity name="zombieMaleHazmatFeral" prob=".15"/> <!-- Unchanged -->
+			<entity name="zombiePartyGirl"/>
+			<entity name="zombiePartyGirlFeral" prob=".15"/> <!-- Unchanged -->
+			<entity name="zombieFatHawaiian"/>
+			<entity name="zombieFatHawaiianFeral" prob=".10"/> <!-- Changed from .05 -->
+			<entity name="zombieBowler"/>
+			<entity name="zombieBowlerFeral" prob=".10"/> <!-- Changed from .05 -->
+			<entity name="zombieFemaleFat"/>
+			<entity name="zombieFemaleFatFeral" prob=".10"/> <!-- Changed from .05 -->
+			<entity name="zombieSteveCrawlerFeral" prob=".15"/> <!-- Unchanged -->
+			<entity name="zombieFatCop"/> <!-- Unchanged -->
+			<entity name="zombieFatCopFeral" prob=".05"/> <!-- Unchanged -->
+			<entity name="zombieSoldier"/>
+			<entity name="zombieSoldierFeral" prob=".05"/> <!-- Unchanged -->
+			<entity name="animalZombieDog"/>
+			<entity name="animalDireWolf" prob=".01"/> <!-- Changed from .05 -->
+			<entity name="animalWolf" prob="0.05"/> <!-- Changed from 0.15 -->
+			<entity name="zombieBurnt"/>
+			<entity name="zombieBurntFeral" prob=".15"/> <!-- Unchanged -->
+			<entity name="zombieLumberjack"/>
+			<entity name="zombieLumberjackFeral" prob=".10"/> <!-- Changed from .06 -->
+			<entity name="zombieMutated" prob=".10"/> <!-- Changed from .1 -->
+			<entity name="zombieMutatedFeral" prob=".08"/> <!-- Changed from .05 -->
+			<entity name="zombieWightFeral" prob=".05"/> <!-- Changed from .08 -->
+			<entity name="animalZombieVulture"/>
+			<entity name="animalZombieVultureRadiated" prob=".10"/> <!-- Changed from .15 -->
+		</entitygroup>
+
+		<!-- NIGHTTIME ZOMBIE SPAWNS FOR FOREST BIOMES (NO DEMOLISHERS) -->
+		<!-- Feral probabilities adjusted using .25 as base -->
+		<entitygroup name="MOD_Forest_Night">
+			<entity name="zombieSpider"/>
+			<entity name="zombieSpiderFeral" prob=".25"/> <!-- Changed from .3 -->
+			<entity name="zombieBoe"/>
+			<entity name="zombieBoeFeral" prob=".25"/> <!-- Changed from .3 -->
+			<entity name="zombieJoe"/>
+			<entity name="zombieJoeFeral" prob=".25"/> <!-- Changed from .3 -->
+			<entity name="zombieSteve"/>
+			<entity name="zombieTomClark"/>
+			<entity name="zombieSteveFeral" prob=".25"/> <!-- Changed from .3 -->
+			<entity name="zombieTomClarkFeral" prob=".25"/> <!-- Changed from .3 -->
+			<entity name="zombieMoe"/>
+			<entity name="zombieMoeFeral" prob=".25"/> <!-- Changed from .3 -->
+			<entity name="zombieYo"/>
+			<entity name="zombieYoFeral" prob=".25"/> <!-- Changed from .3 -->
+			<entity name="zombieBusinessMan"/>
+			<entity name="zombieBusinessManFeral" prob=".25"/> <!-- Changed from .3 -->
+			<entity name="zombieArlene"/>
+			<entity name="zombieArleneFeral" prob=".25"/> <!-- Changed from .3 -->
+			<entity name="zombieDarlene"/>
+			<entity name="zombieDarleneFeral" prob=".25"/> <!-- Changed from .3 -->
+			<entity name="zombieMarlene"/>
+			<entity name="zombieMarleneFeral" prob=".25"/> <!-- Changed from .3 -->
+			<entity name="zombieLumberjack"/>
+			<entity name="zombieLumberjackFeral" prob=".25"/> <!-- Changed from .3 -->
+			<entity name="zombieNurse"/>
+			<entity name="zombieNurseFeral" prob=".25"/> <!-- Changed from .3 -->
+			<entity name="animalZombieDog"/>
+			<entity name="animalDireWolf" prob=".05"/> <!-- Unchanged -->
+			<entity name="zombieSteveCrawler"/>
+			<entity name="zombieFatHawaiian"/>
+			<entity name="zombieFatHawaiianFeral" prob=".25"/> <!-- Unchanged -->
+			<entity name="zombieBowler"/>
+			<entity name="zombieBowlerFeral" prob=".3"/> <!-- Unchanged (per user prev. instruction) -->
+			<entity name="animalWolf" prob="0.15"/> <!-- Unchanged -->
+			<entity name="zombieBurnt"/>
+			<entity name="zombieBurntFeral" prob=".3"/> <!-- Unchanged (per user prev. instruction) -->
+			<entity name="zombieMutated"/>
+			<entity name="zombieMutatedFeral" prob=".2"/> <!-- Unchanged -->
+			<entity name="zombieWightFeral" prob=".12"/> <!-- Unchanged (per user prev. instruction) -->
+			<entity name="animalZombieVulture"/>
+			<entity name="animalZombieVultureRadiated" prob=".25"/> <!-- Changed from .3 -->
+			<entity name="zombieFemaleFat"/>
+			<entity name="zombieFemaleFatFeral" prob=".25"/> <!-- Changed from .3 -->
+			<entity name="zombieSteveCrawlerFeral" prob=".25"/> <!-- Changed from .3 -->
+			<entity name="zombieFatCop"/> <!-- Unchanged -->
+			<entity name="zombieFatCopFeral" prob=".15"/> <!-- Unchanged -->
+			<entity name="zombieMaleHazmat"/>
+			<entity name="zombieMaleHazmatFeral" prob=".25"/> <!-- Changed from .3 -->
+			<entity name="zombieSoldier"/>
+			<entity name="zombieSoldierFeral" prob=".15"/> <!-- Unchanged -->
+			<entity name="zombiePartyGirl"/>
+			<entity name="zombiePartyGirlFeral" prob=".25"/> <!-- Changed from .3 -->
+		</entitygroup>
+		
+		<!-- DAYTIME DOWNTOWN/COMMERCIAL SPAWNS FOR FOREST BIOMES (NO DEMOLISHERS) -->
+		<!-- Feral probabilities adjusted per user example -->
+		<entitygroup name="MOD_Downtown_Forest_Day">
+			<entity name="zombieSpider"/>
+			<entity name="zombieSpiderFeral" prob=".17"/> <!-- Changed from .08 -->
+			<entity name="zombieBoe"/>
+			<entity name="zombieBoeFeral" prob=".17"/> <!-- Changed from .08 -->
+			<entity name="zombieJoe"/>
+			<entity name="zombieJoeFeral" prob=".17"/> <!-- Changed from .08 -->
+			<entity name="zombieSteve"/>
+			<entity name="zombieSteveFeral" prob=".17"/> <!-- Changed from .15 -->
+			<entity name="zombieTomClark"/>
+			<entity name="zombieTomClarkFeral" prob=".17"/> <!-- Changed from .15 -->
+			<entity name="zombieMoe"/>
+			<entity name="zombieMoeFeral" prob=".17"/> <!-- Changed from .06 -->
+			<entity name="zombieYo"/>
+			<entity name="zombieYoFeral" prob=".17"/> <!-- Changed from .15 -->
+			<entity name="zombieBusinessMan"/>
+			<entity name="zombieBusinessManFeral" prob=".17"/> <!-- Changed from .15 -->
+			<entity name="zombieArlene"/>
+			<entity name="zombieArleneFeral" prob=".17"/> <!-- Changed from .15 -->
+			<entity name="zombieDarlene"/>
+			<entity name="zombieDarleneFeral" prob=".17"/> <!-- Changed from .15 -->
+			<entity name="zombieMarlene"/>
+			<entity name="zombieMarleneFeral" prob=".17"/> <!-- Changed from .15 -->
+			<entity name="zombieNurse"/>
+			<entity name="zombieNurseFeral" prob=".17"/> <!-- Changed from .15 -->
+			<entity name="zombieMaleHazmat"/>
+			<entity name="zombieMaleHazmatFeral" prob=".17"/> <!-- Changed from .15 -->
+			<entity name="zombiePartyGirl"/>
+			<entity name="zombiePartyGirlFeral" prob=".17"/> <!-- Changed from .15 -->
+			<entity name="zombieFatHawaiian"/>
+			<entity name="zombieFatHawaiianFeral" prob=".15"/> <!-- Changed from .05 -->
+			<entity name="zombieBowler"/>
+			<entity name="zombieBowlerFeral" prob=".15"/> <!-- Changed from .05 -->
+			<entity name="zombieFemaleFat"/>
+			<entity name="zombieFemaleFatFeral" prob=".15"/> <!-- Changed from .05 -->
+			<entity name="zombieSteveCrawlerFeral" prob=".15"/> <!-- Unchanged -->
+			<entity name="zombieFatCop"/> <!-- Removed prob -->
+			<!-- *** SYNTAX FIX ***: Corrected missing attribute formatting -->
+			<entity name="zombieFatCopFeral" prob=".15"/> <!-- Was: zombieFatCopFeral prob=".15" -->
+			<entity name="zombieSoldier"/>
+			<entity name="zombieSoldierFeral" prob=".10"/> <!-- New prob -->
+			<entity name="animalZombieDog"/>
+			<entity name="animalDireWolf" prob=".03"/> <!-- Changed from .05 -->
+			<entity name="animalWolf" prob="0.10"/> <!-- Changed from 0.15 -->
+			<entity name="zombieBurnt"/>
+			<entity name="zombieBurntFeral" prob=".17"/> <!-- Changed from .15 -->
+			<entity name="zombieMutated" prob=".1"/> <!-- Unchanged -->
+			<entity name="zombieMutatedFeral" prob=".08"/> <!-- Changed from .05 -->
+			<entity name="zombieWightFeral" prob=".05"/> <!-- Changed from .08 -->
+		</entitygroup>
+
+		<!-- NIGHTTIME DOWNTOWN/COMMERCIAL SPAWNS FOR FOREST BIOMES (NO DEMOLISHERS) -->
+		<!-- Copied from MOD_Forest_Night (v3) -->
+		<entitygroup name="MOD_Downtown_Forest_Night">
+			<entity name="zombieSpider"/>
+			<entity name="zombieSpiderFeral" prob=".25"/> <!-- Changed from .3 -->
+			<entity name="zombieBoe"/>
+			<entity name="zombieBoeFeral" prob=".25"/> <!-- Changed from .3 -->
+			<entity name="zombieJoe"/>
+			<entity name="zombieJoeFeral" prob=".25"/> <!-- Changed from .3 -->
+			<entity name="zombieSteve"/>
+			<entity name="zombieTomClark"/>
+			<entity name="zombieSteveFeral" prob=".25"/> <!-- Changed from .3 -->
+			<entity name="zombieTomClarkFeral" prob=".25"/> <!-- Changed from .3 -->
+			<entity name="zombieMoe"/>
+			<entity name="zombieMoeFeral" prob=".25"/> <!-- Changed from .3 -->
+			<entity name="zombieYo"/>
+			<entity name="zombieYoFeral" prob=".25"/> <!-- Changed from .3 -->
+			<entity name="zombieBusinessMan"/>
+			<entity name="zombieBusinessManFeral" prob=".25"/> <!-- Changed from .3 -->
+			<entity name="zombieArlene"/>
+			<entity name="zombieArleneFeral" prob=".25"/> <!-- Changed from .3 -->
+			<entity name="zombieDarlene"/>
+			<entity name="zombieDarleneFeral" prob=".25"/> <!-- Changed from .3 -->
+			<entity name="zombieMarlene"/>
+			<entity name="zombieMarleneFeral" prob=".25"/> <!-- Changed from .3 -->
+			<entity name="zombieLumberjack"/>
+			<entity name="zombieLumberjackFeral" prob=".25"/> <!-- Changed from .3 -->
+			<entity name="zombieNurse"/>
+			<entity name="zombieNurseFeral" prob=".25"/> <!-- Changed from .3 -->
+			<entity name="animalZombieDog"/>
+			<entity name="animalDireWolf" prob=".05"/> <!-- Unchanged -->
+			<entity name="zombieSteveCrawler"/>
+			<entity name="zombieFatHawaiian"/>
+			<entity name="zombieFatHawaiianFeral" prob=".25"/> <!-- Unchanged -->
+			<entity name="zombieBowler"/>
+			<entity name="zombieBowlerFeral" prob=".3"/> <!-- Unchanged (per user prev. instruction) -->
+			<entity name="animalWolf" prob="0.15"/> <!-- Unchanged -->
+			<entity name="zombieBurnt"/>
+			<entity name="zombieBurntFeral" prob=".3"/> <!-- Unchanged (per user prev. instruction) -->
+			<entity name="zombieMutated"/>
+			<entity name="zombieMutatedFeral" prob=".2"/> <!-- Unchanged -->
+			<entity name="zombieWightFeral" prob=".12"/> <!-- Unchanged (per user prev. instruction) -->
+			<entity name="zombieFemaleFat"/>
+			<entity name="zombieFemaleFatFeral" prob=".25"/> <!-- Changed from .3 -->
+			<entity name="zombieSteveCrawlerFeral" prob=".25"/> <!-- Changed from .3 -->
+			<entity name="zombieFatCop"/> <!-- Unchanged -->
+			<!-- *** SYNTAX FIX ***: Corrected missing attribute formatting -->
+			<entity name="zombieFatCopFeral" prob=".25"/> <!-- Was: zombieFatCopFeral prob=".25" -->
+			<entity name="zombieMaleHazmat"/>
+			<entity name="zombieMaleHazmatFeral" prob=".25"/> <!-- Changed from .3 -->
+			<entity name="zombieSoldier"/>
+			<entity name="zombiePartyGirl"/>
+			<entity name="zombiePartyGirlFeral" prob=".25"/> <!-- Changed from .3 -->
+		</entitygroup>
+
+		<!-- APPEND DEMOLISHER TO WASTELAND DOWNTOWN -->
+		<!-- No changes needed here -->
+		<append xpath="/entitygroups/entitygroup[@name='ZombiesWastelandDowntown']">
+			<entity name="zombieDemolition" prob=".03"/>
+			<!-- <entity name="zombieDemolitionFeral" prob=".005"/> -->
+		</append>
+
+		<!-- ============================================================================ -->
+		<!-- NEW: DESERT BIOME ZOMBIE GROUPS (COPIED FROM FOREST WITH DEMOLISHERS) -->
+		<!-- NOTE: This group replaces MOD_DesertSnow groups in the Desert biome. -->
+		<!-- V4: Applied similar logic increase to nighttime ferals -->
+		<!-- ============================================================================ -->
+
+		<!-- DAYTIME ZOMBIE SPAWNS FOR DESERT BIOME (INCLUDES DEMOLISHERS) -->
+		<!-- Increased most feral probs from .20 to .25 -->
+		<entitygroup name="MOD_Desert_Day">
+			<entity name="zombieSpider"/>
+			<entity name="zombieSpiderFeral" prob=".25"/> <!-- Changed from .20 -->
+			<entity name="zombieBoe"/>
+			<entity name="zombieBoeFeral" prob=".25"/> <!-- Changed from .20 -->
+			<entity name="zombieJoe"/>
+			<entity name="zombieJoeFeral" prob=".25"/> <!-- Changed from .20 -->
+			<entity name="zombieSteve"/>
+			<entity name="zombieSteveFeral" prob=".25"/> <!-- Changed from .20 -->
+			<entity name="zombieTomClark"/>
+			<entity name="zombieTomClarkFeral" prob=".25"/> <!-- Changed from .20 -->
+			<entity name="zombieMoe"/>
+			<entity name="zombieMoeFeral" prob=".25"/> <!-- Changed from .20 -->
+			<entity name="zombieYo"/>
+			<entity name="zombieYoFeral" prob=".25"/> <!-- Changed from .20 -->
+			<entity name="zombieBusinessMan"/>
+			<entity name="zombieBusinessManFeral" prob=".25"/> <!-- Changed from .20 -->
+			<entity name="zombieArlene"/>
+			<entity name="zombieArleneFeral" prob=".25"/> <!-- Changed from .20 -->
+			<entity name="zombieDarlene"/>
+			<entity name="zombieDarleneFeral" prob=".25"/> <!-- Changed from .20 -->
+			<entity name="zombieMarlene"/>
+			<entity name="zombieMarleneFeral" prob=".25"/> <!-- Changed from .20 -->
+			<entity name="zombieNurse"/>
+			<entity name="zombieNurseFeral" prob=".25"/> <!-- Changed from .20 -->
+			<entity name="zombieMaleHazmat"/>
+			<entity name="zombieMaleHazmatFeral" prob=".25"/> <!-- Changed from .20 -->
+			<entity name="zombiePartyGirl"/>
+			<entity name="zombiePartyGirlFeral" prob=".25"/> <!-- Changed from .20 -->
+			<entity name="zombieFatHawaiian"/>
+			<entity name="zombieFatHawaiianFeral" prob=".25"/> <!-- Changed from .20 -->
+			<entity name="zombieBowler"/>
+			<entity name="zombieBowlerFeral" prob=".25"/> <!-- Changed from .20 -->
+			<entity name="zombieFemaleFat"/>
+			<entity name="zombieFemaleFatFeral" prob=".25"/> <!-- Changed from .20 -->
+			<entity name="zombieSteveCrawlerFeral" prob=".25"/> <!-- Changed from .20 -->
+			<entity name="zombieFatCop" prob=".2"/> <!-- Unchanged -->
+			<entity name="zombieFatCopFeral" prob=".25"/> <!-- Changed from .20 -->
+			<entity name="zombieSoldier"/>
+			<entity name="zombieSoldierFeral" prob=".25"/> <!-- Changed from .20 -->
+			<entity name="animalZombieDog"/>
+			<entity name="animalDireWolf" prob=".15"/> <!-- Unchanged -->
+			<entity name="animalWolf" prob="0.15"/> <!-- Unchanged -->
+			<entity name="zombieBurnt"/>
+			<entity name="zombieBurntFeral" prob=".25"/> <!-- Changed from .20 -->
+			<entity name="zombieLumberjack"/>
+			<entity name="zombieLumberjackFeral" prob=".25"/> <!-- Changed from .20 -->
+			<entity name="zombieMutated" prob=".15"/> <!-- Unchanged -->
+			<entity name="zombieMutatedFeral" prob=".1"/> <!-- Unchanged -->
+			<entity name="zombieWightFeral" prob=".15"/> <!-- Unchanged -->
+			<entity name="animalZombieVulture"/>
+			<entity name="animalZombieVultureRadiated" prob=".15"/> <!-- Unchanged -->
+			<entity name="zombieDemolition" prob=".03"/> <!-- Unchanged -->
+			<!-- <entity name="zombieDemolitionFeral" prob=".005"/> -->
+		</entitygroup>
+
+		<!-- NIGHTTIME ZOMBIE SPAWNS FOR DESERT BIOME (INCLUDES DEMOLISHERS) -->
+		<!-- Feral probabilities adjusted using .35 as base (scaled up from Forest Night .25) -->
+		<entitygroup name="MOD_Desert_Night">
+			<entity name="zombieSpider"/>
+			<entity name="zombieSpiderFeral" prob=".35"/> <!-- Changed from .25 -->
+			<entity name="zombieBoe"/>
+			<entity name="zombieBoeFeral" prob=".35"/> <!-- Changed from .25 -->
+			<entity name="zombieJoe"/>
+			<entity name="zombieJoeFeral" prob=".35"/> <!-- Changed from .25 -->
+			<entity name="zombieSteve"/>
+			<entity name="zombieTomClark"/>
+			<entity name="zombieSteveFeral" prob=".35"/> <!-- Changed from .25 -->
+			<entity name="zombieTomClarkFeral" prob=".35"/> <!-- Changed from .25 -->
+			<entity name="zombieMoe"/>
+			<entity name="zombieMoeFeral" prob=".35"/> <!-- Changed from .25 -->
+			<entity name="zombieYo"/>
+			<entity name="zombieYoFeral" prob=".35"/> <!-- Changed from .25 -->
+			<entity name="zombieBusinessMan"/>
+			<entity name="zombieBusinessManFeral" prob=".35"/> <!-- Changed from .25 -->
+			<entity name="zombieArlene"/>
+			<entity name="zombieArleneFeral" prob=".35"/> <!-- Changed from .25 -->
+			<entity name="zombieDarlene"/>
+			<entity name="zombieDarleneFeral" prob=".35"/> <!-- Changed from .25 -->
+			<entity name="zombieMarlene"/>
+			<entity name="zombieMarleneFeral" prob=".35"/> <!-- Changed from .25 -->
+			<entity name="zombieLumberjack"/>
+			<entity name="zombieLumberjackFeral" prob=".35"/> <!-- Changed from .25 -->
+			<entity name="zombieNurse"/>
+			<entity name="zombieNurseFeral" prob=".35"/> <!-- Changed from .25 -->
+			<entity name="animalZombieDog"/>
+			<entity name="animalDireWolf" prob=".05"/> <!-- Unchanged -->
+			<entity name="zombieSteveCrawler"/>
+			<entity name="zombieFatHawaiian"/>
+			<entity name="zombieFatHawaiianFeral" prob=".35"/> <!-- Changed from .25 -->
+			<entity name="zombieBowler"/>
+			<entity name="zombieBowlerFeral" prob=".35"/> <!-- Changed from .25 -->
+			<entity name="animalWolf" prob="0.15"/> <!-- Unchanged -->
+			<entity name="zombieBurnt"/>
+			<entity name="zombieBurntFeral" prob=".35"/> <!-- Changed from .25 -->
+			<entity name="zombieMutated"/>
+			<entity name="zombieMutatedFeral" prob=".35"/> <!-- Changed from .25 -->
+			<entity name="zombieWightFeral" prob=".15"/> <!-- Unchanged -->
+			<entity name="animalZombieVulture"/>
+			<entity name="animalZombieVultureRadiated" prob=".2"/> <!-- Unchanged -->
+			<entity name="zombieFemaleFat"/>
+			<entity name="zombieFemaleFatFeral" prob=".35"/> <!-- Changed from .25 -->
+			<entity name="zombieSteveCrawlerFeral" prob=".35"/> <!-- Changed from .25 -->
+			<entity name="zombieFatCop"/> <!-- Unchanged -->
+			<entity name="zombieFatCopFeral" prob=".35"/> <!-- Changed from .25 -->
+			<entity name="zombieMaleHazmat"/>
+			<entity name="zombieMaleHazmatFeral" prob=".35"/> <!-- Changed from .25 -->
+			<entity name="zombieSoldier"/>
+			<entity name="zombieSoldierFeral" prob=".35"/> <!-- Changed from .25 -->
+			<entity name="zombiePartyGirl"/>
+			<entity name="zombiePartyGirlFeral" prob=".35"/> <!-- Changed from .25 -->
+			<entity name="zombieDemolition" prob=".08"/> <!-- Unchanged -->
+			<!-- <entity name="zombieDemolitionFeral" prob=".03"/> -->
+		</entitygroup>
+
+		<!-- ============================================================================ -->
+		<!-- ANIMAL GROUPS FOR SPECIFIC BIOME SPAWNING (Fixes Global Spawns) -->
+		<!-- No changes needed here -->
+		<!-- ============================================================================ -->
+		
+		<!-- PINE FOREST COMMON ANIMALS (RABBITS/DEER/PIGS/YOUNG BEARS) -->
+		<entitygroup name="MOD_PineForest_Animals_Common">
+			<entity name="animalRabbit" prob="0.10"/>
+			<entity name="animalDoe" prob="0.08"/>
+			<entity name="animalStag" prob="0.02"/>
+			<entity name="animalBoar" prob="0.01"/>
+			<entity name="animalBearSmall" prob="0.01"/>
+			<entity name="none" prob="0.78"/> <!-- 1.00 - (0.10+0.08+0.02+0.01+0.01) = 0.78 -->
+		</entitygroup>
+		
+		<!-- PIGS (10% RATE) FOR BURNT/DESERT BIOMES -->
+		<entitygroup name="MOD_Pigs_Uncommon_DesertBurnt">
+			<entity name="animalBoar" prob="0.10"/>
+			<entity name="none" prob="0.90"/>
+		</entitygroup>
+
+		<!-- PIGS (5% RATE) FOR WASTELAND BIOME -->
+		<entitygroup name="MOD_Pigs_Rare_Wasteland">
+			<entity name="animalBoar" prob="0.05"/>
+			<entity name="none" prob="0.95"/>
+		</entitygroup>
+
+		<!-- UNCOMMON SNAKES (10% RATE) FOR WASTELAND BIOME -->
+		<entitygroup name="MOD_Snakes_Wasteland_Uncommon">
+			<entity name="animalSnake" prob="0.10"/>
+			<entity name="none" prob="0.90"/>
+		</entitygroup>
+		
+		<!-- RARE SNAKES (5% RATE) FOR DESERT BIOME -->
+		<entitygroup name="MOD_Snakes_Desert_Rare">
+			<entity name="animalSnake" prob="0.05"/>
+			<entity name="none" prob="0.95"/>
+		</entitygroup>
+
+		<!-- PIGS (1% RATE) FOR PINE FOREST BIOME -->
+		<!-- Note: This wasn't used in spawning.xml, but keeping it for completeness -->
+		<entitygroup name="MOD_Pigs_Rare_Forest">
+			<entity name="animalBoar" prob="0.01"/>
+			<entity name="none" prob="0.99"/>
+		</entitygroup>
+
+		<!-- RABBITS/CHICKENS (10% RATE) FOR GENERAL BIOME USE -->
+		<!-- Note: This wasn't used in spawning.xml, but keeping it for completeness -->
+		<entitygroup name="MOD_Rabbits_Chickens_Common">
+			<entity name="animalRabbit" prob="0.1"/>
+			<entity name="animalChicken" prob="0.1"/>
+			<entity name="none" prob="0.8"/>
+		</entitygroup>
+		
+		<!-- WOLVES (10% RATE) FOR GENERAL BIOME USE -->
+		<!-- Note: This wasn't used in spawning.xml, but keeping it for completeness -->
+		<entitygroup name="MOD_Wolves_Common">
+			<entity name="animalWolf" prob="0.1"/>
+			<entity name="none" prob="0.90"/>
+		</entitygroup>
+	
+	</append>
+</config>

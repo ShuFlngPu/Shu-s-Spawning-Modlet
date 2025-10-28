@@ -1,0 +1,59 @@
+<configs>
+	<!-- *** ZOMBIE_BADASS_GS_HORDE *** -->
+	<!-- Manually setting 'num' attribute to 10 for stages with fewer than 10 zombies -->
+	<set xpath="/gamestages/spawner[@name='ZombieBadassGSHorde']/gamestage[@stage='3']/spawn/@num">10</set>
+	<set xpath="/gamestages/spawner[@name='ZombieBadassGSHorde']/gamestage[@stage='8']/spawn/@num">10</set>
+	<set xpath="/gamestages/spawner[@name='ZombieBadassGSHorde']/gamestage[@stage='13']/spawn/@num">10</set>
+
+	<!-- *** WANDERING_HORDE *** -->
+	<!-- Manually setting 'num' attribute to 10 for stages with fewer than 10 zombies -->
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='01']/spawn/@num">10</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='03']/spawn/@num">10</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='04']/spawn/@num">10</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='05']/spawn/@num">10</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='06']/spawn/@num">10</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='07']/spawn/@num">10</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='08']/spawn/@num">10</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='09']/spawn/@num">10</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='10']/spawn/@num">10</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='11']/spawn/@num">10</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='12']/spawn/@num">10</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='13']/spawn/@num">10</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='14']/spawn/@num">10</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='15']/spawn/@num">10</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='16']/spawn/@num">10</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='17']/spawn/@num">10</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='18']/spawn/@num">10</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='19']/spawn/@num">10</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='20']/spawn/@num">10</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='22']/spawn/@num">10</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='23']/spawn/@num">10</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='24']/spawn/@num">10</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='26']/spawn/@num">10</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='27']/spawn/@num">10</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='28']/spawn/@num">10</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='29']/spawn/@num">10</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='31']/spawn/@num">10</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='32']/spawn/@num">10</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='33']/spawn/@num">10</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='34']/spawn/@num">10</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='35']/spawn/@num">10</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='36']/spawn/@num">10</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='38']/spawn/@num">10</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='39']/spawn/@num">10</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='40']/spawn/@num">10</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='41']/spawn/@num">10</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='43']/spawn/@num">10</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='44']/spawn/@num">10</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='47']/spawn/@num">10</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='49']/spawn/@num">10</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='50']/spawn/@num">10</set>
+
+	<!-- *** SLEEPER_GS_LIST *** -->
+	<!-- Manually setting 'num' attribute to 10 for stages with fewer than 10 zombies -->
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='5']/spawn/@num">10</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='8']/spawn/@num">10</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='11']/spawn/@num">10</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='14']/spawn/@num">10</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='18']/spawn/@num">10</set>
+</configs>

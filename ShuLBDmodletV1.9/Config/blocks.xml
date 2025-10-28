@@ -1,0 +1,75 @@
+<config>
+	<!-- 
+	==================================================================
+	== LBD BLOCKS FILE - MASTER LIST ==
+	This file adds the 'LBDLootable' tag to all relevant vanilla loot containers.
+	The Action_OnLoot trigger has been removed and moved to buffs.xml ("Plan B").
+	==================================================================
+	-->
+
+	<!-- 
+	REMOVED: The patch for 'cntStorageContainerSafeInsecure' was here.
+	It failed because it was a duplicate property error (Violation of Rule #4).
+	The safes below are handled by the next patch.
+	-->
+	<append xpath="/blocks/block[contains(@name,'cntGunSafe') or contains(@name,'cntWallSafe') or @name='cntQuestInfestedT1']">
+		<property name="FilterTags" value="LBDLootable,safes"/>
+		<!-- Action_OnLoot removed -->
+	</append>
+
+	<!-- Add LBDLootable Tag to Trash Containers -->
+	<append xpath="/blocks/block[contains(@name,'cntTrashPile') or @name='cntDumpster' or @name='cntTrash_can']">
+		<property name="FilterTags" value="LBDLootable,trashPile"/>
+		<!-- Action_OnLoot removed -->
+	</append>
+	
+	<!-- Add LBDLootable Tag to Bookworm/Paper Containers -->
+	<append xpath="/blocks/block[contains(@name,'cntBookcase') or contains(@name,'cntMailBox') or contains(@name,'cntFileCabinet')]">
+		<property name="FilterTags" value="LBDLootable,perkBookworm"/>
+		<!-- Action_OnLoot removed -->
+	</append>
+
+	<!-- Add LBDLootable Tag to General & Challenge Containers -->
+	<append xpath="/blocks/block[@name='cntAmmoPileSmall' or @name='cntChemPileSmall' or @name='cntShippingCrateShamway' or @name='challenge_sinks' or @name='challenge_polymers']">
+		<property name="FilterTags" value="LBDLootable,perkBookworm"/>
+		<!-- Action_OnLoot removed -->
+	</append>
+
+	<!-- Add LBDLootable Tag to Personal Bags & Shopping Containers -->
+	<append xpath="/blocks/block[@name='cntBackpack01' or @name='cntPurse01' or @name='cntSuitcase' or @name='cntShoppingBasket' or @name='cntShoppingCart']">
+		<property name="FilterTags" value="LBDLootable,perkBookworm"/>
+		<!-- Action_OnLoot removed -->
+	</append>
+
+	<!-- Add LBDLootable Tag to Cabinets, Furniture, and Appliances -->
+	<!-- FIXED: Corrected syntax error from @name:"..." to @name='...' -->
+	<append xpath="/blocks/block[@name='cntCabinetOldBottom' or @name='cntCabinetOldTop' or @name='cntMedicalCabinet' or @name='cntCupboardCabinetRedTop' or @name='cntCupboardCabinetRedBottom' or @name='cntNightstand' or @name='cntCooler' or @name='cntLockers' or @name='cntOfficeChair' or @name='cntStove']">
+		<property name="FilterTags" value="LBDLootable,perkBookworm"/>
+		<!-- Action_OnLoot removed -->
+	</append>
+
+	<!-- Add LBDLootable Tag to Buried Treasure -->
+	<append xpath="/blocks/block[@name='cntLootChestHeroInsecureT1']">
+		<property name="FilterTags" value="LBDLootable,buriedTreasure,perkBookworm"/>
+		<!-- Action_OnLoot removed -->
+	</append>
+	
+	<!-- Add LBDLootable Tag to Electrical Containers -->
+	<append xpath="/blocks/block[@name='generatorbank']">
+		<property name="FilterTags" value="LBDLootable,electricianSkill"/>
+		<!-- Action_OnLoot removed -->
+	</append>
+
+	<!-- ADDED: ToolBox, Lab, Microwave, CashRegister, Vending -->
+	<append xpath="/blocks/block[@name='cntToolBoxRandom' or @name='cntLabEquipment' or @name='cntMicrowaveOven' or @name='cntCashRegister' or @name='cntVendingMachine']">
+		<property name="FilterTags" value="LBDLootable,perkBookworm"/>
+		<!-- Action_OnLoot removed -->
+	</append>
+	
+	<!-- FINAL ADDITIONS: Add remaining containers -->
+	<append xpath="/blocks/block[@name='cntMunitionsBox' or @name='gasPump' or contains(@name,'cntFoodPile') or @name='cntDesk']">
+		<property name="FilterTags" value="LBDLootable,perkBookworm"/>
+		<!-- Action_OnLoot removed -->
+	</append>
+	
+</config>
