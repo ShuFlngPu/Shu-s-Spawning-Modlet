@@ -1,0 +1,12 @@
+<config>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieTemplateMale']">
+		<!-- Effect Group to apply the Nearby Ally Bonus buff -->
+		<effect_group name="Nearby Ally Bonus MOD">
+			<passive_effect name="BuffResistance" operation="base_set" value="0" tags="buffZombieAllyBonusMOD"/>
+			<!-- FIXED: Corrected buff name typo from buffZombieAllyBonusMOD to buffZombieLeaderAura_T1 -->
+			<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" buff="buffZombieLeaderAura_T1"/>
+		</effect_group>
+	</append>
+	
+</config>
