@@ -1,0 +1,53 @@
+<config>
+	<append xpath="/buffs">
+	
+       <buff name="buffZombieLeaderAura_T1" hidden="true">
+            <duration value="999999"/> <!-- Infinite duration -->
+            <update_rate value="40"/> <!-- Check every 2 seconds -->
+
+            <!-- Requirements: The leader itself must be a zombie, and must detect at least one other zombie nearby -->
+            <requirements>
+                <requirement name="EntityTagCompare" tags="zombie"/> <!-- Ensure self is a zombie -->
+                <requirement name="HasTrackedEntity" tags="zombie"/> <!-- Check within TrackDistance set in entityclasses.xml -->
+            </requirements>
+
+            <effect_group>
+                <!-- If requirements met, apply the bonus buff to all zombies in range -->
+                <!-- The buffZombieAllyBonus_Received_T1 itself handles stacking -->
+                <triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffZombieAllyBonus_Received_T1" target="selfAOE" range="14" target_tags="zombie"/> <!-- Apply in 14m radius -->
+            </effect_group>
+        </buff>
+
+        <buff name="buffZombieAllyBonus_Received_T1" name_key="buffZombieAllyBonusName_T1" description_key="buffZombieAllyBonusDesc_T1" icon="ui_game_symbol_chain" icon_color="255,80,80">
+            <stack_type value="effect"/> <!-- Changed from replace to effect for stacking -->
+            <stack_count_max value="3"/> <!-- Maximum stacks allowed -->
+            <duration value="4"/> <!-- Slightly longer than Leader's update rate; timer resets on each stack/refresh -->
+            <!-- Note: Add localization for name_key and description_key -->
+            <!-- Note: Consider adding a display_value showing current stack count if desired -->
+
+            <effect_group>
+                <!-- Passive stat bonuses (applied per stack) -->
+                <passive_effect name="EntityDamage" operation="perc_add" value=".04"/>         <!-- +4% Damage per stack -->
+                <passive_effect name="PhysicalDamageResist" operation="base_add" value="4"/>     <!-- +4 Physical Resistance per stack -->
+                <passive_effect name="RunSpeed" operation="perc_add" value=".04"/>             <!-- +4% Run Speed per stack -->
+                <passive_effect name="WalkSpeed" operation="perc_add" value=".04"/>           <!-- +4% Walk Speed per stack -->
+            </effect_group>
+        </buff>
+
+        <!-- TODO: Add Tier 2 versions (buffZombieLeaderAura_T2, buffZombieAllyBonus_Received_T2) with stronger effects -->
+        <!-- Assign T2 aura buff to tougher zombies in entityclasses.xml -->
+		
+		<buff name="buffGrantRoboticsXP" hidden="true">
+			<stack_type value="ignore"/>
+			<duration value="2"/> <!-- Short duration, will be removed by the effect -->
+			<effect_group>
+				<!-- On buff start, grant 1 XP to the player -->
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="craftingRoboticsShuLDBexp" operation="add" value="1"/>
+				<!-- Immediately remove the buff so it can be applied again on the next hit -->
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffGrantRoboticsXP"/>
+			</effect_group> 
+		</buff>
+		
+	</append>
+	
+</config>
