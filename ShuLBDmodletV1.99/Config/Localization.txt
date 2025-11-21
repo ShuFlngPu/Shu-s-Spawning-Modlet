@@ -1,0 +1,2 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,spanish,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese
+LBD_lootingSkillPointGained,buffs,Buff,,x,"You have gained experience finding loot.",,,,,,,,,,,,,
