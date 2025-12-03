@@ -1,0 +1,479 @@
+<config>
+
+	<append xpath="/entitygroups">
+
+		<entitygroup name="MOD_Forest_Day">
+			<entity name="zombieSpider"/>
+			<entity name="zombieSpiderFeral" prob=".10"/>
+			<entity name="zombieBoe"/>
+			<entity name="zombieBoeFeral" prob=".15"/>
+			<entity name="zombieJoe"/>
+			<entity name="zombieJoeFeral" prob=".15"/>
+			<entity name="zombieSteve"/>
+			<entity name="zombieSteveFeral" prob=".15"/>
+			<entity name="zombieTomClark"/>
+			<entity name="zombieTomClarkFeral" prob=".15"/>
+			<entity name="zombieMoe"/>
+			<entity name="zombieMoeFeral" prob=".15"/>
+			<entity name="zombieYo"/>
+			<entity name="zombieYoFeral" prob=".15"/>
+			<entity name="zombieArlene"/>
+			<entity name="zombieArleneFeral" prob=".15"/>
+			<entity name="zombieDarlene"/>
+			<entity name="zombieDarleneFeral" prob=".15"/>
+			<entity name="zombieNurse"/>
+			<entity name="zombieNurseFeral" prob=".15"/>
+			<entity name="zombieMarlene"/>
+			<entity name="zombieMarleneFeral" prob=".15"/>
+			<entity name="zombieBusinessMan" prob=".05"/>
+			<entity name="zombieBusinessManFeral" prob=".05"/>
+			<entity name="zombieBurnt"/>
+			<entity name="zombiePlagueSpitter" prob="0.05"/>
+			<entity name="zombieMutated" prob="0.05"/>
+			<entity name="animalDireWolf" prob="0.02"/>
+			<entity name="animalZombieBear" prob="0.01"/>
+
+		</entitygroup>
+
+		<entitygroup name="MOD_Forest_Night">
+			<entity name="zombieSpider"/>
+			<entity name="zombieSpiderFeral" prob=".20"/>
+			<entity name="zombieBoe"/>
+			<entity name="zombieBoeFeral" prob=".30"/>
+			<entity name="zombieJoe"/>
+			<entity name="zombieJoeFeral" prob=".30"/>
+			<entity name="zombieSteve"/>
+			<entity name="zombieSteveFeral" prob=".30"/>
+			<entity name="zombieTomClark"/>
+			<entity name="zombieTomClarkFeral" prob=".30"/>
+			<entity name="zombieMoe"/>
+			<entity name="zombieMoeFeral" prob=".30"/>
+			<entity name="zombieYo"/>
+			<entity name="zombieYoFeral" prob=".30"/>
+			<entity name="zombieArlene"/>
+			<entity name="zombieArleneFeral" prob=".30"/>
+			<entity name="zombieDarlene"/>
+			<entity name="zombieDarleneFeral" prob=".30"/>
+			<entity name="zombieNurse"/>
+			<entity name="zombieNurseFeral" prob=".30"/>
+			<entity name="zombieMarlene"/>
+			<entity name="zombieMarleneFeral" prob=".30"/>
+			<entity name="zombieBusinessMan" prob=".05"/>
+			<entity name="zombieBusinessManFeral" prob=".10"/>
+			<entity name="zombieBurnt"/>
+			<entity name="zombiePlagueSpitter" prob="0.05"/>
+			<entity name="zombieMutated" prob="0.05"/>
+			<entity name="animalZombieBear" prob="0.05"/>
+			<entity name="animalDireWolf" prob="0.05"/>
+
+		</entitygroup>
+
+
+		<entitygroup name="MOD_Desert_Day">
+			<entity name="zombieSpider"/>
+			<entity name="zombieBoe"/>
+			<entity name="zombieJoe"/>
+			<entity name="zombieJoeFeral" prob=".15"/>
+			<entity name="zombieSteve"/>
+			<entity name="zombieSteveFeral" prob=".15"/>
+			<entity name="zombieTomClark"/>
+			<entity name="zombieMoe"/>
+			<entity name="zombieMoeFeral" prob=".15"/>
+			<entity name="zombieYo"/>
+			<entity name="zombieYoFeral" prob=".15"/>
+			<entity name="zombieArlene"/>
+			<entity name="zombieDarlene"/>
+			<entity name="zombieNurse"/>
+			<entity name="zombieMarlene"/>
+			<entity name="zombieBurnt"/>
+			<entity name="zombiePlagueSpitter"/>
+			<entity name="zombieMutated"/>
+			<entity name="animalDireWolf"/>
+			<entity name="animalZombieBear"/>
+		</entitygroup>
+
+		<entitygroup name="MOD_Desert_Night">
+			<entity name="zombieSpider"/>
+			<entity name="zombieBoe"/>
+			<entity name="zombieJoe"/>
+			<entity name="zombieSteve"/>
+			<entity name="zombieTomClark"/>
+			<entity name="zombieMoe"/>
+			<entity name="zombieYo"/>
+			<entity name="zombieYoFeral" prob=".30"/>
+			<entity name="zombieArlene"/>
+			<entity name="zombieArleneFeral" prob=".30"/>
+			<entity name="zombieDarlene"/>
+			<entity name="zombieDarleneFeral" prob=".30"/>
+			<entity name="zombieNurse"/>
+			<entity name="zombieNurseFeral" prob=".30"/>
+			<entity name="zombieMarlene"/>
+			<entity name="zombieMarleneFeral" prob=".30"/>
+			<entity name="zombieBusinessMan" prob=".05"/>
+			<entity name="zombieBusinessManFeral" prob=".10"/>
+			<entity name="zombieBurnt"/>
+			<entity name="zombiePlagueSpitter"/>
+			<entity name="zombieMutated"/>
+			<entity name="animalZombieBear"/>
+			<entity name="animalDireWolf"/>
+		</entitygroup>
+
+
+		<entitygroup name="MOD_Snow_Day">
+			<entity name="zombieSpider"/>
+			<entity name="zombieBoe"/>
+			<entity name="zombieJoe"/>
+			<entity name="zombieSteve"/>
+			<entity name="zombieTomClark"/>
+			<entity name="zombieMoe"/>
+			<entity name="zombieYo"/>
+			<entity name="zombieArlene"/>
+			<entity name="zombieDarlene"/>
+			<entity name="zombieNurse"/>
+			<entity name="zombieMarlene"/>
+			<entity name="zombieBusinessMan"/>
+			<entity name="zombieBurnt"/>
+			<entity name="zombieFrostclaw"/>
+			<entity name="zombiePlagueSpitter"/>
+			<entity name="zombieMutated"/>
+			<entity name="animalDireWolf"/>
+			<entity name="animalZombieBear"/>
+		</entitygroup>
+
+		<entitygroup name="MOD_Snow_Night">
+			<entity name="zombieSpider"/>
+			<entity name="zombieBoe"/>
+			<entity name="zombieJoe"/>
+			<entity name="zombieJoeFeral" prob=".30"/>
+			<entity name="zombieSteve"/>
+			<entity name="zombieSteveFeral" prob=".30"/>
+			<entity name="zombieTomClark"/>
+			<entity name="zombieMoe"/>
+			<entity name="zombieMoeFeral" prob=".30"/>
+			<entity name="zombieYo"/>
+			<entity name="zombieYoFeral" prob=".30"/>
+			<entity name="zombieArlene"/>
+			<entity name="zombieDarlene"/>
+			<entity name="zombieDarleneFeral" prob=".30"/>
+			<entity name="zombieNurse"/>
+			<entity name="zombieMarlene"/>
+			<entity name="zombieMarleneFeral" prob=".30"/>
+			<entity name="zombieBusinessMan"/>
+			<entity name="zombieBusinessManFeral"/>
+			<entity name="zombieBurnt"/>
+			<entity name="zombieFrostclaw"/>
+			<entity name="zombiePlagueSpitter"/>
+			<entity name="zombieMutated"/>
+			<entity name="animalZombieBear"/>
+			<entity name="animalDireWolf"/>
+		</entitygroup>
+
+
+		<entitygroup name="MOD_Wasteland_Day">
+			<entity name="zombieSpider"/>
+			<entity name="zombieBoe"/>
+			<entity name="zombieJoe"/>
+			<entity name="zombieSteve"/>
+			<entity name="zombieTomClark"/>
+			<entity name="zombieMoe"/>
+			<entity name="zombieYo"/>
+			<entity name="zombieArlene"/>
+			<entity name="zombieDarlene"/>
+			<entity name="zombieNurse"/>
+			<entity name="zombieMarlene"/>
+			<entity name="zombieBusinessMan"/>
+			<entity name="zombieBusinessManFeral"/>
+			<entity name="zombieBurnt"/>
+			<entity name="zombiePlagueSpitter"/>
+			<entity name="zombieMutated"/>
+			<entity name="animalDireWolf"/>
+			<entity name="animalZombieBear"/>
+		</entitygroup>
+
+		<entitygroup name="MOD_Wasteland_Night">
+			<entity name="zombieSpider"/>
+			<entity name="zombieBoe"/>
+			<entity name="zombieJoe"/>
+			<entity name="zombieSteve"/>
+			<entity name="zombieTomClark"/>
+			<entity name="zombieMoe"/>
+			<entity name="zombieYo"/>
+			<entity name="zombieArlene"/>
+			<entity name="zombieDarlene"/>
+			<entity name="zombieNurse"/>
+			<entity name="zombieMarlene"/>
+			<entity name="zombieBusinessMan"/>
+			<entity name="zombieBusinessManFeral"/>
+			<entity name="zombieBurnt"/>
+			<entity name="zombiePlagueSpitter"/>
+			<entity name="zombieMutated"/>
+			<entity name="animalDireWolf"/>
+			<entity name="animalZombieBear"/>
+		</entitygroup>
+
+
+		<entitygroup name="MOD_Burnt_Day">
+			<entity name="zombieSpider"/>
+			<entity name="zombieSpiderFeral" prob=".10"/>
+			<entity name="zombieBoe"/>
+			<entity name="zombieBoeFeral" prob=".15"/>
+			<entity name="zombieJoe"/>
+			<entity name="zombieJoeFeral" prob=".15"/>
+			<entity name="zombieSteve"/>
+			<entity name="zombieSteveFeral" prob=".15"/>
+			<entity name="zombieTomClark"/>
+			<entity name="zombieTomClarkFeral" prob=".15"/>
+			<entity name="zombieMoe"/>
+			<entity name="zombieMoeFeral" prob=".15"/>
+			<entity name="zombieYo"/>
+			<entity name="zombieYoFeral" prob=".15"/>
+			<entity name="zombieArlene"/>
+			<entity name="zombieArleneFeral" prob=".15"/>
+			<entity name="zombieDarlene"/>
+			<entity name="zombieDarleneFeral" prob=".15"/>
+			<entity name="zombieNurse"/>
+			<entity name="zombieNurseFeral" prob=".15"/>
+			<entity name="zombieMarlene"/>
+			<entity name="zombieMarleneFeral" prob=".15"/>
+			<entity name="zombieBusinessMan" prob=".05"/>
+			<entity name="zombieBusinessManFeral" prob=".05"/>
+			<entity name="zombieBurnt" prob="0.35"/>
+			<entity name="zombieBurntFeral" prob="0.18"/>
+			<entity name="zombiePlagueSpitter" prob="0.05"/>
+			<entity name="zombieMutated" prob="0.05"/>
+			<entity name="animalDireWolf" prob="0.02"/>
+			<entity name="animalZombieBear" prob="0.01"/>
+		</entitygroup>
+
+		<entitygroup name="MOD_Burnt_Night">
+			<entity name="zombieSpider"/>
+			<entity name="zombieSpiderFeral" prob=".20"/>
+			<entity name="zombieBoe"/>
+			<entity name="zombieBoeFeral" prob=".30"/>
+			<entity name="zombieJoe"/>
+			<entity name="zombieJoeFeral" prob=".30"/>
+			<entity name="zombieSteve"/>
+			<entity name="zombieSteveFeral" prob=".30"/>
+			<entity name="zombieTomClark"/>
+			<entity name="zombieTomClarkFeral" prob=".30"/>
+			<entity name="zombieMoe"/>
+			<entity name="zombieMoeFeral" prob=".30"/>
+			<entity name="zombieYo"/>
+			<entity name="zombieYoFeral" prob=".30"/>
+			<entity name="zombieArlene"/>
+			<entity name="zombieArleneFeral" prob=".30"/>
+			<entity name="zombieDarlene"/>
+			<entity name="zombieDarleneFeral" prob=".30"/>
+			<entity name="zombieNurse"/>
+			<entity name="zombieNurseFeral" prob=".30"/>
+			<entity name="zombieMarlene"/>
+			<entity name="zombieMarleneFeral" prob=".30"/>
+			<entity name="zombieBusinessMan" prob=".05"/>
+			<entity name="zombieBusinessManFeral" prob=".10"/>
+			<entity name="zombieBurnt"/>
+			<entity name="zombiePlagueSpitter" prob="0.05"/>
+			<entity name="zombieMutated" prob="0.05"/>
+			<entity name="animalZombieBear" prob="0.05"/>
+			<entity name="animalDireWolf" prob="0.05"/>
+		</entitygroup>
+
+
+		<entitygroup name="MOD_ForestDowntown_Day">
+			<entity name="zombieSpider"/>
+			<entity name="zombieSpiderFeral" prob=".10"/>
+			<entity name="zombieBoe"/>
+			<entity name="zombieBoeFeral" prob=".15"/>
+			<entity name="zombieJoe"/>
+			<entity name="zombieJoeFeral" prob=".15"/>
+			<entity name="zombieSteve"/>
+			<entity name="zombieSteveFeral" prob=".15"/>
+			<entity name="zombieTomClark"/>
+			<entity name="zombieTomClarkFeral" prob=".15"/>
+			<entity name="zombieMoe"/>
+			<entity name="zombieMoeFeral" prob=".15"/>
+			<entity name="zombieYo"/>
+			<entity name="zombieYoFeral" prob=".15"/>
+			<entity name="zombieArlene"/>
+			<entity name="zombieArleneFeral" prob=".15"/>
+			<entity name="zombieDarlene"/>
+			<entity name="zombieDarleneFeral" prob=".15"/>
+			<entity name="zombieNurse"/>
+			<entity name="zombieNurseFeral" prob=".15"/>
+			<entity name="zombieMarlene"/>
+			<entity name="zombieMarleneFeral" prob=".15"/>
+			<entity name="zombieBusinessMan" prob=".05"/>
+			<entity name="zombieBusinessManFeral" prob=".05"/>
+			<entity name="zombieBurnt"/>
+			<entity name="zombiePlagueSpitter" prob="0.05"/>
+			<entity name="zombieMutated" prob="0.05"/>
+			<entity name="animalDireWolf" prob="0.02"/>
+			<entity name="animalZombieBear" prob="0.01"/>
+		</entitygroup>
+
+		<entitygroup name="MOD_ForestDowntown_Night">
+			<entity name="zombieSpider"/>
+			<entity name="zombieSpiderFeral" prob=".20"/>
+			<entity name="zombieBoe"/>
+			<entity name="zombieBoeFeral" prob=".30"/>
+			<entity name="zombieJoe"/>
+			<entity name="zombieJoeFeral" prob=".30"/>
+			<entity name="zombieSteve"/>
+			<entity name="zombieSteveFeral" prob=".30"/>
+			<entity name="zombieTomClark"/>
+			<entity name="zombieTomClarkFeral" prob=".30"/>
+			<entity name="zombieMoe"/>
+			<entity name="zombieMoeFeral" prob=".30"/>
+			<entity name="zombieYo"/>
+			<entity name="zombieYoFeral" prob=".30"/>
+			<entity name="zombieArlene"/>
+			<entity name="zombieArleneFeral" prob=".30"/>
+			<entity name="zombieDarlene"/>
+			<entity name="zombieDarleneFeral" prob=".30"/>
+			<entity name="zombieNurse"/>
+			<entity name="zombieNurseFeral" prob=".30"/>
+			<entity name="zombieMarlene"/>
+			<entity name="zombieMarleneFeral" prob=".30"/>
+			<entity name="zombieBusinessMan" prob=".05"/>
+			<entity name="zombieBusinessManFeral" prob=".10"/>
+			<entity name="zombieBurnt"/>
+			<entity name="zombiePlagueSpitter" prob="0.05"/>
+			<entity name="zombieMutated" prob="0.05"/>
+			<entity name="animalZombieBear" prob="0.05"/>
+			<entity name="animalDireWolf" prob="0.05"/>
+		</entitygroup>
+
+		<entitygroup name="MOD_DesertDowntown_Day">
+			<entity name="zombieSpider"/>
+			<entity name="zombieBoe"/>
+			<entity name="zombieJoe"/>
+			<entity name="zombieSteve"/>
+			<entity name="zombieTomClark"/>
+			<entity name="zombieMoe"/>
+			<entity name="zombieYo"/>
+			<entity name="zombieArlene"/>
+			<entity name="zombieDarlene"/>
+			<entity name="zombieNurse"/>
+			<entity name="zombieMarlene"/>
+			<entity name="zombieBusinessMan"/>
+			<entity name="zombieBusinessManFeral"/>
+			<entity name="zombieBurnt"/>
+			<entity name="zombiePlagueSpitter"/>
+			<entity name="zombieMutated"/>
+			<entity name="animalDireWolf"/>
+			<entity name="animalZombieBear"/>
+		</entitygroup>
+
+		<entitygroup name="MOD_DesertDowntown_Night">
+			<entity name="zombieSpider"/>
+			<entity name="zombieBoe"/>
+			<entity name="zombieJoe"/>
+			<entity name="zombieSteve"/>
+			<entity name="zombieTomClark"/>
+			<entity name="zombieMoe"/>
+			<entity name="zombieYo"/>
+			<entity name="zombieArlene"/>
+			<entity name="zombieDarlene"/>
+			<entity name="zombieNurse"/>
+			<entity name="zombieMarlene"/>
+			<entity name="zombieBusinessMan"/>
+			<entity name="zombieBusinessManFeral"/>
+			<entity name="zombieBurnt"/>
+			<entity name="zombiePlagueSpitter"/>
+			<entity name="zombieMutated"/>
+			<entity name="animalDireWolf"/>
+			<entity name="animalZombieBear"/>
+		</entitygroup>
+
+		<entitygroup name="MOD_WastelandDowntown_Day">
+			<entity name="zombieSpider"/>
+			<entity name="zombieBoe"/>
+			<entity name="zombieJoe"/>
+			<entity name="zombieSteve"/>
+			<entity name="zombieTomClark"/>
+			<entity name="zombieMoe"/>
+			<entity name="zombieYo"/>
+			<entity name="zombieArlene"/>
+			<entity name="zombieDarlene"/>
+			<entity name="zombieNurse"/>
+			<entity name="zombieMarlene"/>
+			<entity name="zombieBusinessMan"/>
+			<entity name="zombieBusinessManFeral"/>
+			<entity name="zombieBurnt"/>
+			<entity name="zombiePlagueSpitter"/>
+			<entity name="zombieMutated"/>
+			<entity name="animalDireWolf"/>
+			<entity name="animalZombieBear"/>
+		</entitygroup>
+
+		<entitygroup name="MOD_WastelandDowntown_Night">
+			<entity name="zombieSpider"/>
+			<entity name="zombieBoe"/>
+			<entity name="zombieJoe"/>
+			<entity name="zombieSteve"/>
+			<entity name="zombieTomClark"/>
+			<entity name="zombieMoe"/>
+			<entity name="zombieYo"/>
+			<entity name="zombieArlene"/>
+			<entity name="zombieDarlene"/>
+			<entity name="zombieNurse"/>
+			<entity name="zombieMarlene"/>
+			<entity name="zombieBusinessMan"/>
+			<entity name="zombieBusinessManFeral"/>
+			<entity name="zombieBurnt"/>
+			<entity name="zombiePlagueSpitter"/>
+			<entity name="zombieMutated"/>
+			<entity name="animalDireWolf"/>
+			<entity name="animalZombieBear"/>
+		</entitygroup>
+
+
+		<entitygroup name="MOD_Pigs_Rare_Forest">
+			<entity name="animalBoar" prob="0.01"/>
+			<entity name="none" prob="0.99"/>
+		</entitygroup>
+
+		<entitygroup name="MOD_Pigs_Rare_Wasteland">
+			<entity name="animalBoar" prob="0.05"/>
+			<entity name="none" prob="0.95"/>
+		</entitygroup>
+
+		<entitygroup name="MOD_Snakes_Wasteland_Uncommon">
+			<entity name="animalSnake" prob="0.10"/>
+			<entity name="none" prob="0.90"/>
+		</entitygroup>
+
+		<entitygroup name="MOD_Snakes_Uncommon_DesertBurnt">
+			<entity name="animalSnake" prob="0.10"/>
+			<entity name="none" prob="0.90"/>
+		</entitygroup>
+
+		<entitygroup name="MOD_Snakes_Desert_Rare">
+			<entity name="animalSnake" prob="0.05"/>
+			<entity name="none" prob="0.95"/>
+		</entitygroup>
+
+		<entitygroup name="MOD_Rabbits_Common">
+			<entity name="animalRabbit" prob="0.10"/>
+			<entity name="animalChicken" prob="0.10"/>
+			<entity name="none" prob="0.80"/>
+		</entitygroup>
+
+		<entitygroup name="MOD_PineForest_Animals_Common">
+			<entity name="animalRabbit" prob="0.10"/>
+			<entity name="animalStag" prob="0.5"/>
+			<entity name="animalDoe" prob="0.5"/>
+			<entity name="animalBoar" prob="0.01"/>
+			<entity name="animalWolf" prob="0.01"/>
+			<entity name="animalBear" prob="0.01"/>
+			<entity name="none" prob="0.70"/>
+		</entitygroup>
+
+		<entitygroup name="MOD_Pigs_Uncommon_DesertBurnt">
+			<entity name="animalBoar" prob="0.10"/>
+			<entity name="none" prob="0.90"/>
+		</entitygroup>
+
+	</append>
+
+
+</config>

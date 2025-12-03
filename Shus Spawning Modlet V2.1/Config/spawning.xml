@@ -1,0 +1,96 @@
+<config>
+
+	<remove xpath="/spawning/biome[@name='pine_forest']" />
+	<remove xpath="/spawning/biome[@name='burnt_forest']" />
+	<remove xpath="/spawning/biome[@name='desert']" />
+	<remove xpath="/spawning/biome[@name='snow']" />
+	<remove xpath="/spawning/biome[@name='wasteland']" />
+
+	<append xpath="/spawning">
+		
+		<biome name="pine_forest">
+			<spawn id="dz01" maxcount="2" respawndelay="0.2" time="Day" entitygroup="MOD_Forest_Day" notags="commercial,industrial,downtown" />
+			<spawn id="nz01" maxcount="2" respawndelay="0.2" time="Night" entitygroup="MOD_Forest_Night" notags="commercial,industrial,downtown" />
+			
+			<spawn id="dz02" maxcount="3" respawndelay="0.2" time="Day" entitygroup="MOD_ForestDowntown_Day" tags="commercial,industrial" notags="downtown" />
+			<spawn id="nz02" maxcount="4" respawndelay="0.2" time="Night" entitygroup="MOD_ForestDowntown_Night" tags="commercial,industrial" notags="downtown" />
+			
+			<spawn id="dz03" maxcount="4" respawndelay="0.25" time="Day" entitygroup="MOD_ForestDowntown_Day" tags="downtown" />
+			<spawn id="nz03" maxcount="6" respawndelay="0.3" time="Night" entitygroup="MOD_ForestDowntown_Night" tags="downtown" />
+			
+			<spawn id="aa01" maxcount="1" respawndelay="1.5" time="Any" entitygroup="MOD_PineForest_Animals_Common" />
+		</biome>
+
+		<biome name="burnt_forest">
+			<spawn id="dz01" maxcount="2" respawndelay="0.2" time="Day" entitygroup="MOD_Burnt_Day" notags="commercial,industrial,downtown" />
+			<spawn id="nz01" maxcount="2" respawndelay="0.2" time="Night" entitygroup="MOD_Burnt_Night" notags="commercial,industrial,downtown" />
+			
+			<spawn id="dz02" maxcount="3" respawndelay="0.2" time="Day" entitygroup="MOD_Burnt_Day" tags="commercial,industrial" notags="downtown" />
+			<spawn id="nz02" maxcount="4" respawndelay="0.25" time="Night" entitygroup="MOD_Burnt_Night" tags="commercial,industrial" notags="downtown" />
+			
+			<spawn id="dz03" maxcount="4" respawndelay="0.25" time="Day" entitygroup="MOD_Burnt_Day" tags="downtown" />
+			<spawn id="nz03" maxcount="6" respawndelay="0.3" time="Night" entitygroup="MOD_Burnt_Night" tags="downtown" />
+			
+			<spawn id="MOD_Pigs01" maxcount="1" respawndelay="1.0" time="Any" entitygroup="MOD_Pigs_Uncommon_DesertBurnt" />
+		</biome>
+		
+		<biome name="desert">
+			<spawn id="dz01" maxcount="3" respawndelay="0.1" time="Day" entitygroup="MOD_Desert_Day" notags="commercial,industrial,downtown" />
+			<spawn id="nz01" maxcount="3" respawndelay="0.1" time="Night" entitygroup="MOD_Desert_Night" notags="commercial,industrial,downtown" />
+			
+			<spawn id="dz02" maxcount="3" respawndelay="0.15" time="Day" entitygroup="MOD_DesertDowntown_Day" tags="commercial,industrial" notags="downtown" />
+			<spawn id="nz02" maxcount="4" respawndelay="0.20" time="Night" entitygroup="MOD_DesertDowntown_Night" tags="commercial,industrial" notags="downtown" />
+			
+			<spawn id="dz03" maxcount="4" respawndelay="0.20" time="Day" entitygroup="MOD_DesertDowntown_Day" tags="downtown" />
+			<spawn id="nz03" maxcount="6" respawndelay="0.25" time="Night" entitygroup="MOD_DesertDowntown_Night" tags="downtown" />
+			
+			<spawn id="MOD_Pigs02" maxcount="1" respawndelay="1.0" time="Any" entitygroup="MOD_Pigs_Uncommon_DesertBurnt" />
+			<spawn id="MOD_Snakes01" maxcount="1" respawndelay="1.5" time="Any" entitygroup="MOD_Snakes_Desert_Rare" />
+		</biome>
+
+		<biome name="snow">
+			<spawn id="dz01" maxcount="3" respawndelay="0.1" time="Day" entitygroup="MOD_Snow_Day" notags="commercial,industrial,downtown" />
+			<spawn id="nz01" maxcount="3" respawndelay="0.1" time="Night" entitygroup="MOD_Snow_Night" notags="commercial,industrial,downtown" />
+			
+			<spawn id="dz02" maxcount="3" respawndelay="0.15" time="Day" entitygroup="MOD_Snow_Day" tags="commercial,industrial" notags="downtown" />
+			<spawn id="nz02" maxcount="4" respawndelay="0.20" time="Night" entitygroup="MOD_Snow_Night" tags="commercial,industrial" notags="downtown" />
+			
+			<spawn id="dz03" maxcount="4" respawndelay="0.20" time="Day" entitygroup="MOD_Snow_Day" tags="downtown" />
+			<spawn id="nz03" maxcount="6" respawndelay="0.25" time="Night" entitygroup="MOD_Snow_Night" tags="downtown" />
+			
+			<spawn id="aa01" maxcount="1" respawndelay="1.0" time="Any" entitygroup="MOD_Pigs_Uncommon_DesertBurnt" />
+		</biome>
+		
+		<biome name="wasteland">
+			<spawn id="dz01" maxcount="3" respawndelay="0.1" time="Day" entitygroup="MOD_Wasteland_Day" notags="commercial,industrial,downtown" />
+			<spawn id="nz01" maxcount="3" respawndelay="0.1" time="Night" entitygroup="MOD_Wasteland_Night" notags="commercial,industrial,downtown" />
+			
+			<spawn id="dz02" maxcount="4" respawndelay="0.15" time="Day" entitygroup="MOD_WastelandDowntown_Day" tags="commercial,industrial" notags="downtown" />
+			<spawn id="nz02" maxcount="4" respawndelay="0.15" time="Night" entitygroup="MOD_WastelandDowntown_Night" tags="commercial,industrial" notags="downtown" />
+			
+			<spawn id="dz03" maxcount="4" respawndelay="0.15" time="Day" entitygroup="MOD_WastelandDowntown_Day" tags="downtown" />
+			<spawn id="nz03" maxcount="6" respawndelay="0.15" time="Night" entitygroup="MOD_WastelandDowntown_Night" tags="downtown" />
+			
+			<spawn id="MOD_Pigs03" maxcount="1" respawndelay="1.5" time="Any" entitygroup="MOD_Pigs_Rare_Wasteland" />
+			<spawn id="MOD_Snakes02" maxcount="1" respawndelay="1.5" time="Any" entitygroup="MOD_Snakes_Wasteland_Uncommon" />
+		</biome>
+
+	</append>
+
+	<remove xpath="/spawning/entityspawner[@name='SpawnBurntTown']" />
+
+	<append xpath="/spawning">
+		<entityspawner name="SpawnBurntTown">
+			<day value="*">
+				<property name="ResetToday" value="false" />
+				<property name="EntityGroupName" value="MOD_Burnt_Day" />
+				<property name="Time" value="Any" />
+				<property name="DelayBetweenSpawns" value="0" />
+				<property name="TotalAlive" value="12" />
+				<property name="TotalPerWave" value="12" />
+				<property name="DaysToRespawnIfPlayerLeft" value="5" />
+				<property name="AttackPlayerAtOnce" value="false" />
+			</day>
+		</entityspawner>
+	</append>
+</config>
