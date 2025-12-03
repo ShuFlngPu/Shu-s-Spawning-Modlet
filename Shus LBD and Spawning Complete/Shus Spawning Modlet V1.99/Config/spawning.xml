@@ -1,12 +1,5 @@
 <config>
 
-	<!-- ============================================================================ -->
-	<!-- Biome Definitions - Full Removal and Re-append for Modlet Consistency -->
-	<!-- NOTE: The 'remove' blocks below are retained as they were present in the -->
-	<!-- original modlet structure to ensure full overwrite of vanilla biome data. -->
-	<!-- V1: Decreased respawndelay to 0.2, increased maxcount (1->2, 2->3, 3->4, 5->6) -->
-	<!-- ============================================================================ -->
-
 	<remove xpath="/spawning/biome[@name='pine_forest']" />
 	<remove xpath="/spawning/biome[@name='burnt_forest']" />
 	<remove xpath="/spawning/biome[@name='desert']" />
@@ -15,87 +8,89 @@
 
 	<append xpath="/spawning">
 		
-		<!-- PINE FOREST BIOME - ANIMALS/ZOMBIES -->
 		<biome name="pine_forest">
-			<!-- Zombie Spawns: respawndelay changed from 0.5 to 0.2, maxcount increased -->
-			<spawn id="dz01" maxcount="2" respawndelay="0.2" time="Day" entitygroup="MOD_Forest_Day" notags="commercial,industrial,downtown" /> <!-- maxcount 1->2 -->
-			<spawn id="nz01" maxcount="2" respawndelay="0.2" time="Night" entitygroup="MOD_Forest_Night" notags="commercial,industrial,downtown" /> <!-- maxcount 1->2 -->
+			<spawn id="dz01" maxcount="2" respawndelay="0.2" time="Day" entitygroup="MOD_Forest_Day" notags="commercial,industrial,downtown" />
+			<spawn id="nz01" maxcount="2" respawndelay="0.2" time="Night" entitygroup="MOD_Forest_Night" notags="commercial,industrial,downtown" />
 			
-			<!-- *** LOGIC FIX ***: Pointed commercial/industrial spawns to the correct MOD_Downtown_Forest groups -->
-			<spawn id="dz02" maxcount="3" respawndelay="0.2" time="Day" entitygroup="MOD_Downtown_Forest_Day" tags="commercial,industrial" notags="downtown" /> <!-- maxcount 2->3 -->
-			<spawn id="nz02" maxcount="4" respawndelay="0.2" time="Night" entitygroup="MOD_Downtown_Forest_Night" tags="commercial,industrial" notags="downtown" /> <!-- maxcount 3->4 -->
+			<spawn id="dz02" maxcount="3" respawndelay="0.2" time="Day" entitygroup="MOD_ForestDowntown_Day" tags="commercial,industrial" notags="downtown" />
+			<spawn id="nz02" maxcount="4" respawndelay="0.2" time="Night" entitygroup="MOD_ForestDowntown_Night" tags="commercial,industrial" notags="downtown" />
 			
-			<!-- *** LOGIC FIX ***: Pointed downtown spawns to the correct MOD_Downtown_Forest groups -->
-			<spawn id="dz03" maxcount="4" respawndelay="0.25" time="Day" entitygroup="MOD_Downtown_Forest_Day" tags="downtown" /> <!-- maxcount 3->4 -->
-			<spawn id="nz03" maxcount="6" respawndelay="0.3" time="Night" entitygroup="MOD_Downtown_Forest_Night" tags="downtown" /> <!-- maxcount 5->6 -->
+			<spawn id="dz03" maxcount="4" respawndelay="0.25" time="Day" entitygroup="MOD_ForestDowntown_Day" tags="downtown" />
+			<spawn id="nz03" maxcount="6" respawndelay="0.3" time="Night" entitygroup="MOD_ForestDowntown_Night" tags="downtown" />
 			
-			<!-- ANIMAL FIX: Uses MOD_PineForest_Animals_Common for Rabbits (10%), Deer (10%), Young Bear (1%), Pig (1%) -->
-			<!-- Animal spawns unchanged -->
-			<spawn id="aa01" maxcount="1" respawndelay="1.5" time="Any" entitygroup="MOD_PineForest_Animals_Common" /> 
+			<spawn id="aa01" maxcount="1" respawndelay="1.5" time="Any" entitygroup="MOD_PineForest_Animals_Common" />
 		</biome>
 
-		<!-- BURNT FOREST BIOME - PIGS/ZOMBIES -->
 		<biome name="burnt_forest">
-			<!-- Zombie Spawns: respawndelay changed from 0.5 to 0.2, maxcount increased -->
-			<spawn id="dz01" maxcount="2" respawndelay="0.2" time="Day" entitygroup="MOD_Desert_Day" notags="commercial,industrial,downtown" /> <!-- maxcount 1->2 -->
-			<spawn id="nz01" maxcount="2" respawndelay="0.2" time="Night" entitygroup="MOD_Desert_Night" notags="commercial,industrial,downtown" /> <!-- maxcount 1->2 -->
-			<spawn id="dz02" maxcount="3" respawndelay="0.2" time="Day" entitygroup="MOD_Desert_Day" tags="commercial,industrial" notags="downtown" /> <!-- maxcount 2->3 -->
-			<spawn id="nz02" maxcount="4" respawndelay="0.25" time="Night" entitygroup="MOD_Desert_Night" tags="commercial,industrial" notags="downtown" /> <!-- maxcount 3->4 -->
-			<spawn id="dz03" maxcount="4" respawndelay="0.25" time="Day" entitygroup="MOD_Desert_Day" tags="downtown" /> <!-- maxcount 3->4 -->
-			<spawn id="nz03" maxcount="6" respawndelay="0.3" time="Night" entitygroup="MOD_Desert_Night" tags="downtown" /> <!-- maxcount 5->6 -->
+			<spawn id="dz01" maxcount="2" respawndelay="0.2" time="Day" entitygroup="MOD_Burnt_Day" notags="commercial,industrial,downtown" />
+			<spawn id="nz01" maxcount="2" respawndelay="0.2" time="Night" entitygroup="MOD_Burnt_Night" notags="commercial,industrial,downtown" />
 			
-			<!-- ANIMAL FIX: Pigs assigned to 10% rate group -->
-			<!-- Animal spawns unchanged -->
+			<spawn id="dz02" maxcount="3" respawndelay="0.2" time="Day" entitygroup="MOD_Burnt_Day" tags="commercial,industrial" notags="downtown" />
+			<spawn id="nz02" maxcount="4" respawndelay="0.25" time="Night" entitygroup="MOD_Burnt_Night" tags="commercial,industrial" notags="downtown" />
+			
+			<spawn id="dz03" maxcount="4" respawndelay="0.25" time="Day" entitygroup="MOD_Burnt_Day" tags="downtown" />
+			<spawn id="nz03" maxcount="6" respawndelay="0.3" time="Night" entitygroup="MOD_Burnt_Night" tags="downtown" />
+			
 			<spawn id="MOD_Pigs01" maxcount="1" respawndelay="1.0" time="Any" entitygroup="MOD_Pigs_Uncommon_DesertBurnt" />
 		</biome>
 		
-		<!-- DESERT BIOME - PIGS/ZOMBIES -->
 		<biome name="desert">
-			<!-- Zombie Spawns: respawndelay changed from 0.5 to 0.2, maxcount increased -->
-			<spawn id="dz01" maxcount="2" respawndelay="0.2" time="Day" entitygroup="MOD_Desert_Day" notags="commercial,industrial,downtown" /> <!-- maxcount 1->2 -->
-			<spawn id="nz01" maxcount="2" respawndelay="0.2" time="Night" entitygroup="MOD_Desert_Night" notags="commercial,industrial,downtown" /> <!-- maxcount 1->2 -->
-			<spawn id="dz02" maxcount="3" respawndelay="0.2" time="Day" entitygroup="MOD_Desert_Day" tags="commercial,industrial" notags="downtown" /> <!-- maxcount 2->3 -->
-			<spawn id="nz02" maxcount="4" respawndelay="0.25" time="Night" entitygroup="MOD_Desert_Night" tags="commercial,industrial" notags="downtown" /> <!-- maxcount 3->4 -->
-			<spawn id="dz03" maxcount="4" respawndelay="0.25" time="Day" entitygroup="MOD_Desert_Day" tags="downtown" /> <!-- maxcount 3->4 -->
-			<spawn id="nz03" maxcount="6" respawndelay="0.3" time="Night" entitygroup="MOD_Desert_Night" tags="downtown" /> <!-- maxcount 5->6 -->
+			<spawn id="dz01" maxcount="3" respawndelay="0.1" time="Day" entitygroup="MOD_Desert_Day" notags="commercial,industrial,downtown" />
+			<spawn id="nz01" maxcount="3" respawndelay="0.1" time="Night" entitygroup="MOD_Desert_Night" notags="commercial,industrial,downtown" />
 			
-			<!-- ANIMAL FIX: Pigs assigned to 10% rate group -->
-			<!-- Animal spawns unchanged -->
+			<spawn id="dz02" maxcount="3" respawndelay="0.15" time="Day" entitygroup="MOD_DesertDowntown_Day" tags="commercial,industrial" notags="downtown" />
+			<spawn id="nz02" maxcount="4" respawndelay="0.20" time="Night" entitygroup="MOD_DesertDowntown_Night" tags="commercial,industrial" notags="downtown" />
+			
+			<spawn id="dz03" maxcount="4" respawndelay="0.20" time="Day" entitygroup="MOD_DesertDowntown_Day" tags="downtown" />
+			<spawn id="nz03" maxcount="6" respawndelay="0.25" time="Night" entitygroup="MOD_DesertDowntown_Night" tags="downtown" />
+			
 			<spawn id="MOD_Pigs02" maxcount="1" respawndelay="1.0" time="Any" entitygroup="MOD_Pigs_Uncommon_DesertBurnt" />
 			<spawn id="MOD_Snakes01" maxcount="1" respawndelay="1.5" time="Any" entitygroup="MOD_Snakes_Desert_Rare" />
 		</biome>
 
-		<!-- SNOW BIOME - ZOMBIES -->
 		<biome name="snow">
-			<!-- Zombie Spawns: respawndelay changed from 0.5 to 0.2, maxcount increased -->
-			<spawn id="dz01" maxcount="2" respawndelay="0.2" time="Day" entitygroup="MOD_Desert_Day" notags="commercial,industrial,downtown" /> <!-- maxcount 1->2 -->
-			<spawn id="nz01" maxcount="2" respawndelay="0.2" time="Night" entitygroup="MOD_Desert_Night" notags="commercial,industrial,downtown" /> <!-- maxcount 1->2 -->
-			<spawn id="dz02" maxcount="3" respawndelay="0.25" time="Day" entitygroup="MOD_Desert_Day" tags="commercial,industrial" notags="downtown" /> <!-- maxcount 2->3 -->
-			<spawn id="nz02" maxcount="4" respawndelay="0.25" time="Night" entitygroup="MOD_Desert_Night" tags="commercial,industrial" notags="downtown" /> <!-- maxcount 3->4 -->
-			<spawn id="dz03" maxcount="4" respawndelay="0.25" time="Day" entitygroup="MOD_Desert_Day" tags="downtown" /> <!-- maxcount 3->4 -->
-			<spawn id="nz03" maxcount="6" respawndelay="0.3" time="Night" entitygroup="MOD_Desert_Night" tags="downtown" /> <!-- maxcount 5->6 -->
+			<spawn id="dz01" maxcount="3" respawndelay="0.1" time="Day" entitygroup="MOD_Snow_Day" notags="commercial,industrial,downtown" />
+			<spawn id="nz01" maxcount="3" respawndelay="0.1" time="Night" entitygroup="MOD_Snow_Night" notags="commercial,industrial,downtown" />
 			
-			<!-- ANIMAL FIX: Pigs assigned to 10% rate group -->
-			<!-- Animal spawns unchanged -->
-			<!-- NOTE: Original modlet had aa01 using MOD_Pigs_Uncommon_DesertBurnt here. Kept as-is. -->
+			<spawn id="dz02" maxcount="3" respawndelay="0.15" time="Day" entitygroup="MOD_Snow_Day" tags="commercial,industrial" notags="downtown" />
+			<spawn id="nz02" maxcount="4" respawndelay="0.20" time="Night" entitygroup="MOD_Snow_Night" tags="commercial,industrial" notags="downtown" />
+			
+			<spawn id="dz03" maxcount="4" respawndelay="0.20" time="Day" entitygroup="MOD_Snow_Day" tags="downtown" />
+			<spawn id="nz03" maxcount="6" respawndelay="0.25" time="Night" entitygroup="MOD_Snow_Night" tags="downtown" />
+			
 			<spawn id="aa01" maxcount="1" respawndelay="1.0" time="Any" entitygroup="MOD_Pigs_Uncommon_DesertBurnt" />
 		</biome>
 		
-		<!-- WASTELAND BIOME - PIGS/ZOMBIES -->
 		<biome name="wasteland">
-			<!-- Zombie Spawns: respawndelay changed from 0.5 to 0.2, maxcount increased -->
-			<spawn id="dz01" maxcount="2" respawndelay="0.2" time="Day" entitygroup="MOD_Desert_Day" notags="commercial,industrial,downtown" /> <!-- maxcount 1->2 -->
-			<spawn id="nz01" maxcount="2" respawndelay="0.2" time="Night" entitygroup="MOD_Desert_Night" notags="commercial,industrial,downtown" /> <!-- maxcount 1->2 -->
-			<spawn id="dz02" maxcount="3" respawndelay="0.25" time="Day" entitygroup="MOD_Desert_Day" tags="commercial,industrial" notags="downtown" /> <!-- maxcount 2->3 -->
-			<spawn id="nz02" maxcount="4" respawndelay="0.25" time="Night" entitygroup="MOD_Desert_Night" tags="commercial,industrial" notags="downtown" /> <!-- maxcount 3->4 -->
-			<spawn id="dz03" maxcount="4" respawndelay="0.25" time="Day" entitygroup="MOD_Desert_Day" tags="downtown" /> <!-- maxcount 3->4 -->
-			<spawn id="nz03" maxcount="6" respawndelay="0.3" time="Night" entitygroup="MOD_Desert_Night" tags="downtown" /> <!-- maxcount 5->6 -->
+			<spawn id="dz01" maxcount="3" respawndelay="0.1" time="Day" entitygroup="MOD_Wasteland_Day" notags="commercial,industrial,downtown" />
+			<spawn id="nz01" maxcount="3" respawndelay="0.1" time="Night" entitygroup="MOD_Wasteland_Night" notags="commercial,industrial,downtown" />
 			
-			<!-- ANIMAL FIX: Pigs assigned to 5% rate group -->
-			<!-- Animal spawns unchanged -->
+			<spawn id="dz02" maxcount="4" respawndelay="0.15" time="Day" entitygroup="MOD_WastelandDowntown_Day" tags="commercial,industrial" notags="downtown" />
+			<spawn id="nz02" maxcount="4" respawndelay="0.15" time="Night" entitygroup="MOD_WastelandDowntown_Night" tags="commercial,industrial" notags="downtown" />
+			
+			<spawn id="dz03" maxcount="4" respawndelay="0.15" time="Day" entitygroup="MOD_WastelandDowntown_Day" tags="downtown" />
+			<spawn id="nz03" maxcount="6" respawndelay="0.15" time="Night" entitygroup="MOD_WastelandDowntown_Night" tags="downtown" />
+			
 			<spawn id="MOD_Pigs03" maxcount="1" respawndelay="1.5" time="Any" entitygroup="MOD_Pigs_Rare_Wasteland" />
 			<spawn id="MOD_Snakes02" maxcount="1" respawndelay="1.5" time="Any" entitygroup="MOD_Snakes_Wasteland_Uncommon" />
 		</biome>
 
+	</append>
+
+	<remove xpath="/spawning/entityspawner[@name='SpawnBurntTown']" />
+
+	<append xpath="/spawning">
+		<entityspawner name="SpawnBurntTown">
+			<day value="*">
+				<property name="ResetToday" value="false" />
+				<property name="EntityGroupName" value="MOD_Burnt_Day" />
+				<property name="Time" value="Any" />
+				<property name="DelayBetweenSpawns" value="0" />
+				<property name="TotalAlive" value="12" />
+				<property name="TotalPerWave" value="12" />
+				<property name="DaysToRespawnIfPlayerLeft" value="5" />
+				<property name="AttackPlayerAtOnce" value="false" />
+			</day>
+		</entityspawner>
 	</append>
 </config>
