@@ -565,7 +565,7 @@
 				<requirements>
 					<requirement name="HoldingItemHasTags" tags="roboticsSkill"/>
 				</requirements>
-				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="craftingRoboticsShuLDBexp" operation="add" value="3"/>
+				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="craftingRoboticsShuLDBexp" operation="add" value="1"/>
 			</effect_group>
 			
 			<effect_group> <!-- Headshot Bonus LBDexp (Held-in-hand) -->
@@ -590,7 +590,7 @@
 					<requirement name="CVarCompare" cvar="craftingRoboticsShuLDBexp" operation="GTE" value="@craftingRoboticsShuLDBThreshold"/>
 				</requirements>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingRoboticsShuLDBexp" operation="subtract" value="@craftingRoboticsShuLDBThreshold"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingRoboticsShuLDBThreshold" operation="multiply" value="1.10"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingRoboticsShuLDBThreshold" operation="multiply" value="1.15"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddProgressionLevel" progression_name="craftingRobotics" level="1"/>
 			</effect_group>
 		</buff>
@@ -622,7 +622,7 @@
 					<requirement name="CVarCompare" cvar="craftingMedicalShuLDBexp" operation="GTE" value="@craftingMedicalShuLDBThreshold"/>
 				</requirements>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingMedicalShuLDBexp" operation="subtract" value="@craftingMedicalShuLDBThreshold"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingMedicalShuLDBThreshold" operation="multiply" value="1.10"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingMedicalShuLDBThreshold" operation="multiply" value="1.15"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddProgressionLevel" progression_name="craftingMedical" level="1"/>
 			</effect_group>
 		</buff>
@@ -642,7 +642,7 @@
 					<requirement name="CVarCompare" cvar="craftingElectricianShuLDBexp" operation="GTE" value="@craftingElectricianShuLDBThreshold"/>
 				</requirements>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingElectricianShuLDBexp" operation="subtract" value="@craftingElectricianShuLDBThreshold"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingElectricianShuLDBThreshold" operation="multiply" value="1.10"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingElectricianShuLDBThreshold" operation="multiply" value="1.15"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddProgressionLevel" progression_name="craftingElectrician" level="1"/>
 			</effect_group>
 		</buff>
@@ -661,7 +661,7 @@
 					<requirement name="CVarCompare" cvar="craftingFoodShuLDBexp" operation="GTE" value="@craftingFoodShuLDBThreshold"/>
 				</requirements>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingFoodShuLDBexp" operation="subtract" value="@craftingFoodShuLDBThreshold"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingFoodShuLDBThreshold" operation="multiply" value="1.10"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingFoodShuLDBThreshold" operation="multiply" value="1.18"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddProgressionLevel" progression_name="craftingFood" level="1"/>
 			</effect_group>
 		</buff>
@@ -702,7 +702,7 @@
 					<requirement name="CVarCompare" cvar="craftingSeedsShuLDBexp" operation="GTE" value="@craftingSeedsShuLDBThreshold"/>
 				</requirements>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingSeedsShuLDBexp" operation="subtract" value="@craftingSeedsShuLDBThreshold"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingSeedsShuLDBThreshold" operation="multiply" value="1.10"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="craftingSeedsShuLDBThreshold" operation="multiply" value="1.18"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddProgressionLevel" progression_name="craftingSeeds" level="1"/>
 			</effect_group>
 		</buff>
@@ -772,8 +772,8 @@
 			<stack_type value="effect"/>
 			<duration value="1"/>
 			<effect_group>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" target="otherAOE" range="20" target_tags="player" cvar="$trapsHelperXP" operation="add" value="3"/>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" target="otherAOE" range="20" target_tags="player" cvar="$roboticsHelperXP" operation="add" value="2"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" target="otherAOE" range="20" target_tags="player" cvar="$trapsHelperXP" operation="add" value="2"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" target="otherAOE" range="20" target_tags="player" cvar="$roboticsHelperXP" operation="add" value="1"/>
 				
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffLBD_TrapsRelay"/>
 			</effect_group>

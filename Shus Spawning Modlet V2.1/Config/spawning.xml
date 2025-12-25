@@ -1,5 +1,15 @@
 <config>
 
+<!-- Default Animal Spawn IDs by biome
+-Pine aa01 animals all, na01 pine animals night, ne01 enemy animals night only
+-Burnt aa01 passive animals all, na01 passive animals night, ae01 enemy animals Anytime, ne01 enemy animals night
+-Desert aa01 passive animals all, ae01 enemy animals all, ne01 enemy animals night
+-Snow aa01 passive animals all, na01 nighttime stag, ae01 enemy animals all, ne01 enemy animals night
+-Wasteland na01 passive animals all, ae01 enemy animals all, ne01 enemy animals night
+-->
+
+
+<!-- Workflow Notes: Change Animal Spawning links. -->
 	<remove xpath="/spawning/biome[@name='pine_forest']" />
 	<remove xpath="/spawning/biome[@name='burnt_forest']" />
 	<remove xpath="/spawning/biome[@name='desert']" />
@@ -18,7 +28,7 @@
 			<spawn id="dz03" maxcount="4" respawndelay="0.25" time="Day" entitygroup="MOD_ForestDowntown_Day" tags="downtown" />
 			<spawn id="nz03" maxcount="6" respawndelay="0.3" time="Night" entitygroup="MOD_ForestDowntown_Night" tags="downtown" />
 			
-			<spawn id="aa01" maxcount="1" respawndelay="1.5" time="Any" entitygroup="MOD_PineForest_Animals_Common" />
+			<spawn id="Mod_Pine01" maxcount="1" respawndelay="1.5" time="Any" entitygroup="MOD_Animals_Pine" />
 		</biome>
 
 		<biome name="burnt_forest">
@@ -31,7 +41,7 @@
 			<spawn id="dz03" maxcount="4" respawndelay="0.25" time="Day" entitygroup="MOD_Burnt_Day" tags="downtown" />
 			<spawn id="nz03" maxcount="6" respawndelay="0.3" time="Night" entitygroup="MOD_Burnt_Night" tags="downtown" />
 			
-			<spawn id="MOD_Pigs01" maxcount="1" respawndelay="1.0" time="Any" entitygroup="MOD_Pigs_Uncommon_DesertBurnt" />
+			<spawn id="MOD_Burnt01" maxcount="1" respawndelay="1.0" time="Any" entitygroup="MOD_Animals_Burnt" />
 		</biome>
 		
 		<biome name="desert">
@@ -44,8 +54,7 @@
 			<spawn id="dz03" maxcount="4" respawndelay="0.20" time="Day" entitygroup="MOD_DesertDowntown_Day" tags="downtown" />
 			<spawn id="nz03" maxcount="6" respawndelay="0.25" time="Night" entitygroup="MOD_DesertDowntown_Night" tags="downtown" />
 			
-			<spawn id="MOD_Pigs02" maxcount="1" respawndelay="1.0" time="Any" entitygroup="MOD_Pigs_Uncommon_DesertBurnt" />
-			<spawn id="MOD_Snakes01" maxcount="1" respawndelay="1.5" time="Any" entitygroup="MOD_Snakes_Desert_Rare" />
+			<spawn id="MOD_Desert01" maxcount="1" respawndelay="1.0" time="Any" entitygroup="MOD_Animals_Desert" />
 		</biome>
 
 		<biome name="snow">
@@ -58,7 +67,7 @@
 			<spawn id="dz03" maxcount="4" respawndelay="0.20" time="Day" entitygroup="MOD_Snow_Day" tags="downtown" />
 			<spawn id="nz03" maxcount="6" respawndelay="0.25" time="Night" entitygroup="MOD_Snow_Night" tags="downtown" />
 			
-			<spawn id="aa01" maxcount="1" respawndelay="1.0" time="Any" entitygroup="MOD_Pigs_Uncommon_DesertBurnt" />
+			<spawn id="Mod_Snow01" maxcount="1" respawndelay="1.0" time="Any" entitygroup="MOD_Animals_Snow" />
 		</biome>
 		
 		<biome name="wasteland">
@@ -71,8 +80,7 @@
 			<spawn id="dz03" maxcount="4" respawndelay="0.15" time="Day" entitygroup="MOD_WastelandDowntown_Day" tags="downtown" />
 			<spawn id="nz03" maxcount="6" respawndelay="0.15" time="Night" entitygroup="MOD_WastelandDowntown_Night" tags="downtown" />
 			
-			<spawn id="MOD_Pigs03" maxcount="1" respawndelay="1.5" time="Any" entitygroup="MOD_Pigs_Rare_Wasteland" />
-			<spawn id="MOD_Snakes02" maxcount="1" respawndelay="1.5" time="Any" entitygroup="MOD_Snakes_Wasteland_Uncommon" />
+			<spawn id="MOD_Wasteland01" maxcount="1" respawndelay="1.5" time="Any" entitygroup="MOD_Animals_Wasteland" />
 		</biome>
 
 	</append>

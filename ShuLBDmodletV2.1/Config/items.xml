@@ -89,46 +89,46 @@
 					<requirement name="CVarCompare" cvar="craftingVehiclesShuLDBexp" operation="Equals" value="0"/>
 				</triggered_effect>
 				
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingHarvestingToolsShuLDBThreshold" operation="set" value="120">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingHarvestingToolsShuLDBThreshold" operation="set" value="140">
 					<requirement name="CVarCompare" cvar="craftingHarvestingToolsShuLDBThreshold" operation="Equals" value="0"/>
 				</triggered_effect>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingRepairToolsShuLDBThreshold" operation="set" value="120">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingRepairToolsShuLDBThreshold" operation="set" value="140">
 					<requirement name="CVarCompare" cvar="craftingRepairToolsShuLDBThreshold" operation="Equals" value="0"/>
 				</triggered_effect>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingWorkstationsShuLDBThreshold" operation="set" value="60">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingWorkstationsShuLDBThreshold" operation="set" value="120">
 					<requirement name="CVarCompare" cvar="craftingWorkstationsShuLDBThreshold" operation="Equals" value="0"/>
 				</triggered_effect>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingFoodShuLDBThreshold" operation="set" value="60">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingFoodShuLDBThreshold" operation="set" value="80">
 					<requirement name="CVarCompare" cvar="craftingFoodShuLDBThreshold" operation="Equals" value="0"/>
 				</triggered_effect>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="LootingSkillThreshold" operation="set" value="75">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="LootingSkillThreshold" operation="set" value="80">
 					<requirement name="CVarCompare" cvar="LootingSkillThreshold" operation="Equals" value="0"/>
 				</triggered_effect>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingSalvageToolsShuLDBThreshold" operation="set" value="100">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingSalvageToolsShuLDBThreshold" operation="set" value="140">
 					<requirement name="CVarCompare" cvar="craftingSalvageToolsShuLDBThreshold" operation="Equals" value="0"/>
 				</triggered_effect>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingBladesShuLDBThreshold" operation="set" value="120">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingBladesShuLDBThreshold" operation="set" value="160">
 					<requirement name="CVarCompare" cvar="craftingBladesShuLDBThreshold" operation="Equals" value="0"/>
 				</triggered_effect>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingClubsShuLDBThreshold" operation="set" value="100">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingClubsShuLDBThreshold" operation="set" value="110">
 					<requirement name="CVarCompare" cvar="craftingClubsShuLDBThreshold" operation="Equals" value="0"/>
 				</triggered_effect>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingSledgehammersShuLDBThreshold" operation="set" value="90">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingSledgehammersShuLDBThreshold" operation="set" value="100">
 					<requirement name="CVarCompare" cvar="craftingSledgehammersShuLDBThreshold" operation="Equals" value="0"/>
 				</triggered_effect>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingKnucklesShuLDBThreshold" operation="set" value="120">
 					<requirement name="CVarCompare" cvar="craftingKnucklesShuLDBThreshold" operation="Equals" value="0"/>
 				</triggered_effect>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingSpearsShuLDBThreshold" operation="set" value="100">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingSpearsShuLDBThreshold" operation="set" value="110">
 					<requirement name="CVarCompare" cvar="craftingSpearsShuLDBThreshold" operation="Equals" value="0"/>
 				</triggered_effect>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingHandgunsShuLDBThreshold" operation="set" value="100">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingHandgunsShuLDBThreshold" operation="set" value="110">
 					<requirement name="CVarCompare" cvar="craftingHandgunsShuLDBThreshold" operation="Equals" value="0"/>
 				</triggered_effect>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingShotgunsShuLDBThreshold" operation="set" value="80">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingShotgunsShuLDBThreshold" operation="set" value="200">
 					<requirement name="CVarCompare" cvar="craftingShotgunsShuLDBThreshold" operation="Equals" value="0"/>
 				</triggered_effect>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingRiflesShuLDBThreshold" operation="set" value="80">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingRiflesShuLDBThreshold" operation="set" value="90">
 					<requirement name="CVarCompare" cvar="craftingRiflesShuLDBThreshold" operation="Equals" value="0"/>
 				</triggered_effect>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingMachineGunsShuLDBThreshold" operation="set" value="120">
@@ -137,28 +137,28 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingExplosivesShuLDBThreshold" operation="set" value="120">
 					<requirement name="CVarCompare" cvar="craftingExplosivesShuLDBThreshold" operation="Equals" value="0"/>
 				</triggered_effect>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingBowsShuLDBThreshold" operation="set" value="80">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingBowsShuLDBThreshold" operation="set" value="90">
 					<requirement name="CVarCompare" cvar="craftingBowsShuLDBThreshold" operation="Equals" value="0"/>
 				</triggered_effect>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingRoboticsShuLDBThreshold" operation="set" value="100">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingRoboticsShuLDBThreshold" operation="set" value="160">
 					<requirement name="CVarCompare" cvar="craftingRoboticsShuLDBThreshold" operation="Equals" value="0"/>
 				</triggered_effect>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingTrapsShuLDBThreshold" operation="set" value="100">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingTrapsShuLDBThreshold" operation="set" value="140">
 					<requirement name="CVarCompare" cvar="craftingTrapsShuLDBThreshold" operation="Equals" value="0"/>
 				</triggered_effect>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingMedicalShuLDBThreshold" operation="set" value="80">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingMedicalShuLDBThreshold" operation="set" value="60">
 					<requirement name="CVarCompare" cvar="craftingMedicalShuLDBThreshold" operation="Equals" value="0"/>
 				</triggered_effect>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingElectricianShuLDBThreshold" operation="set" value="80">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingElectricianShuLDBThreshold" operation="set" value="160">
 					<requirement name="CVarCompare" cvar="craftingElectricianShuLDBThreshold" operation="Equals" value="0"/>
 				</triggered_effect>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingSeedsShuLDBThreshold" operation="set" value="70">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingSeedsShuLDBThreshold" operation="set" value="80">
 					<requirement name="CVarCompare" cvar="craftingSeedsShuLDBThreshold" operation="Equals" value="0"/>
 				</triggered_effect>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingArmorShuLDBThreshold" operation="set" value="110">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingArmorShuLDBThreshold" operation="set" value="130">
 					<requirement name="CVarCompare" cvar="craftingArmorShuLDBThreshold" operation="Equals" value="0"/>
 				</triggered_effect>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingVehiclesShuLDBThreshold" operation="set" value="100">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingVehiclesShuLDBThreshold" operation="set" value="120">
 					<requirement name="CVarCompare" cvar="craftingVehiclesShuLDBThreshold" operation="Equals" value="0"/>
 				</triggered_effect>
 
