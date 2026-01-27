@@ -1,0 +1,99 @@
+<config>
+
+<set xpath="/blocks/block[@name='smallPileRandomHelper']">
+		<property name="Extends" value="cntAmmoPileSmall"/>
+		<property name="CreativeMode" value="Dev"/>
+		<property name="LootList" value="foodPileSmall"/>
+		<property name="CustomIcon" value="cntAmmoPileSmall"/>
+		<property name="CustomIconTint" value="ff8080"/>
+		<property name="ItemTypeIcon" value="other"/>
+		<property name="DisplayInfo" value="Name"/>
+		<property name="SortOrder2" value="0252"/>
+		<property name="FilterTags" value="MC_building,SC_loot,MC_helpers,SC_treasureRoom,LBDLootable"/>
+		<property name="Action_OnLoot" value="AddBuff(buffLootXPTrigger)"/>
+	</set>
+
+
+<append xpath="/blocks/block[@name='bladeTrap']">
+		<property name="Buff" value="buffInjuryBleeding,buffInjuryLaceration,buffLBD_TrapsRelay"/>
+	</append>
+
+
+<append xpath="/blocks/block[@name='cntGasPumpRandomLootHelper']/property[@name='FilterTags']/@value">,LBDLootable</append>
+	<append xpath="/blocks/block[@name='cntGasPumpRandomLootHelper']">
+		<property name="Action_OnLoot" value="AddBuff(buffLootXPTrigger)"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='cntMunitionsBoxArmy']/property[@name='FilterTags']/@value">,LBDLootable</append>
+	<append xpath="/blocks/block[@name='cntMunitionsBoxArmy']">
+		<property name="Action_OnLoot" value="AddBuff(buffLootXPTrigger)"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='cntWallSafeInsecure']/property[@name='FilterTags']/@value">,LBDLootable</append>
+	<append xpath="/blocks/block[@name='cntWallSafeInsecure']">
+		<property name="Action_OnLoot" value="AddBuff(buffLootXPTrigger)"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='cntShippingCrateShamway']/property[@name='FilterTags']/@value">,LBDLootable</append>
+	<append xpath="/blocks/block[@name='cntShippingCrateShamway']">
+		<property name="Action_OnLoot" value="AddBuff(buffLootXPTrigger)"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='cntShippingCrateHero']/property[@name='FilterTags']/@value">,LBDLootable</append>
+	<append xpath="/blocks/block[@name='cntShippingCrateHero']">
+		<property name="Action_OnLoot" value="AddBuff(buffLootXPTrigger)"/>
+	</append>
+
+
+<append xpath="/blocks/block[contains(@name,'cntGunSafe') or contains(@name,'cntWallSafe') or @name='cntQuestInfestedT1']/property[@name='FilterTags']/@value">,LBDLootable</append>
+
+	<append xpath="/blocks/block[contains(@name,'cntTrashPile') or @name='cntDumpster' or @name='cntTrash_can']/property[@name='FilterTags']/@value">,LBDLootable</append>
+	
+	<append xpath="/blocks/block[contains(@name,'cntBookcase') or contains(@name,'cntMailBox') or contains(@name,'cntFileCabinet')]/property[@name='FilterTags']/@value">,LBDLootable</append>
+
+	<append xpath="/blocks/block[@name='cntAmmoPileSmall' or @name='cntChemPileSmall' or @name='challenge_sinks' or @name='challenge_polymers']/property[@name='FilterTags']/@value">,LBDLootable</append>
+
+	<append xpath="/blocks/block[@name='cntBackpack01' or @name='cntPurse01' or @name='cntSuitcase' or @name='cntShoppingBasket' or @name='cntShoppingCart']/property[@name='FilterTags']/@value">,LBDLootable</append>
+
+	<append xpath="/blocks/block[@name='cntCabinetOldBottom' or @name='cntCabinetOldTop' or @name='cntMedicalCabinet' or @name='cntCupboardCabinetRedTop' or @name='cntCupboardCabinetRedBottom' or @name='cntNightstand' or @name='cntCooler' or @name='cntLockers' or @name='cntOfficeChair' or @name='cntStove']/property[@name='FilterTags']/@value">,LBDLootable</append>
+	
+	<append xpath="/blocks/block[@name='generatorbank']/property[@name='FilterTags']/@value">,LBDLootable</append>
+
+	<append xpath="/blocks/block[@name='cntToolBoxRandom' or @name='cntLabEquipment' or @name='cntMicrowaveOven' or @name='cntCashRegister' or @name='cntVendingMachine']/property[@name='FilterTags']/@value">,LBDLootable</append>
+
+
+	<append xpath="/blocks/block[contains(@name,'cntGunSafe') or contains(@name,'cntWallSafe') or @name='cntQuestInfestedT1']">
+		<property name="Action_OnLoot" value="AddBuff(buffLootXPTrigger)"/>
+	</append>
+
+	<append xpath="/blocks/block[contains(@name,'cntTrashPile') or @name='cntDumpster' or @name='cntTrash_can']">
+		<property name="Action_OnLoot" value="AddBuff(buffLootXPTrigger)"/>
+	</append>
+	
+	<append xpath="/blocks/block[contains(@name,'cntBookcase') or contains(@name,'cntMailBox') or contains(@name,'cntFileCabinet')]">
+		<property name="Action_OnLoot" value="AddBuff(buffLootXPTrigger)"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='cntAmmoPileSmall' or @name='cntChemPileSmall' or @name='challenge_sinks' or @name='challenge_polymers']">
+		<property name="Action_OnLoot" value="AddBuff(buffLootXPTrigger)"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='cntBackpack01' or @name='cntPurse01' or @name='cntSuitcase' or @name='cntShoppingBasket' or @name='cntShoppingCart']">
+		<property name="Action_OnLoot" value="AddBuff(buffLootXPTrigger)"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='cntCabinetOldBottom' or @name='cntCabinetOldTop' or @name='cntMedicalCabinet' or @name='cntCupboardCabinetRedTop' or @name='cntCupboardCabinetRedBottom' or @name='cntNightstand' or @name='cntCooler' or @name='cntLockers' or @name='cntOfficeChair' or @name='cntStove']">
+		<property name="Action_OnLoot" value="AddBuff(buffLootXPTrigger)"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='generatorbank']">
+		<property name="Action_OnLoot" value="AddBuff(buffLootXPTrigger)"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='cntToolBoxRandom' or @name='cntLabEquipment' or @name='cntMicrowaveOven' or @name='cntCashRegister' or @name='cntVendingMachine']">
+		<property name="Action_OnLoot" value="AddBuff(buffLootXPTrigger)"/>
+	</append>
+	
+	<setattribute xpath="/blocks/block[@name='electricfencepost']/property[@name='Buff']" name="value">buffShocked,buffLBD_TrapsRelay</setattribute>
+
+</config>

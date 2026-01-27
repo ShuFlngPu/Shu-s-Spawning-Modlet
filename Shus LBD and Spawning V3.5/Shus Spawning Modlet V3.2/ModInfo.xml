@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="Shus_Spawning_Modlet" />
+	<DisplayName value="ShuSpawning" />
+	<Description value="Changes_the_BIOME_spawning_XML" />
+	<Author value="ShuFlngPu" />
+	<Version value="2.0.0.0" />
+	<Website value="" />
+</xml>
