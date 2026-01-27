@@ -1,0 +1,413 @@
+<config>
+	<!-- ============================================================================ -->
+	<!-- GLOBAL CONFIG -->
+	<!-- ============================================================================ -->
+	<!-- Rule 1: Set difficultyBonus to 1.62 (Vanilla 1.2 + 35%) -->
+	<set xpath="/gamestages/config/@difficultyBonus">1.42</set>
+
+	<!-- ============================================================================ -->
+	<!-- SPAWNER MODIFICATIONS (Rule 2: +7 maxAlive, CAPPED at 64) -->
+	<!-- ============================================================================ -->
+	
+	<!-- *** ZOMBIE_BADASS_GS_HORDE *** -->
+	<set xpath="/gamestages/spawner[@name='ZombieBadassGSHorde']/gamestage[@stage='1']/spawn/@maxAlive">14</set>
+	<set xpath="/gamestages/spawner[@name='ZombieBadassGSHorde']/gamestage[@stage='3']/spawn/@maxAlive">14</set>
+	<set xpath="/gamestages/spawner[@name='ZombieBadassGSHorde']/gamestage[@stage='8']/spawn/@maxAlive">16</set>
+	<set xpath="/gamestages/spawner[@name='ZombieBadassGSHorde']/gamestage[@stage='13']/spawn/@maxAlive">20</set>
+	<set xpath="/gamestages/spawner[@name='ZombieBadassGSHorde']/gamestage[@stage='21']/spawn/@maxAlive">27</set>
+	<set xpath="/gamestages/spawner[@name='ZombieBadassGSHorde']/gamestage[@stage='30']/spawn/@maxAlive">36</set>
+	<set xpath="/gamestages/spawner[@name='ZombieBadassGSHorde']/gamestage[@stage='40']/spawn/@maxAlive">45</set>
+	<set xpath="/gamestages/spawner[@name='ZombieBadassGSHorde']/gamestage[@stage='51']/spawn/@maxAlive">54</set>
+	<!-- Vanilla maxAlive = 60. (60+7=67). CAPPED at 64. This is the last entry for this spawner. -->
+	<set xpath="/gamestages/spawner[@name='ZombieBadassGSHorde']/gamestage[@stage='65']/spawn/@maxAlive">64</set>
+
+	<!-- *** ZOMBIE_BADASS_ONLY_HORDE *** -->
+	<set xpath="/gamestages/spawner[@name='ZombieBadassOnlyHorde']/gamestage[@stage='1']/spawn/@maxAlive">14</set>
+	<set xpath="/gamestages/spawner[@name='ZombieBadassOnlyHorde']/gamestage[@stage='3']/spawn/@maxAlive">14</set>
+	<set xpath="/gamestages/spawner[@name='ZombieBadassOnlyHorde']/gamestage[@stage='8']/spawn/@maxAlive">16</set>
+	<set xpath="/gamestages/spawner[@name='ZombieBadassOnlyHorde']/gamestage[@stage='13']/spawn/@maxAlive">20</set>
+	<set xpath="/gamestages/spawner[@name='ZombieBadassOnlyHorde']/gamestage[@stage='21']/spawn/@maxAlive">27</set>
+	<set xpath="/gamestages/spawner[@name='ZombieBadassOnlyHorde']/gamestage[@stage='30']/spawn/@maxAlive">36</set>
+	<set xpath="/gamestages/spawner[@name='ZombieBadassOnlyHorde']/gamestage[@stage='40']/spawn/@maxAlive">45</set>
+	<set xpath="/gamestages/spawner[@name='ZombieBadassOnlyHorde']/gamestage[@stage='51']/spawn/@maxAlive">54</set>
+	<!-- Vanilla maxAlive = 60. (60+7=67). CAPPED at 64. This is the last entry for this spawner. -->
+	<set xpath="/gamestages/spawner[@name='ZombieBadassOnlyHorde']/gamestage[@stage='65']/spawn/@maxAlive">64</set>
+
+	<!-- *** SLEEPER_GS_LIST *** -->
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='5']/spawn/@maxAlive">14</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='8']/spawn/@maxAlive">14</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='11']/spawn/@maxAlive">14</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='14']/spawn/@maxAlive">14</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='18']/spawn/@maxAlive">14</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='22']/spawn/@maxAlive">14</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='27']/spawn/@maxAlive">14</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='31']/spawn/@maxAlive">14</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='36']/spawn/@maxAlive">14</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='41']/spawn/@maxAlive">14</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='46']/spawn/@maxAlive">14</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='52']/spawn/@maxAlive">14</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='58']/spawn/@maxAlive">14</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='64']/spawn/@maxAlive">14</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='70']/spawn/@maxAlive">14</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='76']/spawn/@maxAlive">14</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='82']/spawn/@maxAlive">14</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='89']/spawn/@maxAlive">15</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='96']/spawn/@maxAlive">15</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='103']/spawn/@maxAlive">16</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='110']/spawn/@maxAlive">16</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='117']/spawn/@maxAlive">17</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='125']/spawn/@maxAlive">18</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='132']/spawn/@maxAlive">18</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='140']/spawn/@maxAlive">19</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='148']/spawn/@maxAlive">19</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='156']/spawn/@maxAlive">20</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='164']/spawn/@maxAlive">21</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='172']/spawn/@maxAlive">21</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='181']/spawn/@maxAlive">22</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='189']/spawn/@maxAlive">23</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='198']/spawn/@maxAlive">23</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='207']/spawn/@maxAlive">24</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='216']/spawn/@maxAlive">25</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='225']/spawn/@maxAlive">26</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='234']/spawn/@maxAlive">26</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='243']/spawn/@maxAlive">27</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='252']/spawn/@maxAlive">28</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='262']/spawn/@maxAlive">28</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='272']/spawn/@maxAlive">29</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='281']/spawn/@maxAlive">30</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='291']/spawn/@maxAlive">31</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='301']/spawn/@maxAlive">32</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='311']/spawn/@maxAlive">32</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='322']/spawn/@maxAlive">33</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='332']/spawn/@maxAlive">34</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='343']/spawn/@maxAlive">35</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='353']/spawn/@maxAlive">36</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='364']/spawn/@maxAlive">37</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='374']/spawn/@maxAlive">37</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='385']/spawn/@maxAlive">38</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='396']/spawn/@maxAlive">39</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='407']/spawn/@maxAlive">40</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='419']/spawn/@maxAlive">41</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='430']/spawn/@maxAlive">42</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='441']/spawn/@maxAlive">43</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='453']/spawn/@maxAlive">44</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='464']/spawn/@maxAlive">45</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='476']/spawn/@maxAlive">46</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='488']/spawn/@maxAlive">47</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='500']/spawn/@maxAlive">48</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='512']/spawn/@maxAlive">48</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='524']/spawn/@maxAlive">49</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='536']/spawn/@maxAlive">50</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='548']/spawn/@maxAlive">51</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='560']/spawn/@maxAlive">52</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='573']/spawn/@maxAlive">53</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='585']/spawn/@maxAlive">54</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='598']/spawn/@maxAlive">55</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='610']/spawn/@maxAlive">56</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='623']/spawn/@maxAlive">57</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='636']/spawn/@maxAlive">58</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='649']/spawn/@maxAlive">59</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='662']/spawn/@maxAlive">60</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='675']/spawn/@maxAlive">62</set>
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='688']/spawn/@maxAlive">63</set>
+	<!-- Vanilla maxAlive = 57. (57+7=64). CAPPING. This is the last entry for this spawner. -->
+	<set xpath="/gamestages/spawner[@name='SleeperGSList']/gamestage[@stage='702']/spawn/@maxAlive">64</set>
+
+	<!-- *** SCOUT_GS_LIST *** -->
+	<set xpath="/gamestages/spawner[@name='ScoutGSList']/gamestage[@stage='1']/spawn/@maxAlive">9</set>
+	<set xpath="/gamestages/spawner[@name='ScoutGSList']/gamestage[@stage='2']/spawn/@maxAlive">10</set>
+	<set xpath="/gamestages/spawner[@name='ScoutGSList']/gamestage[@stage='5']/spawn/@maxAlive">13</set>
+	<set xpath="/gamestages/spawner[@name='ScoutGSList']/gamestage[@stage='8']/spawn/@maxAlive">16</set>
+	<set xpath="/gamestages/spawner[@name='ScoutGSList']/gamestage[@stage='11']/spawn/@maxAlive">18</set>
+	<set xpath="/gamestages/spawner[@name='ScoutGSList']/gamestage[@stage='14']/spawn/@maxAlive">21</set>
+	<set xpath="/gamestages/spawner[@name='ScoutGSList']/gamestage[@stage='18']/spawn/@maxAlive">25</set>
+	<set xpath="/gamestages/spawner[@name='ScoutGSList']/gamestage[@stage='22']/spawn/@maxAlive">28</set>
+	<set xpath="/gamestages/spawner[@name='ScoutGSList']/gamestage[@stage='27']/spawn/@maxAlive">33</set>
+	<set xpath="/gamestages/spawner[@name='ScoutGSList']/gamestage[@stage='31']/spawn/@maxAlive">36</set>
+	<set xpath="/gamestages/spawner[@name='ScoutGSList']/gamestage[@stage='36']/spawn/@maxAlive">41</set>
+	<set xpath="/gamestages/spawner[@name='ScoutGSList']/gamestage[@stage='41']/spawn/@maxAlive">45</set>
+	<set xpath="/gamestages/spawner[@name='ScoutGSList']/gamestage[@stage='46']/spawn/@maxAlive">50</set>
+	<set xpath="/gamestages/spawner[@name='ScoutGSList']/gamestage[@stage='52']/spawn/@maxAlive">55</set>
+	<set xpath="/gamestages/spawner[@name='ScoutGSList']/gamestage[@stage='58']/spawn/@maxAlive">61</set>
+	<!-- Vanilla maxAlive = 59. (59+7=66). CAPPED at 64. This is the last entry for this spawner. -->
+	<set xpath="/gamestages/spawner[@name='ScoutGSList']/gamestage[@stage='64']/spawn/@maxAlive">64</set>
+
+	<!-- *** BLOOD_MOON_HORDE *** -->
+	<!-- GS 1 -->
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='1']/spawn[1]/@maxAlive">10</set>
+	<!-- GS 2 -->
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='2']/spawn[3]/@maxAlive">10</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='2']/spawn[4]/@maxAlive">10</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='2']/spawn[5]/@maxAlive">10</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='2']/spawn[6]/@maxAlive">12</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='2']/spawn[7]/@maxAlive">10</set>
+	<!-- GS 4 -->
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='4']/spawn[3]/@maxAlive">10</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='4']/spawn[4]/@maxAlive">10</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='4']/spawn[5]/@maxAlive">10</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='4']/spawn[6]/@maxAlive">12</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='4']/spawn[7]/@maxAlive">10</set>
+	<!-- GS 7 -->
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='7']/spawn[1]/@maxAlive">12</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='7']/spawn[2]/@maxAlive">10</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='7']/spawn[3]/@maxAlive">12</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='7']/spawn[4]/@maxAlive">10</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='7']/spawn[5]/@maxAlive">10</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='7']/spawn[6]/@maxAlive">12</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='7']/spawn[7]/@maxAlive">10</set>
+	<!-- GS 10 -->
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='10']/spawn[1]/@maxAlive">13</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='10']/spawn[2]/@maxAlive">13</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='10']/spawn[3]/@maxAlive">10</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='10']/spawn[4]/@maxAlive">12</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='10']/spawn[5]/@maxAlive">10</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='10']/spawn[6]/@maxAlive">10</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='10']/spawn[7]/@maxAlive">10</set>
+	<!-- GS 13 -->
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='13']/spawn[1]/@maxAlive">13</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='13']/spawn[2]/@maxAlive">13</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='13']/spawn[3]/@maxAlive">13</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='13']/spawn[4]/@maxAlive">13</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='13']/spawn[5]/@maxAlive">15</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='13']/spawn[6]/@maxAlive">13</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='13']/spawn[7]/@maxAlive">10</set>
+	<!-- GS 16 -->
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='16']/spawn[1]/@maxAlive">14</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='16']/spawn[2]/@maxAlive">14</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='16']/spawn[3]/@maxAlive">11</set>
+	<!-- GS 19 -->
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='19']/spawn[1]/@maxAlive">15</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='19']/spawn[2]/@maxAlive">15</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='19']/spawn[3]/@maxAlive">12</set>
+	<!-- GS 23 -->
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='23']/spawn[1]/@maxAlive">16</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='23']/spawn[2]/@maxAlive">16</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='23']/spawn[3]/@maxAlive">16</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='23']/spawn[4]/@maxAlive">13</set>
+	<!-- GS 27 -->
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='27']/spawn[1]/@maxAlive">18</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='27']/spawn[2]/@maxAlive">18</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='27']/spawn[3]/@maxAlive">18</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='27']/spawn[4]/@maxAlive">14</set>
+	<!-- GS 31 -->
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='31']/spawn[1]/@maxAlive">19</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='31']/spawn[2]/@maxAlive">19</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='31']/spawn[3]/@maxAlive">19</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='31']/spawn[4]/@maxAlive">15</set>
+	<!-- GS 35 -->
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='35']/spawn[1]/@maxAlive">20</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='35']/spawn[2]/@maxAlive">20</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='35']/spawn[3]/@maxAlive">20</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='35']/spawn[4]/@maxAlive">16</set>
+	<!-- GS 40 -->
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='40']/spawn[1]/@maxAlive">22</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='40']/spawn[2]/@maxAlive">22</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='40']/spawn[3]/@maxAlive">22</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='40']/spawn[4]/@maxAlive">17</set>
+	<!-- GS 44 -->
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='44']/spawn[1]/@maxAlive">23</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='44']/spawn[2]/@maxAlive">23</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='44']/spawn[3]/@maxAlive">23</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='44']/spawn[4]/@maxAlive">18</set>
+	<!-- GS 49 -->
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='49']/spawn[1]/@maxAlive">24</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='49']/spawn[2]/@maxAlive">24</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='49']/spawn[3]/@maxAlive">24</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='49']/spawn[4]/@maxAlive">19</set>
+	<!-- GS 54 -->
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='54']/spawn[1]/@maxAlive">26</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='54']/spawn[2]/@maxAlive">26</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='54']/spawn[3]/@maxAlive">26</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='54']/spawn[4]/@maxAlive">20</set>
+	<!-- GS 59 -->
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='59']/spawn[1]/@maxAlive">27</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='59']/spawn[2]/@maxAlive">27</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='59']/spawn[3]/@maxAlive">27</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='59']/spawn[4]/@maxAlive">21</set>
+	<!-- GS 64 -->
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='64']/spawn[1]/@maxAlive">29</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='64']/spawn[2]/@maxAlive">29</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='64']/spawn[3]/@maxAlive">29</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='64']/spawn[4]/@maxAlive">22</set>
+	<!-- GS 69 -->
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='69']/spawn[1]/@maxAlive">30</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='69']/spawn[2]/@maxAlive">30</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='69']/spawn[3]/@maxAlive">30</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='69']/spawn[4]/@maxAlive">23</set>
+	<!-- GS 74 -->
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='74']/spawn[1]/@maxAlive">32</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='74']/spawn[2]/@maxAlive">32</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='74']/spawn[3]/@maxAlive">32</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='74']/spawn[4]/@maxAlive">24</set>
+	<!-- GS 80 -->
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='80']/spawn[1]/@maxAlive">34</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='80']/spawn[2]/@maxAlive">34</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='80']/spawn[3]/@maxAlive">34</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='80']/spawn[4]/@maxAlive">25</set>
+	<!-- GS 85 -->
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='85']/spawn[1]/@maxAlive">35</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='85']/spawn[2]/@maxAlive">35</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='85']/spawn[3]/@maxAlive">35</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='85']/spawn[4]/@maxAlive">26</set>
+	<!-- GS 91 -->
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='91']/spawn[1]/@maxAlive">37</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='91']/spawn[2]/@maxAlive">37</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='91']/spawn[3]/@maxAlive">37</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='91']/spawn[4]/@maxAlive">27</set>
+	<!-- GS 97 -->
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='97']/spawn[1]/@maxAlive">39</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='97']/spawn[2]/@maxAlive">39</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='97']/spawn[3]/@maxAlive">39</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='97']/spawn[4]/@maxAlive">28</set>
+	<!-- GS 103 -->
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='103']/spawn[1]/@maxAlive">40</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='103']/spawn[2]/@maxAlive">40</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='103']/spawn[3]/@maxAlive">40</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='103']/spawn[4]/@maxAlive">29</set>
+	<!-- GS 109 -->
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='109']/spawn[1]/@maxAlive">42</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='109']/spawn[2]/@maxAlive">42</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='109']/spawn[3]/@maxAlive">42</set>
+	<!-- GS 115 -->
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='115']/spawn[1]/@maxAlive">44</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='115']/spawn[2]/@maxAlive">44</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='115']/spawn[3]/@maxAlive">44</set>
+	<!-- GS 121 -->
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='121']/spawn[1]/@maxAlive">46</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='121']/spawn[2]/@maxAlive">46</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='121']/spawn[3]/@maxAlive">46</set>
+	<!-- GS 127 -->
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='127']/spawn[1]/@maxAlive">48</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='127']/spawn[2]/@maxAlive">48</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='127']/spawn[3]/@maxAlive">48</set>
+	<!-- GS 133 -->
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='133']/spawn[1]/@maxAlive">49</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='133']/spawn[2]/@maxAlive">49</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='133']/spawn[3]/@maxAlive">49</set>
+	<!-- GS 140 -->
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='140']/spawn[1]/@maxAlive">52</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='140']/spawn[2]/@maxAlive">52</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='140']/spawn[3]/@maxAlive">52</set>
+	<!-- GS 147 -->
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='147']/spawn[1]/@maxAlive">54</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='147']/spawn[2]/@maxAlive">54</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='147']/spawn[3]/@maxAlive">54</set>
+	<!-- GS 153 -->
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='153']/spawn[1]/@maxAlive">55</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='153']/spawn[2]/@maxAlive">55</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='153']/spawn[3]/@maxAlive">55</set>
+	<!-- GS 160 -->
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='160']/spawn[1]/@maxAlive">58</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='160']/spawn[2]/@maxAlive">58</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='160']/spawn[3]/@maxAlive">58</set>
+	<!-- GS 167 -->
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='167']/spawn[1]/@maxAlive">60</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='167']/spawn[2]/@maxAlive">60</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='167']/spawn[3]/@maxAlive">60</set>
+	<!-- GS 174 -->
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='174']/spawn[1]/@maxAlive">62</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='174']/spawn[2]/@maxAlive">62</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='174']/spawn[3]/@maxAlive">62</set>
+	<!-- GS 181 -->
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='181']/spawn[1]/@maxAlive">64</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='181']/spawn[2]/@maxAlive">64</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='181']/spawn[3]/@maxAlive">64</set>
+	<!-- GS 188 -->
+	<!-- Vanilla maxAlive = 59. (59+7=66). CAPPED at 64. This is the last stage modified for this spawner. -->
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='188']/spawn[1]/@maxAlive">64</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='188']/spawn[2]/@maxAlive">64</set>
+	<set xpath="/gamestages/spawner[@name='BloodMoonHorde']/gamestage[@stage='188']/spawn[3]/@maxAlive">64</set>
+
+	<!-- *** ZOMBIE_POLICE_CAR_HORDE *** -->
+	<set xpath="/gamestages/spawner[@name='ZombiePoliceCarHorde']/gamestage[@stage='1']/spawn/@maxAlive">9</set>
+	<set xpath="/gamestages/spawner[@name='ZombiePoliceCarHorde']/gamestage[@stage='3']/spawn/@maxAlive">11</set>
+	<set xpath="/gamestages/spawner[@name='ZombiePoliceCarHorde']/gamestage[@stage='8']/spawn/@maxAlive">16</set>
+	<set xpath="/gamestages/spawner[@name='ZombiePoliceCarHorde']/gamestage[@stage='13']/spawn/@maxAlive">20</set>
+	<set xpath="/gamestages/spawner[@name='ZombiePoliceCarHorde']/gamestage[@stage='21']/spawn/@maxAlive">27</set>
+	<set xpath="/gamestages/spawner[@name='ZombiePoliceCarHorde']/gamestage[@stage='30']/spawn/@maxAlive">36</set>
+	<set xpath="/gamestages/spawner[@name='ZombiePoliceCarHorde']/gamestage[@stage='40']/spawn/@maxAlive">45</set>
+	<set xpath="/gamestages/spawner[@name='ZombiePoliceCarHorde']/gamestage[@stage='51']/spawn/@maxAlive">54</set>
+	<!-- Vanilla maxAlive = 60. (60+7=67). CAPPED at 64. This is the last entry for this spawner. -->
+	<set xpath="/gamestages/spawner[@name='ZombiePoliceCarHorde']/gamestage[@stage='65']/spawn/@maxAlive">64</set>
+
+	<!-- *** SURVIVAL_DEFENSE_SPAWN_GROUP *** -->
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='5']/spawn/@maxAlive">10</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='8']/spawn/@maxAlive">10</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='11']/spawn/@maxAlive">10</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='14']/spawn/@maxAlive">10</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='18']/spawn/@maxAlive">10</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='22']/spawn/@maxAlive">10</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='27']/spawn/@maxAlive">10</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='31']/spawn/@maxAlive">10</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='36']/spawn/@maxAlive">10</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='41']/spawn/@maxAlive">11</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='46']/spawn/@maxAlive">11</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='52']/spawn/@maxAlive">12</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='58']/spawn/@maxAlive">12</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='64']/spawn/@maxAlive">13</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='70']/spawn/@maxAlive">13</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='76']/spawn/@maxAlive">14</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='82']/spawn/@maxAlive">14</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='89']/spawn/@maxAlive">15</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='96']/spawn/@maxAlive">15</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='103']/spawn/@maxAlive">16</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='110']/spawn/@maxAlive">16</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='117']/spawn/@maxAlive">17</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='125']/spawn/@maxAlive">18</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='132']/spawn/@maxAlive">18</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='140']/spawn/@maxAlive">19</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='148']/spawn/@maxAlive">19</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='156']/spawn/@maxAlive">20</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='164']/spawn/@maxAlive">21</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='172']/spawn/@maxAlive">21</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='181']/spawn/@maxAlive">22</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='189']/spawn/@maxAlive">23</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='198']/spawn/@maxAlive">23</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='207']/spawn/@maxAlive">24</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='216']/spawn/@maxAlive">25</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='225']/spawn/@maxAlive">26</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='234']/spawn/@maxAlive">26</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='243']/spawn/@maxAlive">27</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='252']/spawn/@maxAlive">28</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='262']/spawn/@maxAlive">28</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='272']/spawn/@maxAlive">29</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='281']/spawn/@maxAlive">30</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='291']/spawn/@maxAlive">31</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='301']/spawn/@maxAlive">32</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='311']/spawn/@maxAlive">32</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='322']/spawn/@maxAlive">33</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='332']/spawn/@maxAlive">34</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='343']/spawn/@maxAlive">35</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='353']/spawn/@maxAlive">36</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='364']/spawn/@maxAlive">37</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='374']/spawn/@maxAlive">37</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='385']/spawn/@maxAlive">38</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='396']/spawn/@maxAlive">39</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='407']/spawn/@maxAlive">40</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='419']/spawn/@maxAlive">41</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='430']/spawn/@maxAlive">42</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='441']/spawn/@maxAlive">43</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='453']/spawn/@maxAlive">44</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='464']/spawn/@maxAlive">45</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='476']/spawn/@maxAlive">46</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='488']/spawn/@maxAlive">47</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='500']/spawn/@maxAlive">48</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='512']/spawn/@maxAlive">48</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='524']/spawn/@maxAlive">49</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='536']/spawn/@maxAlive">50</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='548']/spawn/@maxAlive">51</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='560']/spawn/@maxAlive">52</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='573']/spawn/@maxAlive">53</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='585']/spawn/@maxAlive">54</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='598']/spawn/@maxAlive">55</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='610']/spawn/@maxAlive">56</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='623']/spawn/@maxAlive">57</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='636']/spawn/@maxAlive">58</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='649']/spawn/@maxAlive">59</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='662']/spawn/@maxAlive">60</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='675']/spawn/@maxAlive">62</set>
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='688']/spawn/@maxAlive">63</set>
+	<!-- Vanilla maxAlive = 57. (57+7=64). CAPPING. This is the last entry for this spawner. -->
+	<set xpath="/gamestages/spawner[@name='defenseGSList']/gamestage[@stage='702']/spawn/@maxAlive">64</set>
+
+</config>

@@ -1,0 +1,92 @@
+<config>
+	
+	<!--===================================================================
+	== LBD ENTITYCLASSES FILE ==
+	This file has been reverted to use an item-based trigger. The
+	unreliable "BuffsOnEnterGame" property has been removed, and the
+	"itemLBDManual" has been added back to the player's starting
+	inventory.
+	===================================================================
+	-->
+
+	<!-- Modify Male Player Inventory to include the LBD Manual -->
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvival']/@value">drinkJarBoiledWater=2,foodCanChili,medicalFirstAidBandage,meleeToolTorch,noteDuke01,itemLBDManual</set>
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvivalSP']/@value">drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,meleeToolTorch,itemLBDManual</set>
+
+    <!-- 
+	===================================================================
+	== LBD ROBOTICS FIX
+	== 1. Add new <effect_group> to Junk Turrets to add the XP Packet buff.
+	== 2. Modify Junk Drone to use the XP Packet buff, avoiding CVar conflict.
+	===================================================================
+	-->
+	
+    <!-- SYNTAX FIX: Corrected whitespace on this append tag -->
+	<!-- MODIFIED: Appending NEW effect group for XP trigger -->
+    <append xpath="/entity_classes/entity_class[@name='junkTurretGun']">
+        <effect_group name="GrantRoboticsXP_ToOwner_LBD">
+            <!-- Trigger when the turret damages another entity -->
+            <triggered_effect trigger="onSelfDamagedOther" action="AddBuff" buff="buffGrantRoboticsXP" target="selfAOE" range="16" target_tags="player">
+                <!-- Requirement: Grant XP unless the target hit is neutral, an NPC, or another deployed object -->
+                <requirement name="!EntityTagCompare" target="other" tags="neutral,npc,turret,vehicle,drone"/>
+            </triggered_effect>
+        </effect_group>
+    </append>
+
+    <!-- SYNTAX FIX: Corrected whitespace on this append tag -->
+	<!-- MODIFIED: Appending NEW effect group for XP trigger -->
+    <append xpath="/entity_classes/entity_class[@name='junkTurretSledge']">
+        <effect_group name="GrantRoboticsXP_ToOwner_LBD">
+            <!-- Trigger when the turret damages another entity -->
+            <triggered_effect trigger="onSelfDamagedOther" action="AddBuff" buff="buffGrantRoboticsXP" target="selfAOE" range="16" target_tags="player">
+                 <!-- Requirement: Grant XP unless the target hit is neutral, an NPC, or another deployed object -->
+               <requirement name="!EntityTagCompare" target="other" tags="neutral,npc,turret,vehicle,drone"/>
+            </triggered_effect>
+        </effect_group>
+    </append>
+
+	<!--
+	PATCH 3: entityJunkDrone
+	This entity DOES have a vanilla <effect_group> for its stats.
+	We will append our logic INSIDE its existing group to preserve it.
+	-->
+	<!-- MODIFIED: Replaced conflicting ModifyCVar logic with the XP Packet buff -->
+	<append xpath="/entity_classes/entity_class[@name='entityJunkDrone']/effect_group">
+		<!-- LBD MOD: Grant Robotics XP to owner when damaging valid targets -->
+		
+		<!-- Using the reliable 'selfOtherPlayers' target to send the XP Packet buff -->
+		<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" buff="buffGrantRoboticsXP" target="selfOtherPlayers">
+			<!-- Requirement: Grant XP unless the target hit is neutral, an NPC, or another deployed object -->
+			<!-- Note: Drone has headshot/animal logic, but this simplified trigger unifies the XP gain. -->
+			<!-- We can add back the headshot/animal logic here if needed. -->
+			<requirement name="!EntityTagCompare" target="other" tags="neutral,npc,turret,vehicle,drone"/>
+		</triggered_effect>
+		
+		<!-- 
+		REMOVED: The conflicting ModifyCVar logic was removed from this patch.
+		If this logic exists in another file, it should be removed.
+		The new AddBuff trigger above is the replacement.
+		
+		(OLD CONFLICTING LOGIC FOR REFERENCE:)
+		<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" target="selfOtherPlayers" cvar="craftingRoboticsShuLDBexp" operation="add" value="1">
+			<requirement name="TargetIsAnimal"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" target="selfOtherPlayers" cvar="craftingRoboticsShuLDBexp" operation="add" value="1">
+			<requirement name="TargetIsZombie"/>
+			<requirement name="!HitLocation" body_parts="Head"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" target="selfOtherPlayers" cvar="craftingRoboticsShuLDBexp" operation="add" value="2">
+			<requirement name="TargetIsZombie"/>
+			<requirement name="HitLocation" body_parts="Head"/>
+		</triggered_effect>
+		-->
+	</append>
+		
+		<!-- This code accomidates LBDexp Threshold/Values to 0 for Hardcore Mode.-->
+		<append xpath="/entity_classes/entity_class[@name='playerMale' or @name='playerFemale']">
+        <effect_group name="LBD_Death_Reset_Trigger">
+            <triggered_effect trigger="onSelfDied" action="AddBuff" buff="buffLBDResetWatcher"/>
+        </effect_group>
+	</append>
+
+</config>

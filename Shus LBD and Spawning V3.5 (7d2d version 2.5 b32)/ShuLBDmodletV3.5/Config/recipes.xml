@@ -1,0 +1,11 @@
+<config>
+	<append xpath="/recipes">
+		<recipe name="ammo9mmRobotic" count="300" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammo9mmBulletBall" count="300"/>
+		</recipe>
+		<recipe name="ammoShotgunRobotic" count="150" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammoShotgunShell" count="150"/>
+		</recipe>
+		
+	</append>
+</config>
