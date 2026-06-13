@@ -1,0 +1,25 @@
+<config>
+	<!-- ============================================================================ -->
+	<!-- BIOME GAME STAGE SCALING INJECTION (+33% Across the Board)                   -->
+	<!-- ============================================================================ -->
+	
+	<!-- *** PINE FOREST *** -->
+	<setattribute xpath="/worldgeneration/biomes/biome[@name='pine_forest']" name="gamestage_modifier">0.35</setattribute>
+	<setattribute xpath="/worldgeneration/biomes/biome[@name='pine_forest']" name="gamestage_bonus">5</setattribute>
+	
+	<!-- *** BURNT FOREST *** -->
+	<setattribute xpath="/worldgeneration/biomes/biome[@name='burnt_forest']" name="gamestage_modifier">0.65</setattribute>
+	<setattribute xpath="/worldgeneration/biomes/biome[@name='burnt_forest']" name="gamestage_bonus">13</setattribute>
+	
+	<!-- *** DESERT *** -->
+	<setattribute xpath="/worldgeneration/biomes/biome[@name='desert']" name="gamestage_modifier">1.00</setattribute>
+	<setattribute xpath="/worldgeneration/biomes/biome[@name='desert']" name="gamestage_bonus">13</setattribute>
+	
+	<!-- *** SNOW *** -->
+	<setattribute xpath="/worldgeneration/biomes/biome[@name='snow']" name="gamestage_modifier">1.50</setattribute>
+	<setattribute xpath="/worldgeneration/biomes/biome[@name='snow']" name="gamestage_bonus">20</setattribute>
+	
+	<!-- *** WASTELAND *** -->
+	<setattribute xpath="/worldgeneration/biomes/biome[@name='wasteland']" name="gamestage_modifier">2.00</setattribute>
+	<setattribute xpath="/worldgeneration/biomes/biome[@name='wasteland']" name="gamestage_bonus">66</setattribute>
+</config>

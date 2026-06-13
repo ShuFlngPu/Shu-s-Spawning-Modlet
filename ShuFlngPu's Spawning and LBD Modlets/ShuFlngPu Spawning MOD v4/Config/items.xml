@@ -1,0 +1,14 @@
+<config>
+<!-- -24% zombie block damage, triggers ZombieLeaderBuffs because "onSelfFirstSpawn" doesnt work for zombies.-->
+	<append xpath="/items/item[@name='meleeHandMaster']/effect_group[@name='meleeHandMaster']">
+		<passive_effect name="BlockDamage" operation="perc_add" value="-0.24">
+			<requirement name="EntityTagCompare" tags="zombie"/>
+		</passive_effect>
+		
+		<triggered_effect trigger="onSelfEquipUpdate" action="AddBuff" buff="buffZombieLeaderTracker">
+			<requirement name="IsEquipped"/>
+			<requirement name="EntityTagCompare" tags="zombie"/>
+		</triggered_effect>
+	</append>
+
+</config>

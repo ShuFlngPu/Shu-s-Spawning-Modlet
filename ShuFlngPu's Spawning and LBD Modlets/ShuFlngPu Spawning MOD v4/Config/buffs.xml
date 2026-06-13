@@ -1,0 +1,132 @@
+<config>
+	<append xpath="/buffs">
+
+		<buff name="buffZombieLeaderTracker" hidden="true" remove_on_death="true">
+			<stack_type value="ignore"/>
+			<duration value="0"/> 
+			
+			<effect_group>
+				<requirements>
+					<requirement name="EntityTagCompare" tags="feral"/>
+				</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffZombieLeaderAura_T1"/>
+			</effect_group>
+
+			<effect_group>
+				<requirements>
+					<requirement name="EntityTagCompare" tags="radiated"/>
+				</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffZombieLeaderAura_T2"/>
+			</effect_group>
+
+			<effect_group>
+				<requirements>
+					<requirement name="EntityTagCompare" tags="charged"/>
+				</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffZombieLeaderAura_T3"/>
+			</effect_group>
+
+			<effect_group>
+				<requirements>
+					<requirement name="EntityTagCompare" tags="infernal"/>
+				</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffZombieLeaderAura_T4"/>
+			</effect_group>
+		</buff>
+		
+		<buff name="buffZombieLeaderAura_T1" hidden="true">
+			<duration value="0"/>
+			<update_rate value="3"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffZombieAllyBonus_Received_T1" target="selfAOE" range="14" target_tags="zombie"/>
+			</effect_group>
+		</buff>
+
+		<buff name="buffZombieAllyBonus_Received_T1" name_key="buffZombieAllyBonusName_T1" description_key="buffZombieAllyBonusDesc_T1" icon="ui_game_symbol_chain" icon_color="255,80,80">
+			<stack_type value="effect"/>
+			<stack_count_max value="3"/>
+			<duration value="4"/> 
+			<effect_group>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".04"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="4"/>
+				<passive_effect name="RunSpeed" operation="perc_add" value=".04"/>
+				<passive_effect name="WalkSpeed" operation="perc_add" value=".04"/>
+			</effect_group>
+		</buff>
+
+		<buff name="buffZombieLeaderAura_T2" hidden="true">
+			<duration value="0"/>
+			<update_rate value="3"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffZombieAllyBonus_Received_T2" target="selfAOE" range="14" target_tags="zombie"/>
+			</effect_group>
+		</buff>
+
+		<buff name="buffZombieAllyBonus_Received_T2" name_key="buffZombieAllyBonusName_T2" description_key="buffZombieAllyBonusDesc_T2" icon="ui_game_symbol_chain" icon_color="255,140,80">
+			<stack_type value="effect"/>
+			<stack_count_max value="3"/>
+			<duration value="4"/>
+			<effect_group>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".08"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="8"/>
+				<passive_effect name="RunSpeed" operation="perc_add" value=".08"/>
+				<passive_effect name="WalkSpeed" operation="perc_add" value=".08"/>
+			</effect_group>
+		</buff>
+
+		<buff name="buffZombieLeaderAura_T3" hidden="true">
+			<duration value="0"/>
+			<update_rate value="3"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffZombieAllyBonus_Received_T3" target="selfAOE" range="14" target_tags="zombie"/>
+			</effect_group>
+		</buff>
+
+		<buff name="buffZombieAllyBonus_Received_T3" name_key="buffZombieAllyBonusName_T3" description_key="buffZombieAllyBonusDesc_T3" icon="ui_game_symbol_chain" icon_color="255,40,40">
+			<stack_type value="effect"/>
+			<stack_count_max value="3"/>
+			<duration value="4"/>
+			<effect_group>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".12"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="12"/>
+				<passive_effect name="RunSpeed" operation="perc_add" value=".12"/>
+				<passive_effect name="WalkSpeed" operation="perc_add" value=".12"/>
+			</effect_group>
+		</buff>
+
+		<buff name="buffZombieLeaderAura_T4" hidden="true">
+			<duration value="0"/>
+			<update_rate value="3"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffZombieAllyBonus_Received_T4" target="selfAOE" range="14" target_tags="zombie"/>
+			</effect_group>
+		</buff>
+
+		<buff name="buffZombieAllyBonus_Received_T4" name_key="buffZombieAllyBonusName_T4" description_key="buffZombieAllyBonusDesc_T4" icon="ui_game_symbol_chain" icon_color="255,0,0">
+			<stack_type value="effect"/>
+			<stack_count_max value="3"/>
+			<duration value="4"/>
+			<effect_group>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".16"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="16"/>
+				<passive_effect name="RunSpeed" operation="perc_add" value=".16"/>
+				<passive_effect name="WalkSpeed" operation="perc_add" value=".16"/>
+			</effect_group>
+		</buff>
+
+	</append>
+
+	<remove xpath="/buffs/buff[@name='buffGrantRoboticsXP']"/>
+
+	<append xpath="/buffs">
+		<buff name="buffGrantRoboticsXP" hidden="true">
+			<stack_type value="ignore"/>
+			<duration value="2"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="craftingRoboticsShuLDBexp" operation="add" value="1"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffGrantRoboticsXP"/>
+			</effect_group> 
+		</buff>
+	</append>
+
+</config>

@@ -1,0 +1,189 @@
+<config>
+<append xpath="/items">
+	<!-- =================================================================== -->
+	<!-- LBD MANUAL - System Initialization -->
+	<!-- =================================================================== -->
+	<item name="itemLBDManual">
+		<property name="Extends" value="blankNoteMaster"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="Group" value="Special Items"/>
+		<property name="CustomIcon" value="foodCanSham"/>
+		<property name="ItemTypeIcon" value="book"/>
+		<property name="AltItemTypeIcon" value="book_read"/>
+		<property name="CustomIconTint" value="255,175,0"/>
+		<property name="Stacknumber" value="1"/>
+		<property name="DescriptionKey" value="itemLBDManualDesc"/>
+		<property name="Candrop" value="false"/>
+		
+		<property class="Action0">
+			<property name="Class" value="Eat"/>
+			<property name="Delay" value="1.0"/>
+			<property name="Sound_start" value="read_mod"/>
+		</property>
+
+		<effect_group name="LBD_System_Activation">
+			<!-- Initialize CVars to 0 if they don't exist yet -->
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingHarvestingToolsShuLDBexp" operation="set" value="0"><requirement name="CVarCompare" cvar="craftingHarvestingToolsShuLDBexp" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingRepairToolsShuLDBexp" operation="set" value="0"><requirement name="CVarCompare" cvar="craftingRepairToolsShuLDBexp" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingWorkstationsShuLDBexp" operation="set" value="0"><requirement name="CVarCompare" cvar="craftingWorkstationsShuLDBexp" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingFoodShuLDBexp" operation="set" value="0"><requirement name="CVarCompare" cvar="craftingFoodShuLDBexp" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="lootingShuLDBexp" operation="set" value="0"><requirement name="CVarCompare" cvar="lootingShuLDBexp" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingSalvageToolsShuLDBexp" operation="set" value="0"><requirement name="CVarCompare" cvar="craftingSalvageToolsShuLDBexp" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingBladesShuLDBexp" operation="set" value="0"><requirement name="CVarCompare" cvar="craftingBladesShuLDBexp" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingClubsShuLDBexp" operation="set" value="0"><requirement name="CVarCompare" cvar="craftingClubsShuLDBexp" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingSledgehammersShuLDBexp" operation="set" value="0"><requirement name="CVarCompare" cvar="craftingSledgehammersShuLDBexp" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingKnucklesShuLDBexp" operation="set" value="0"><requirement name="CVarCompare" cvar="craftingKnucklesShuLDBexp" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingSpearsShuLDBexp" operation="set" value="0"><requirement name="CVarCompare" cvar="craftingSpearsShuLDBexp" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingHandgunsShuLDBexp" operation="set" value="0"><requirement name="CVarCompare" cvar="craftingHandgunsShuLDBexp" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingShotgunsShuLDBexp" operation="set" value="0"><requirement name="CVarCompare" cvar="craftingShotgunsShuLDBexp" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingRiflesShuLDBexp" operation="set" value="0"><requirement name="CVarCompare" cvar="craftingRiflesShuLDBexp" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingMachineGunsShuLDBexp" operation="set" value="0"><requirement name="CVarCompare" cvar="craftingMachineGunsShuLDBexp" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingExplosivesShuLDBexp" operation="set" value="0"><requirement name="CVarCompare" cvar="craftingExplosivesShuLDBexp" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingBowsShuLDBexp" operation="set" value="0"><requirement name="CVarCompare" cvar="craftingBowsShuLDBexp" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingRoboticsShuLDBexp" operation="set" value="0"><requirement name="CVarCompare" cvar="craftingRoboticsShuLDBexp" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingTrapsShuLDBexp" operation="set" value="0"><requirement name="CVarCompare" cvar="craftingTrapsShuLDBexp" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingMedicalShuLDBexp" operation="set" value="0"><requirement name="CVarCompare" cvar="craftingMedicalShuLDBexp" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingElectricianShuLDBexp" operation="set" value="0"><requirement name="CVarCompare" cvar="craftingElectricianShuLDBexp" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingSeedsShuLDBexp" operation="set" value="0"><requirement name="CVarCompare" cvar="craftingSeedsShuLDBexp" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingArmorShuLDBexp" operation="set" value="0"><requirement name="CVarCompare" cvar="craftingArmorShuLDBexp" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingVehiclesShuLDBexp" operation="set" value="0"><requirement name="CVarCompare" cvar="craftingVehiclesShuLDBexp" operation="Equals" value="0"/></triggered_effect>
+
+			<!-- Initialize Thresholds -->
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingHarvestingToolsShuLDBThreshold" operation="set" value="140"><requirement name="CVarCompare" cvar="craftingHarvestingToolsShuLDBThreshold" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingRepairToolsShuLDBThreshold" operation="set" value="140"><requirement name="CVarCompare" cvar="craftingRepairToolsShuLDBThreshold" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingWorkstationsShuLDBThreshold" operation="set" value="120"><requirement name="CVarCompare" cvar="craftingWorkstationsShuLDBThreshold" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingFoodShuLDBThreshold" operation="set" value="80"><requirement name="CVarCompare" cvar="craftingFoodShuLDBThreshold" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="LootingSkillThreshold" operation="set" value="80"><requirement name="CVarCompare" cvar="LootingSkillThreshold" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingSalvageToolsShuLDBThreshold" operation="set" value="140"><requirement name="CVarCompare" cvar="craftingSalvageToolsShuLDBThreshold" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingBladesShuLDBThreshold" operation="set" value="160"><requirement name="CVarCompare" cvar="craftingBladesShuLDBThreshold" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingClubsShuLDBThreshold" operation="set" value="110"><requirement name="CVarCompare" cvar="craftingClubsShuLDBThreshold" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingSledgehammersShuLDBThreshold" operation="set" value="100"><requirement name="CVarCompare" cvar="craftingSledgehammersShuLDBThreshold" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingKnucklesShuLDBThreshold" operation="set" value="120"><requirement name="CVarCompare" cvar="craftingKnucklesShuLDBThreshold" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingSpearsShuLDBThreshold" operation="set" value="110"><requirement name="CVarCompare" cvar="craftingSpearsShuLDBThreshold" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingHandgunsShuLDBThreshold" operation="set" value="110"><requirement name="CVarCompare" cvar="craftingHandgunsShuLDBThreshold" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingShotgunsShuLDBThreshold" operation="set" value="200"><requirement name="CVarCompare" cvar="craftingShotgunsShuLDBThreshold" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingRiflesShuLDBThreshold" operation="set" value="90"><requirement name="CVarCompare" cvar="craftingRiflesShuLDBThreshold" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingMachineGunsShuLDBThreshold" operation="set" value="120"><requirement name="CVarCompare" cvar="craftingMachineGunsShuLDBThreshold" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingExplosivesShuLDBThreshold" operation="set" value="120"><requirement name="CVarCompare" cvar="craftingExplosivesShuLDBThreshold" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingBowsShuLDBThreshold" operation="set" value="90"><requirement name="CVarCompare" cvar="craftingBowsShuLDBThreshold" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingRoboticsShuLDBThreshold" operation="set" value="160"><requirement name="CVarCompare" cvar="craftingRoboticsShuLDBThreshold" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingTrapsShuLDBThreshold" operation="set" value="140"><requirement name="CVarCompare" cvar="craftingTrapsShuLDBThreshold" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingMedicalShuLDBThreshold" operation="set" value="60"><requirement name="CVarCompare" cvar="craftingMedicalShuLDBThreshold" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingElectricianShuLDBThreshold" operation="set" value="160"><requirement name="CVarCompare" cvar="craftingElectricianShuLDBThreshold" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingSeedsShuLDBThreshold" operation="set" value="80"><requirement name="CVarCompare" cvar="craftingSeedsShuLDBThreshold" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingArmorShuLDBThreshold" operation="set" value="130"><requirement name="CVarCompare" cvar="craftingArmorShuLDBThreshold" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="craftingVehiclesShuLDBThreshold" operation="set" value="120"><requirement name="CVarCompare" cvar="craftingVehiclesShuLDBThreshold" operation="Equals" value="0"/></triggered_effect>
+
+			<!-- Apply all trackers -->
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffLBDManager,buffStoneAxeTracker,buffHarvestingToolsTracker,buffRepairToolsTracker,buffWorkstationsTracker,buffFoodTracker,buffLootingTracker,buffSalvageToolsTracker,buffBladesTracker,buffClubsTracker,buffSledgehammersTracker,buffKnucklesTracker,buffSpearsTracker,buffHandgunsTracker,buffShotgunsTracker,buffRiflesTracker,buffMachineGunsTracker,buffExplosivesTracker,buffBowsTracker,buffRoboticsTracker,buffTrapsTracker,buffMedicalTracker,buffElectricianTracker,buffVehiclesTracker,buffSeedsTracker,buffArmorTracker,buffLBDResetWatcher"/>
+		</effect_group>
+	</item>
+
+	<!-- =================================================================== -->
+	<!-- LBD REMOVAL - System Wipe -->
+	<!-- =================================================================== -->
+	<item name="itemLBDRemoval">
+		<property name="Extends" value="blankNoteMaster"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="Group" value="Special Items"/>
+		<property name="CustomIcon" value="foodRottingFlesh"/>
+		<property name="ItemTypeIcon" value="book"/>
+		<property name="AltItemTypeIcon" value="book_read"/>
+		<property name="CustomIconTint" value="255,0,0"/>
+		<property name="Stacknumber" value="1"/>
+		<property name="DescriptionKey" value="itemLBDRemovalDesc"/>
+		<property name="Candrop" value="false"/>
+		
+		<property class="Action0">
+			<property name="Class" value="Eat"/>
+			<property name="Delay" value="1.0"/>
+			<property name="Sound_start" value="player_painlg"/>
+		</property>
+		
+		<effect_group name="LBD_System_Removal">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffLBDManager,buffStoneAxeTracker,buffHarvestingToolsTracker,buffRepairToolsTracker,buffWorkstationsTracker,buffFoodTracker,buffLootingTracker,buffSalvageToolsTracker,buffBladesTracker,buffClubsTracker,buffSledgehammersTracker,buffKnucklesTracker,buffSpearsTracker,buffHandgunsTracker,buffShotgunsTracker,buffRiflesTracker,buffMachineGunsTracker,buffExplosivesTracker,buffBowsTracker,buffRoboticsTracker,buffTrapsTracker,buffMedicalTracker,buffElectricianTracker,buffVehiclesTracker,buffSeedsTracker,buffArmorTracker,buffLBDLootBonusApplier,buffLBDResetWatcher"/>
+			
+			<!-- CRITICAL FIX: The 7D2D Engine does NOT natively support comma-separated arrays for RemoveCVar. -->
+			<!-- Attempting to pass a massive comma-separated string causes the engine to look for a single CVar named "a,b,c" and fail silently. -->
+			<!-- All CVars must be removed individually to guarantee a clean system wipe. -->
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="craftingHarvestingToolsShuLDBexp"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="craftingRepairToolsShuLDBexp"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="craftingWorkstationsShuLDBexp"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="craftingFoodShuLDBexp"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="lootingShuLDBexp"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="craftingSalvageToolsShuLDBexp"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="craftingBladesShuLDBexp"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="craftingClubsShuLDBexp"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="craftingSledgehammersShuLDBexp"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="craftingKnucklesShuLDBexp"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="craftingSpearsShuLDBexp"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="craftingHandgunsShuLDBexp"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="craftingShotgunsShuLDBexp"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="craftingRiflesShuLDBexp"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="craftingMachineGunsShuLDBexp"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="craftingExplosivesShuLDBexp"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="craftingBowsShuLDBexp"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="craftingRoboticsShuLDBexp"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="craftingTrapsShuLDBexp"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="craftingMedicalShuLDBexp"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="craftingElectricianShuLDBexp"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="craftingSeedsShuLDBexp"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="craftingArmorShuLDBexp"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="craftingVehiclesShuLDBexp"/>
+			
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="craftingHarvestingToolsShuLDBThreshold"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="craftingRepairToolsShuLDBThreshold"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="craftingWorkstationsShuLDBThreshold"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="craftingFoodShuLDBThreshold"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="LootingSkillThreshold"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="craftingSalvageToolsShuLDBThreshold"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="craftingBladesShuLDBThreshold"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="craftingClubsShuLDBThreshold"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="craftingSledgehammersShuLDBThreshold"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="craftingKnucklesShuLDBThreshold"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="craftingSpearsShuLDBThreshold"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="craftingHandgunsShuLDBThreshold"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="craftingShotgunsShuLDBThreshold"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="craftingRiflesShuLDBThreshold"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="craftingMachineGunsShuLDBThreshold"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="craftingExplosivesShuLDBThreshold"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="craftingBowsShuLDBThreshold"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="craftingRoboticsShuLDBThreshold"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="craftingTrapsShuLDBThreshold"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="craftingMedicalShuLDBThreshold"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="craftingElectricianShuLDBThreshold"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="craftingSeedsShuLDBThreshold"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="craftingArmorShuLDBThreshold"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="craftingVehiclesShuLDBThreshold"/>
+			
+			<!-- Removing Legacy Flags/Helpers -->
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="LBD_isBlade"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="LBD_isClub"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="LBD_isSledge"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="LBD_isKnuckle"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="LBD_isSpear"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="LBD_isHandgun"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="LBD_isShotgun"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="LBD_isRifle"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="LBD_isMachineGun"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="LBD_isExplosive"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="LBD_isBow"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="LBD_isRobotics"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="LBD_canHarvest"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="LBD_canRepair"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="LBD_canSalvage"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="LBD_isMedical"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="LBD_isElectrician"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="LBD_isFood"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="LBD_isStoneAxe"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="$inCombatLBDtimer"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="$LootingBaseBonus"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="$LootingPercBonus"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="$roboticsHelperXP"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="$trapsHelperXP"/>
+		</effect_group>
+	</item>
+</append>
+
+
+</config>

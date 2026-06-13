@@ -1,0 +1,2014 @@
+<configs>
+	<append xpath="/entitygroups">
+
+<!-- List of known Zombies == 
+zombieArlene
+zombieBiker
+zombieBoe
+zombieBowler
+zombieBurnt
+zombieBusinessMan
+zombieChuck
+zombieDarlene
+zombieDemolition
+zombieFatCop
+zombieFatHawaiian
+zombieFemaleFat
+zombieFrostclaw
+zombieInmate
+zombieJanitor
+zombieJoe
+zombieLab
+zombieLumberjack
+zombieMaleHazmat
+zombieMarlene
+zombieMoe
+zombieMutated
+zombieNurse
+zombiePartyGirl
+zombiePlagueSpitter
+zombieRancher
+zombieScreamer
+zombieSkateboarder
+zombieSoldier
+zombieSpider
+zombieSteve
+zombieSteveCrawler
+zombieTomClark
+zombieUtilityWorker
+zombieWight
+zombieYo
+
+NOT WORKING YET
+zombieCrawlerSteveRadiated
+zombieCrawlerSteveCharged
+zombieCrawlerSteveInfernal
+zombieArleneInfernal  
+zombieMarleneInfernal  
+zombiePartyGirlInfernal  
+zombieNurseInfernal  
+zombieJoeInfernal  
+zombieSteveInfernal  
+zombieTomClarkInfernal  
+zombieMoeCharged  
+zombieLabInfernal  
+zombieBikerCharged  
+zombieLumberjackCharged  
+zombieFemaleFatCharged  
+zombieFatHawaiianCharged 
+zombieBowlerCharged 
+zombieFatCopCharged  
+zombieSoldierCharged  
+zombieScreamerInfernal  
+
+Radiated Variants
+
+zombieArleneRadiated
+zombieBikerRadiated
+zombieBoeRadiated
+zombieBowlerRadiated
+zombieBurntRadiated
+zombieBusinessManRadiated
+zombieChuckRadiated
+zombieDarleneRadiated
+zombieFatCopRadiated
+zombieFatHawaiianRadiated
+zombieFemaleFatRadiated
+zombieFrostclawRadiated
+zombieInmateRadiated
+zombieJanitorRadiated
+zombieJoeRadiated
+zombieLabRadiated
+zombieLumberjackRadiated
+zombieMaleHazmatRadiated
+zombieMarleneRadiated
+zombieMoeRadiated
+zombieMutatedRadiated
+zombieNurseRadiated
+zombiePartyGirlRadiated
+zombiePlagueSpitterRadiated
+zombieRancherRadiated
+zombieScreamerRadiated
+zombieSkateboarderRadiated
+zombieSoldierRadiated
+zombieSpiderRadiated
+zombieSteveRadiated
+zombieTomClarkRadiated
+zombieUtilityWorkerRadiated
+zombieWightRadiated
+zombieYoRadiated
+
+Charged Variants
+
+zombieArleneCharged
+zombieBikerCharged (Commented out in POI groups)
+zombieBoeCharged
+zombieBowlerCharged (Commented out in POI groups)
+zombieBurntCharged
+zombieBusinessManCharged
+zombieChuckCharged
+zombieDarleneCharged
+zombieFatCopCharged (Commented out in POI groups)
+zombieFatHawaiianCharged (Commented out in POI groups)
+zombieFemaleFatCharged (Commented out in POI groups)
+zombieFrostclawCharged
+zombieInmateCharged
+zombieJanitorCharged
+zombieJoeCharged
+zombieLabCharged
+zombieLumberjackCharged (Commented out in POI groups)
+zombieMaleHazmatCharged
+zombieMarleneCharged
+zombieMoeCharged (Commented out in POI groups)
+zombieMutatedCharged
+zombieNurseCharged
+zombiePartyGirlCharged
+zombiePlagueSpitterCharged
+zombieRancherCharged
+zombieScreamerCharged
+zombieSkateboarderCharged
+zombieSoldierCharged (Commented out in POI groups)
+zombieSpiderCharged
+zombieSteveCharged
+zombieTomClarkCharged
+zombieUtilityWorkerCharged
+zombieWightCharged
+zombieYoCharged
+Infernal Variants
+zombieArleneInfernal (Commented out in POI groups)
+zombieBikerInfernal
+zombieBoeInfernal
+zombieBowlerInfernal
+zombieBurntInfernal
+zombieBusinessManInfernal
+zombieChuckInfernal
+zombieDarleneInfernal
+zombieFatCopInfernal
+zombieFatHawaiianInfernal
+zombieFemaleFatInfernal
+zombieFrostclawInfernal
+zombieInmateInfernal
+zombieJanitorInfernal
+zombieJoeInfernal (Commented out in POI groups)
+zombieLabInfernal (Commented out in POI groups)
+zombieLumberjackInfernal
+zombieMaleHazmatInfernal
+zombieMarleneInfernal (commented out in POI groups)
+zombieMoeInfernal
+zombieMutatedInfernal
+zombieNurseInfernal (Commented out in POI groups)
+zombiePartyGirlInfernal (Commented out in POI groups)
+zombiePlagueSpitterInfernal
+zombieRancherInfernal
+zombieScreamerInfernal (Commented out in POI groups)
+zombieSkateboarderInfernal
+zombieSoldierInfernal
+zombieSpiderInfernal
+zombieSteveInfernal (Commented out in POI groups)
+zombieTomClarkInfernal (Commented out in POI groups)
+zombieUtilityWorkerInfernal
+zombieWightInfernal
+zombieYoInfernal
+-->
+		<entitygroup name="ZombiesAllPine">
+			zombieBoe
+			zombieJoe
+			zombieSteve
+			zombieTomClark
+			zombieMoe
+			zombieYo
+			zombieBusinessMan
+			zombieArlene
+			zombieDarlene
+			zombieMarlene
+			zombieSkateboarder
+			zombieBiker, .3
+			zombiePartyGirl, .3
+			zombieUtilityWorker, .3
+			zombieJanitor, .2
+			zombieLumberjack, .2
+			zombieNurse, .3
+			zombieSteveCrawler
+			zombieFatHawaiian, .3
+			zombieBowler, .3
+			
+			zombieBoeFeral, .08
+			zombieJoeFeral, .08
+			zombieSteveFeral, .08
+			zombieTomClarkFeral, .08
+			zombieMoeFeral, .08
+			zombieYoFeral, .08
+			zombieBusinessManFeral, .08
+			zombieArleneFeral, .08
+			zombieDarleneFeral, .08
+			zombieMarleneFeral, .08
+			zombieSkateboarderFeral, .08
+			zombieBikerFeral, .04
+			zombiePartyGirlFeral, .08
+			zombieUtilityWorkerFeral, .04
+			zombieJanitorFeral, .08
+			zombieLumberjackFeral, .04
+			zombieNurseFeral, .008
+			zombieSteveCrawlerFeral, .08
+			zombieFatHawaiianFeral, .02
+			zombieBowlerFeral, .02
+			
+			zombieBoeRadiated, .005
+			zombieJoeRadiated, .005
+			zombieTomClarkRadiated, .005
+			zombieMoeRadiated, .005
+			zombieYoRadiated, .005
+			zombieBusinessManRadiated, .005
+			zombieArleneRadiated, .005
+			zombieDarleneRadiated, .005
+			zombieMarleneRadiated, .005
+			zombieSkateboarderRadiated, .005
+			zombieBikerRadiated, .005
+			zombiePartyGirlRadiated, .005
+			zombieUtilityWorkerRadiated, .005
+			zombieJanitorRadiated, .005
+			zombieLumberjackRadiated, .005
+			zombieNurseRadiated, .005
+			zombieFatHawaiianRadiated, .005
+			zombieBowlerRadiated, .005
+			
+			zombieBoeCharged, .0001
+			zombieJoeCharged, .0001
+			zombieTomClarkCharged, .0001
+			zombieYoCharged, .0001
+			zombieBusinessManCharged, .0001
+			zombieArleneCharged, .0001
+			zombieDarleneCharged, .0001
+			zombieMarleneCharged, .0001
+			zombieSkateboarderCharged, .0001
+			zombiePartyGirlCharged, .0001
+			zombieUtilityWorkerCharged, .0001
+			zombieJanitorCharged, .0001
+			zombieNurseCharged, .0001
+			zombieBoeInfernal, .0001
+			zombieMoeInfernal, .0001
+			zombieYoInfernal, .0001
+			zombieBusinessManInfernal, .0001
+			zombieDarleneInfernal, .0001
+			zombieSkateboarderInfernal, .0001
+			zombieBikerInfernal, .0001
+			zombieUtilityWorkerInfernal, .0001
+			zombieJanitorInfernal, .0001
+			zombieLumberjackInfernal, .0001
+			zombieFatHawaiianInfernal, .0001
+			zombieBowlerInfernal, .0001
+		</entitygroup>
+		
+		<!-- FIX FOR MISSING PINE FOREST NIGHT SPAWN GROUP -->
+	<entitygroup name="ZombiesAllNightPine">
+		zombieSpider
+		zombieSpiderFeral, .25
+		zombieBoe
+		zombieBoeFeral, .25
+		zombieJoe
+		zombieJoeFeral, .25
+		zombieSteve
+		zombieTomClark
+		zombieSteveFeral, .25
+		zombieTomClarkFeral, .25
+		zombieMoe
+		zombieMoeFeral, .25
+		zombieYo
+		zombieYoFeral, .25
+		zombieBusinessMan
+		zombieBusinessManFeral, .25
+		zombieArlene
+		zombieArleneFeral, .25
+		zombieDarlene
+		zombieDarleneFeral, .25
+		zombieMarlene
+		zombieMarleneFeral, .25
+		zombieLumberjack
+		zombieLumberjackFeral,.25
+		zombieNurse
+		zombieNurseFeral, .25
+		animalZombieDog, .05
+		animalDireWolf, .01
+		zombieSteveCrawler
+		zombieFatHawaiian
+		zombieFatHawaiianFeral, .25
+		zombieBowler, .1
+		zombieBowlerFeral, .1
+	</entitygroup>
+
+		<entitygroup name="ZombiesPineCommercial">
+			<!-- SET 1: BASE ZOMBIES -->
+			zombieBoe
+			zombieJoe
+			zombieSteve
+			zombieTomClark
+			zombieMoe
+			zombieYo
+			zombieBusinessMan
+			zombieArlene
+			zombieDarlene
+			zombieMarlene
+			zombieSkateboarder
+			zombieBiker, .3
+			zombiePartyGirl, .3
+			zombieUtilityWorker, .3
+			zombieJanitor, .2
+			zombieLumberjack, .2
+			zombieNurse, .3
+			zombieSteveCrawler
+			zombieFatHawaiian, .3
+			zombieBowler, .3
+			
+			<!-- SET 2: FERAL (Base 1x = .08 -> 1.5x = .12) -->
+			zombieBoeFeral, .12
+			zombieJoeFeral, .12
+			zombieSteveFeral, .12
+			zombieTomClarkFeral, .12
+			zombieMoeFeral, .12
+			zombieYoFeral, .12
+			zombieBusinessManFeral, .12
+			zombieArleneFeral, .12
+			zombieDarleneFeral, .12
+			zombieMarleneFeral, .12
+			zombieSkateboarderFeral, .12
+			zombieBikerFeral, .06
+			zombiePartyGirlFeral, .12
+			zombieUtilityWorkerFeral, .06
+			zombieJanitorFeral, .12
+			zombieLumberjackFeral, .06
+			zombieNurseFeral, .012
+			zombieSteveCrawlerFeral, .12
+			zombieFatHawaiianFeral, .03
+			zombieBowlerFeral, .03
+			
+			<!-- SET 3: RADIATED (Base 1x = .005 -> 1.5x = .0075) -->
+			zombieBoeRadiated, .0075
+			zombieJoeRadiated, .0075
+			zombieTomClarkRadiated, .0075
+			zombieMoeRadiated, .0075
+			zombieYoRadiated, .0075
+			zombieBusinessManRadiated, .0075
+			zombieArleneRadiated, .0075
+			zombieDarleneRadiated, .0075
+			zombieMarleneRadiated, .0075
+			zombieSkateboarderRadiated, .0075
+			zombieBikerRadiated, .00375
+			zombiePartyGirlRadiated, .0075
+			zombieUtilityWorkerRadiated, .00375
+			zombieJanitorRadiated, .0075
+			zombieLumberjackRadiated, .00375
+			zombieNurseRadiated, .00075
+			zombieFatHawaiianRadiated, .00187
+			zombieBowlerRadiated, .00187
+			
+			<!-- SET 4: CHARGED (Base 1x = .002 -> 1.5x = .003) -->
+			zombieBoeCharged, .003
+			zombieJoeCharged, .003
+			zombieSteveCharged, .003
+			zombieTomClarkCharged, .003
+			zombieYoCharged, .003
+			zombieBusinessManCharged, .003
+			zombieArleneCharged, .003
+			zombieDarleneCharged, .003
+			zombieMarleneCharged, .003
+			zombieSkateboarderCharged, .003
+			zombiePartyGirlCharged, .003
+			zombieUtilityWorkerCharged, .0015
+			zombieJanitorCharged, .003
+			zombieNurseCharged, .0003
+			
+			<!-- SET 5: INFERNAL (Base 1x = .001 -> 1.5x = .0015) -->
+			zombieBoeInfernal, .0015
+			zombieMoeInfernal, .0015
+			zombieYoInfernal, .0015
+			zombieBusinessManInfernal, .0015
+			zombieDarleneInfernal, .0015
+			zombieSkateboarderInfernal, .0015
+			zombieBikerInfernal, .00075
+			zombieUtilityWorkerInfernal, .00075
+			zombieJanitorInfernal, .0015
+			zombieLumberjackInfernal, .00075
+			zombieFatHawaiianInfernal, .00037
+			zombieBowlerInfernal, .00037
+		</entitygroup>
+
+<entitygroup name="ZombiesPineIndustrial">
+			<!-- SET 1: BASE ZOMBIES -->
+			zombieBoe
+			zombieJoe
+			zombieSteve
+			zombieTomClark
+			zombieMoe
+			zombieYo
+			zombieBusinessMan
+			zombieArlene
+			zombieDarlene
+			zombieMarlene
+			zombieSkateboarder
+			zombieBiker, .3
+			zombiePartyGirl, .3
+			zombieUtilityWorker, .3
+			zombieJanitor, .2
+			zombieLumberjack, .2
+			zombieNurse, .3
+			zombieSteveCrawler
+			zombieFatHawaiian, .3
+			zombieBowler, .3
+			
+			<!-- SET 2: FERAL (Base 1x = .08 -> 2.5x = .20) -->
+			zombieBoeFeral, .20
+			zombieJoeFeral, .20
+			zombieSteveFeral, .20
+			zombieTomClarkFeral, .20
+			zombieMoeFeral, .20
+			zombieYoFeral, .20
+			zombieBusinessManFeral, .20
+			zombieArleneFeral, .20
+			zombieDarleneFeral, .20
+			zombieMarleneFeral, .20
+			zombieSkateboarderFeral, .20
+			zombieBikerFeral, .10
+			zombiePartyGirlFeral, .20
+			zombieUtilityWorkerFeral, .10
+			zombieJanitorFeral, .20
+			zombieLumberjackFeral, .10
+			zombieNurseFeral, .02
+			zombieSteveCrawlerFeral, .20
+			zombieFatHawaiianFeral, .05
+			zombieBowlerFeral, .05
+			
+			<!-- SET 3: RADIATED (Base 1x = .005 -> 2.5x = .0125) -->
+			zombieBoeRadiated, .0125
+			zombieJoeRadiated, .0125
+			zombieSteveRadiated, .0125
+			zombieTomClarkRadiated, .0125
+			zombieMoeRadiated, .0125
+			zombieYoRadiated, .0125
+			zombieBusinessManRadiated, .0125
+			zombieArleneRadiated, .0125
+			zombieDarleneRadiated, .0125
+			zombieMarleneRadiated, .0125
+			zombieSkateboarderRadiated, .0125
+			zombieBikerRadiated, .00625
+			zombiePartyGirlRadiated, .0125
+			zombieUtilityWorkerRadiated, .00625
+			zombieJanitorRadiated, .0125
+			zombieLumberjackRadiated, .00625
+			zombieNurseRadiated, .00125
+			zombieFatHawaiianRadiated, .00312
+			zombieBowlerRadiated, .00312
+			
+			<!-- SET 4: CHARGED (Base 1x = .002 -> 2.5x = .005) -->
+			zombieBoeCharged, .005
+			zombieJoeCharged, .005
+			zombieSteveCharged, .005
+			zombieTomClarkCharged, .005
+			zombieYoCharged, .005
+			zombieBusinessManCharged, .005
+			zombieArleneCharged, .005
+			zombieDarleneCharged, .005
+			zombieMarleneCharged, .005
+			zombieSkateboarderCharged, .005
+			zombiePartyGirlCharged, .005
+			zombieUtilityWorkerCharged, .0025
+			zombieJanitorCharged, .005
+			zombieNurseCharged, .0005
+			
+			<!-- SET 5: INFERNAL (Base 1x = .001 -> 2.5x = .0025) -->
+			zombieBoeInfernal, .0025
+			zombieMoeInfernal, .0025
+			zombieYoInfernal, .0025
+			zombieBusinessManInfernal, .0025
+			zombieDarleneInfernal, .0025
+			zombieSkateboarderInfernal, .0025
+			zombieBikerInfernal, .00125
+			zombieUtilityWorkerInfernal, .00125
+			zombieJanitorInfernal, .0025
+			zombieLumberjackInfernal, .00125
+			zombieFatHawaiianInfernal, .00062
+			zombieBowlerInfernal, .00062
+		</entitygroup>
+
+<entitygroup name="ZombiesPineDowntown">
+			<!-- SET 1: BASE ZOMBIES -->
+			zombieSpider
+			zombieBoe
+			zombieJoe
+			zombieSteve
+			zombieTomClark
+			zombieMoe
+			zombieYo
+			zombieBusinessMan, 1.5
+			zombieArlene
+			zombieDarlene
+			zombieMarlene
+			zombieNurse
+			zombiePartyGirl
+			zombieFatHawaiian
+			zombieBowler, .1
+			zombieFatCop, .4
+			zombieSoldier, .4
+			animalZombieDog, .1
+			animalDireWolf, .1
+			animalWolf, .1
+			
+			<!-- SET 2: FERAL (Base 1x = .08 -> 3.0x = .24) -->
+			zombieSpiderFeral, .24
+			zombieBoeFeral, .24
+			zombieJoeFeral, .24
+			zombieSteveFeral, .24
+			zombieTomClarkFeral, .24
+			zombieMoeFeral, .24
+			zombieYoFeral, .24
+			zombieBusinessManFeral, .24
+			zombieArleneFeral, .24
+			zombieDarleneFeral, .24
+			zombieMarleneFeral, .24
+			zombieNurseFeral, .024
+			zombiePartyGirlFeral, .24
+			zombieFatHawaiianFeral, .06
+			zombieBowlerFeral, .06
+			zombieFatCopFeral, .24
+			zombieSoldierFeral, .24
+			
+			<!-- SET 3: RADIATED (Base 1x = .005 -> 3.0x = .015) -->
+			zombieSpiderRadiated, .015
+			zombieBoeRadiated, .015
+			zombieJoeRadiated, .015
+			zombieSteveRadiated, .015
+			zombieTomClarkRadiated, .015
+			zombieMoeRadiated, .015
+			zombieYoRadiated, .015
+			zombieBusinessManRadiated, .015
+			zombieArleneRadiated, .015
+			zombieDarleneRadiated, .015
+			zombieMarleneRadiated, .015
+			zombieNurseRadiated, .0015
+			zombiePartyGirlRadiated, .015
+			zombieFatHawaiianRadiated, .00375
+			zombieBowlerRadiated, .00375
+			zombieFatCopRadiated, .015
+			zombieSoldierRadiated, .015
+			
+			<!-- SET 4: CHARGED (Base 1x = .002 -> 3.0x = .006) -->
+			zombieSpiderCharged, .006
+			zombieBoeCharged, .006
+			zombieJoeCharged, .006
+			zombieSteveCharged, .006
+			zombieTomClarkCharged, .006
+			zombieYoCharged, .006
+			zombieBusinessManCharged, .006
+			zombieArleneCharged, .006
+			zombieDarleneCharged, .006
+			zombieMarleneCharged, .006
+			zombieNurseCharged, .0006
+			zombiePartyGirlCharged, .006
+			
+			<!-- SET 5: INFERNAL (Base 1x = .001 -> 3.0x = .003) -->
+			zombieSpiderInfernal, .003
+			zombieBoeInfernal, .003
+			zombieMoeInfernal, .003
+			zombieYoInfernal, .003
+			zombieBusinessManInfernal, .003
+			zombieDarleneInfernal, .003
+			zombieFatHawaiianInfernal, .00075
+			zombieBowlerInfernal, .00075
+			zombieFatCopInfernal, .003
+			zombieSoldierInfernal, .003
+		</entitygroup>
+		
+		<entitygroup name="ZombiesAllBurnt">
+			<!-- SET 1: BASE ZOMBIES -->
+			zombieBurnt
+			zombieBoe
+			zombieJoe
+			zombieSteve
+			zombieTomClark
+			zombieMoe
+			zombieYo
+			zombieBusinessMan
+			zombieArlene
+			zombieDarlene
+			zombieMarlene
+			zombieSkateboarder
+			zombieBiker, .3
+			zombiePartyGirl, .3
+			zombieUtilityWorker, .3
+			zombieJanitor, .2
+			zombieLumberjack, .2
+			zombieNurse, .3
+			zombieSteveCrawler
+			zombieFatHawaiian, .3
+			zombieBowler, .3
+			
+			<!-- SET 2: FERAL (Base 1x = .08 -> 2.0x = .16) -->
+			zombieBurntFeral, .16
+			zombieBoeFeral, .16
+			zombieJoeFeral, .16
+			zombieSteveFeral, .16
+			zombieTomClarkFeral, .16
+			zombieMoeFeral, .16
+			zombieYoFeral, .16
+			zombieBusinessManFeral, .16
+			zombieArleneFeral, .16
+			zombieDarleneFeral, .16
+			zombieMarleneFeral, .16
+			zombieSkateboarderFeral, .16
+			zombieBikerFeral, .08
+			zombiePartyGirlFeral, .16
+			zombieUtilityWorkerFeral, .08
+			zombieJanitorFeral, .16
+			zombieLumberjackFeral, .08
+			zombieNurseFeral, .016
+			zombieSteveCrawlerFeral, .16
+			zombieFatHawaiianFeral, .04
+			zombieBowlerFeral, .04
+			
+			<!-- SET 3: RADIATED (Base 1x = .005 -> 2.0x = .01) -->
+			zombieBurntRadiated, .05
+			zombieBoeRadiated, .05
+			zombieJoeRadiated, .05
+			zombieSteveRadiated, .05
+			zombieTomClarkRadiated, .05
+			zombieMoeRadiated, .05
+			zombieYoRadiated, .05
+			zombieBusinessManRadiated, .05
+			zombieArleneRadiated, .05
+			zombieDarleneRadiated, .05
+			zombieMarleneRadiated, .05
+			zombieSkateboarderRadiated, .05
+			zombieBikerRadiated, .05
+			zombiePartyGirlRadiated, .05
+			zombieUtilityWorkerRadiated, .05
+			zombieJanitorRadiated, .05
+			zombieLumberjackRadiated, .05
+			zombieNurseRadiated, .05
+			zombieFatHawaiianRadiated, .05
+			zombieBowlerRadiated, .05
+			
+			<!-- SET 4: CHARGED (Base 1x = .002 -> 2.0x = .004) -->
+			zombieBurntCharged, .004
+			zombieBoeCharged, .004
+			zombieJoeCharged, .004
+			zombieSteveCharged, .004
+			zombieTomClarkCharged, .004
+			zombieYoCharged, .004
+			zombieBusinessManCharged, .004
+			zombieArleneCharged, .004
+			zombieDarleneCharged, .004
+			zombieMarleneCharged, .004
+			zombieSkateboarderCharged, .004
+			zombiePartyGirlCharged, .004
+			zombieUtilityWorkerCharged, .002
+			zombieJanitorCharged, .004
+			zombieNurseCharged, .0004
+			
+			<!-- SET 5: INFERNAL (Base 1x = .001 -> 2.0x = .002) -->
+			zombieBurntInfernal, .002
+			zombieBoeInfernal, .002
+			zombieMoeInfernal, .002
+			zombieYoInfernal, .002
+			zombieBusinessManInfernal, .002
+			zombieDarleneInfernal, .002
+			zombieSkateboarderInfernal, .002
+			zombieBikerInfernal, .001
+			zombieUtilityWorkerInfernal, .001
+			zombieJanitorInfernal, .002
+			zombieLumberjackInfernal, .001
+			zombieFatHawaiianInfernal, .0005
+			zombieBowlerInfernal, .0005
+		</entitygroup>
+
+		<entitygroup name="ZombiesAllNightBurnt">
+			<!-- SET 1: BASE NIGHT ZOMBIES -->
+			zombieBurnt
+			zombieSpider
+			zombieBoe
+			zombieJoe
+			zombieSteve
+			zombieTomClark
+			zombieMoe
+			zombieYo
+			zombieBusinessMan
+			zombieArlene
+			zombieDarlene
+			zombieMarlene
+			zombieLumberjack
+			zombieNurse
+			animalZombieDog, .05
+			animalDireWolf, .01
+			zombieSteveCrawler
+			zombieFatHawaiian
+			zombieBowler, .1
+			
+			<!-- SET 2: FERAL (Base 1x = .08 -> 4.0x = .32) -->
+			zombieBurntFeral, .32
+			zombieSpiderFeral, .32
+			zombieBoeFeral, .32
+			zombieJoeFeral, .32
+			zombieSteveFeral, .32
+			zombieTomClarkFeral, .32
+			zombieMoeFeral, .32
+			zombieYoFeral, .32
+			zombieBusinessManFeral, .32
+			zombieArleneFeral, .32
+			zombieDarleneFeral, .32
+			zombieMarleneFeral, .32
+			zombieLumberjackFeral, .16
+			zombieNurseFeral, .032
+			zombieSteveCrawlerFeral, .32
+			zombieFatHawaiianFeral, .32
+			zombieBowlerFeral, .32
+			
+			<!-- SET 3: RADIATED (Base 1x = .005 -> 4.0x = .02) -->
+			zombieBurntRadiated, .08
+			zombieSpiderRadiated, .08
+			zombieBoeRadiated, .08
+			zombieJoeRadiated, .08
+			zombieSteveRadiated, .08
+			zombieTomClarkRadiated, .08
+			zombieMoeRadiated, .08
+			zombieYoRadiated, .08
+			zombieBusinessManRadiated, .08
+			zombieArleneRadiated, .08
+			zombieDarleneRadiated, .08
+			zombieMarleneRadiated, .08
+			zombieLumberjackRadiated, .08
+			zombieNurseRadiated, .08
+			zombieFatHawaiianRadiated, .08
+			zombieBowlerRadiated, .08
+			
+			<!-- SET 4: CHARGED (Base 1x = .002 -> 4.0x = .008) -->
+			zombieBurntCharged, .02
+			zombieSpiderCharged, .02
+			zombieBoeCharged, .02
+			zombieJoeCharged, .02
+			zombieSteveCharged, .02
+			zombieTomClarkCharged, .02
+			zombieYoCharged, .02
+			zombieBusinessManCharged, .02
+			zombieArleneCharged, .02
+			zombieDarleneCharged, .02
+			zombieMarleneCharged, .02
+			zombieNurseCharged, .02
+			
+			<!-- SET 5: INFERNAL (Base 1x = .001 -> 4.0x = .004) -->
+			zombieBurntInfernal, .01
+			zombieSpiderInfernal, .01
+			zombieBoeInfernal, .01
+			zombieMoeInfernal, .01
+			zombieYoInfernal, .01
+			zombieBusinessManInfernal, .01
+			zombieDarleneInfernal, .01
+			zombieLumberjackInfernal, .01
+			zombieFatHawaiianInfernal, .01
+			zombieBowlerInfernal, .01
+		</entitygroup>
+
+		<entitygroup name="ZombiesBurntCommercial">
+			<!-- SET 1: BASE ZOMBIES -->
+			zombieBoe
+			zombieBurnt
+			zombieJoe
+			zombieSteve
+			zombieTomClark
+			zombieMoe
+			zombieYo
+			zombieBusinessMan
+			zombieArlene
+			zombieDarlene
+			zombieMarlene
+			zombieSkateboarder
+			zombieBiker, .3
+			zombiePartyGirl, .3
+			zombieUtilityWorker, .3
+			zombieJanitor, .2
+			zombieLumberjack, .2
+			zombieNurse, .3
+			zombieSteveCrawler
+			zombieFatHawaiian, .3
+			zombieBowler, .3
+			
+			<!-- SET 2: FERAL (Base .08 * 3.0x = .24) [Under .40 Cap] -->
+			zombieBoeFeral, .24
+			zombieJoeFeral, .24
+			zombieSteveFeral, .24
+			zombieTomClarkFeral, .24
+			zombieMoeFeral, .24
+			zombieYoFeral, .24
+			zombieBusinessManFeral, .24
+			zombieArleneFeral, .24
+			zombieDarleneFeral, .24
+			zombieMarleneFeral, .24
+			zombieSkateboarderFeral, .24
+			zombieBikerFeral, .12
+			zombiePartyGirlFeral, .24
+			zombieUtilityWorkerFeral, .12
+			zombieJanitorFeral, .24
+			zombieLumberjackFeral, .12
+			zombieNurseFeral, .024
+			zombieSteveCrawlerFeral, .24
+			zombieFatHawaiianFeral, .06
+			zombieBowlerFeral, .06
+			
+			<!-- SET 3: RADIATED (Base .005 * 3.0x = .015) -->
+			zombieBoeRadiated, .015
+			zombieJoeRadiated, .015
+			zombieSteveRadiated, .015
+			zombieTomClarkRadiated, .015
+			zombieMoeRadiated, .015
+			zombieYoRadiated, .015
+			zombieBusinessManRadiated, .015
+			zombieArleneRadiated, .015
+			zombieDarleneRadiated, .015
+			zombieMarleneRadiated, .015
+			zombieSkateboarderRadiated, .015
+			zombieBikerRadiated, .0075
+			zombiePartyGirlRadiated, .015
+			zombieUtilityWorkerRadiated, .0075
+			zombieJanitorRadiated, .015
+			zombieLumberjackRadiated, .0075
+			zombieNurseRadiated, .0015
+			zombieFatHawaiianRadiated, .00375
+			zombieBowlerRadiated, .00375
+			
+			<!-- SET 4: CHARGED (Base .002 * 3.0x = .006) -->
+			zombieBoeCharged, .006
+			zombieJoeCharged, .006
+			zombieSteveCharged, .006
+			zombieTomClarkCharged, .006
+			zombieYoCharged, .006
+			zombieBusinessManCharged, .006
+			zombieArleneCharged, .006
+			zombieDarleneCharged, .006
+			zombieMarleneCharged, .006
+			zombieSkateboarderCharged, .006
+			zombiePartyGirlCharged, .006
+			zombieUtilityWorkerCharged, .003
+			zombieJanitorCharged, .006
+			zombieNurseCharged, .0006
+			
+			<!-- SET 5: INFERNAL (Base .001 * 3.0x = .003) -->
+			zombieBoeInfernal, .003
+			zombieMoeInfernal, .003
+			zombieYoInfernal, .003
+			zombieBusinessManInfernal, .003
+			zombieDarleneInfernal, .003
+			zombieSkateboarderInfernal, .003
+			zombieBikerInfernal, .0015
+			zombieUtilityWorkerInfernal, .0015
+			zombieJanitorInfernal, .003
+			zombieLumberjackInfernal, .0015
+			zombieFatHawaiianInfernal, .00075
+			zombieBowlerInfernal, .00075
+		</entitygroup>
+
+		<entitygroup name="ZombiesBurntIndustrial">
+			zombieBoe
+			zombieJoe
+			zombieSteve
+			zombieTomClark
+			zombieMoe
+			zombieYo
+			zombieBusinessMan
+			zombieArlene
+			zombieDarlene
+			zombieMarlene
+			zombieSkateboarder
+			zombieBiker, .3
+			zombiePartyGirl, .3
+			zombieUtilityWorker, .3
+			zombieJanitor, .2
+			zombieLumberjack, .2
+			zombieNurse, .3
+			zombieSteveCrawler
+			zombieFatHawaiian, .3
+			zombieBowler, .3
+			
+			zombieBoeFeral, .40
+			zombieJoeFeral, .40
+			zombieSteveFeral, .40
+			zombieTomClarkFeral, .40
+			zombieMoeFeral, .40
+			zombieYoFeral, .40
+			zombieBusinessManFeral, .40
+			zombieArleneFeral, .40
+			zombieDarleneFeral, .40
+			zombieMarleneFeral, .40
+			zombieSkateboarderFeral, .40
+			zombieBikerFeral, .20
+			zombiePartyGirlFeral, .40
+			zombieUtilityWorkerFeral, .20
+			zombieJanitorFeral, .40
+			zombieLumberjackFeral, .20
+			zombieNurseFeral, .40
+			zombieSteveCrawlerFeral, .40
+			zombieFatHawaiianFeral, .25
+			zombieBowlerFeral, .25
+			
+			zombieBoeRadiated, .08
+			zombieJoeRadiated, .08
+			zombieSteveRadiated, .08
+			zombieTomClarkRadiated, .08
+			zombieMoeRadiated, .08
+			zombieYoRadiated, .08
+			zombieBusinessManRadiated, .12
+			zombieArleneRadiated, .12
+			zombieDarleneRadiated, .08
+			zombieMarleneRadiated, .08
+			zombieSkateboarderRadiated, .08
+			zombieBikerRadiated, .12
+			zombiePartyGirlRadiated, .08
+			zombieUtilityWorkerRadiated, .12
+			zombieJanitorRadiated, .08
+			zombieLumberjackRadiated, .005
+			zombieNurseRadiated, .08
+			zombieFatHawaiianRadiated, .08
+			zombieBowlerRadiated, .08
+			
+			zombieBoeCharged, .01
+			zombieJoeCharged, .01
+			zombieSteveCharged, .01
+			zombieTomClarkCharged, .01
+			zombieYoCharged, .01
+			zombieBusinessManCharged, .01
+			zombieArleneCharged, .01
+			zombieDarleneCharged, .01
+			zombieMarleneCharged, .01
+			zombieSkateboarderCharged, .01
+			zombiePartyGirlCharged, .01
+			zombieUtilityWorkerCharged, .01
+			zombieJanitorCharged, .01
+			zombieNurseCharged, .01
+			
+			zombieBoeInfernal, .005
+			zombieMoeInfernal, .005
+			zombieYoInfernal, .005
+			zombieBusinessManInfernal, .005
+			zombieDarleneInfernal, .005
+			zombieSkateboarderInfernal, .005
+			zombieBikerInfernal, .0025
+			zombieUtilityWorkerInfernal, .005
+			zombieJanitorInfernal, .005
+			zombieLumberjackInfernal, .005
+			zombieFatHawaiianInfernal, .005
+			zombieBowlerInfernal, .005
+		</entitygroup>
+
+		<entitygroup name="ZombiesBurntDowntown">
+			<!-- SET 1: BASE ZOMBIES -->
+			zombieSpider
+			zombieBoe
+			zombieJoe
+			zombieSteve
+			zombieTomClark
+			zombieMoe
+			zombieYo
+			zombieBusinessMan, 1.5
+			zombieArlene
+			zombieDarlene
+			zombieMarlene
+			zombieNurse
+			zombiePartyGirl
+			zombieFatHawaiian
+			zombieBowler, .1
+			zombieFatCop, .5
+			zombieSoldier, .5
+			zombieDemolition, .02
+			animalZombieDog, .4
+			animalDireWolf, .1
+			animalWolf, .4
+			
+			<!-- SET 2: FERAL (Base .08 * 6.0x = .48 -> Capped at .40) -->
+			zombieSpiderFeral, .40
+			zombieBoeFeral, .40
+			zombieJoeFeral, .40
+			zombieSteveFeral, .40
+			zombieTomClarkFeral, .40
+			zombieMoeFeral, .40
+			zombieYoFeral, .40
+			zombieBusinessManFeral, .40
+			zombieArleneFeral, .40
+			zombieDarleneFeral, .40
+			zombieMarleneFeral, .40
+			zombieNurseFeral, .048
+			zombiePartyGirlFeral, .40
+			zombieFatHawaiianFeral, .40
+			zombieBowlerFeral, .40
+			zombieFatCopFeral, .40
+			zombieSoldierFeral, .40
+			
+			<!-- SET 3: RADIATED (Base .005 * 6.0x = .03) -->
+			zombieSpiderRadiated, .03
+			zombieBoeRadiated, .03
+			zombieJoeRadiated, .03
+			zombieSteveRadiated, .03
+			zombieTomClarkRadiated, .03
+			zombieMoeRadiated, .03
+			zombieYoRadiated, .03
+			zombieBusinessManRadiated, .03
+			zombieArleneRadiated, .03
+			zombieDarleneRadiated, .03
+			zombieMarleneRadiated, .03
+			zombieNurseRadiated, .03
+			zombiePartyGirlRadiated, .03
+			zombieFatHawaiianRadiated, .03
+			zombieBowlerRadiated, .03
+			zombieFatCopRadiated, .03
+			zombieSoldierRadiated, .03
+			
+			<!-- SET 4: CHARGED (Base .002 * 6.0x = .012) -->
+			zombieSpiderCharged, .012
+			zombieBoeCharged, .012
+			zombieJoeCharged, .012
+			zombieSteveCharged, .012
+			zombieTomClarkCharged, .012
+			zombieYoCharged, .012
+			zombieBusinessManCharged, .012
+			zombieArleneCharged, .012
+			zombieDarleneCharged, .012
+			zombieMarleneCharged, .012
+			zombieNurseCharged, .0012
+			zombiePartyGirlCharged, .012
+			
+			<!-- SET 5: INFERNAL (Base .001 * 6.0x = .006) -->
+			zombieSpiderInfernal, .01
+			zombieBoeInfernal, .01
+			zombieMoeInfernal, .01
+			zombieYoInfernal, .01
+			zombieBusinessManInfernal, .01
+			zombieDarleneInfernal, .01
+			zombieFatHawaiianInfernal, .01
+			zombieBowlerInfernal, .01
+			zombieFatCopInfernal, .01
+			zombieSoldierInfernal, .01
+		</entitygroup>
+
+	</append>
+
+	<!-- ================================================================================= -->
+	<!-- STEP 2: BADASS HORDE DEMOLISHER GATING                                            -->
+	<!-- ================================================================================= -->
+	<append xpath="/entitygroups/entitygroup[contains(@name, 'badassHorde')]">
+		<entity name="zombieDemolition" prob="0.04"/>
+	</append>
+
+<!-- WIP ===
+Missing Links: spawning.xml sets up spawns for the Desert biome (e.g., ZombiesAllDesert, ZombiesDesertCommercial), but those specific 
+entity groups do not currently exist in the active or WIP sections of your entitygroups.xml file.
+
+<entitygroup name="ZombiesAllSnow">
+			zombieMoe
+			zombieYo
+			zombieBusinessMan
+			zombieArlene
+			zombieDarlene
+			zombieMarlene
+			zombieSkateboarder
+			zombieBiker, .3
+			zombiePartyGirl, .3
+			zombieUtilityWorker, .3
+			zombieJanitor, .2
+			zombieLumberjack, .2
+			zombieNurse, .3
+			zombieSteveCrawler
+			zombieFatHawaiian, .3
+			zombieBowler, .3
+			
+			zombieMoeFeral, .01
+			zombieYoFeral, .01
+			zombieBusinessManFeral, .01
+			zombieArleneFeral, .01
+			zombieDarleneFeral, .01
+			zombieMarleneFeral, .01
+			zombieSkateboarderFeral, .01
+			zombieBikerFeral, .01
+			zombiePartyGirlFeral, .01
+			zombieUtilityWorkerFeral, .01
+			zombieJanitorFeral, .01
+			zombieLumberjackFeral, .01
+			zombieNurseFeral, .01
+			zombieSteveCrawlerFeral, .01
+			zombieFatHawaiianFeral, .01
+			zombieBowlerFeral, .01
+			
+			zombieMoeRadiated, .005
+			zombieYoRadiated, .005
+			zombieBusinessManRadiated, .005
+			zombieArleneRadiated, .005
+			zombieDarleneRadiated, .005
+			zombieMarleneRadiated, .005
+			zombieSkateboarderRadiated, .005
+			zombieBikerRadiated, .005
+			zombiePartyGirlRadiated, .005
+			zombieUtilityWorkerRadiated, .005
+			zombieJanitorRadiated, .005
+			zombieLumberjackRadiated, .005
+			zombieNurseRadiated, .005
+			zombieFatHawaiianRadiated, .005
+			zombieBowlerRadiated, .005
+			
+			zombieYoCharged, .0025
+			zombieBusinessManCharged, .0025
+			zombieArleneCharged, .0025
+			zombieDarleneCharged, .0025
+			zombieMarleneCharged, .0025
+			zombieSkateboarderCharged, .0025
+			zombieBikerCharged, .0025
+			zombiePartyGirlCharged, .0025
+			zombieUtilityWorkerCharged, .0025
+			zombieJanitorCharged, .0025
+			zombieLumberjackCharged, .0025
+			zombieNurseCharged, .0025
+			zombieFatHawaiianCharged, .0025
+			zombieBowlerCharged, .0025
+			
+			zombieMoeInfernal, .000625
+			zombieYoInfernal, .000625
+			zombieBusinessManInfernal, .000625
+			zombieArleneInfernal, .000625
+			zombieDarleneInfernal, .000625
+			zombieMarleneInfernal, .000625
+			zombieSkateboarderInfernal, .000625
+			zombieBikerInfernal, .000625
+			zombiePartyGirlInfernal, .000625
+			zombieUtilityWorkerInfernal, .000625
+			zombieJanitorInfernal, .000625
+			zombieLumberjackInfernal, .000625
+			zombieNurseInfernal, .000625
+			zombieFatHawaiianInfernal, .000625
+			zombieBowlerInfernal, .000625
+		</entitygroup>
+
+		<entitygroup name="ZombiesAllNightSnow">
+			zombieSpider
+			zombieBoe
+			zombieJoe
+			zombieSteve
+			zombieTomClark
+			zombieMoe
+			zombieYo
+			zombieBusinessMan
+			zombieArlene
+			zombieDarlene
+			zombieMarlene
+			zombieLumberjack
+			zombieNurse
+			animalZombieDog, .05
+			animalDireWolf, .01
+			zombieSteveCrawler
+			zombieFatHawaiian
+			zombieBowler, .1
+			
+			zombieSpiderFeral, .015
+			zombieBoeFeral, .015
+			zombieJoeFeral, .015
+			zombieSteveFeral, .015
+			zombieTomClarkFeral, .015
+			zombieMoeFeral, .015
+			zombieYoFeral, .015
+			zombieBusinessManFeral, .015
+			zombieArleneFeral, .015
+			zombieDarleneFeral, .015
+			zombieMarleneFeral, .015
+			zombieLumberjackFeral, .015
+			zombieNurseFeral, .015
+			zombieSteveCrawlerFeral, .015
+			zombieFatHawaiianFeral, .015
+			zombieBowlerFeral, .015
+			
+			zombieSpiderRadiated, .0075
+			zombieBoeRadiated, .0075
+			zombieJoeRadiated, .0075
+			zombieSteveRadiated, .0075
+			zombieTomClarkRadiated, .0075
+			zombieMoeRadiated, .0075
+			zombieYoRadiated, .0075
+			zombieBusinessManRadiated, .0075
+			zombieArleneRadiated, .0075
+			zombieDarleneRadiated, .0075
+			zombieMarleneRadiated, .0075
+			zombieLumberjackRadiated, .0075
+			zombieNurseRadiated, .0075
+			zombieFatHawaiianRadiated, .0075
+			zombieBowlerRadiated, .0075
+			
+			zombieSpiderCharged, .00375
+			zombieBoeCharged, .00375
+			zombieJoeCharged, .00375
+			zombieSteveCharged, .00375
+			zombieTomClarkCharged, .00375
+			zombieYoCharged, .00375
+			zombieBusinessManCharged, .00375
+			zombieArleneCharged, .00375
+			zombieDarleneCharged, .00375
+			zombieMarleneCharged, .00375
+			zombieLumberjackCharged, .00375
+			zombieNurseCharged, .00375
+			zombieFatHawaiianCharged, .00375
+			zombieBowlerCharged, .00375
+			
+			zombieSpiderInfernal, .00093
+			zombieBoeInfernal, .00093
+			zombieJoeInfernal, .00093
+			zombieSteveInfernal, .00093
+			zombieTomClarkInfernal, .00093
+			zombieMoeInfernal, .00093
+			zombieYoInfernal, .00093
+			zombieBusinessManInfernal, .00093
+			zombieArleneInfernal, .00093
+			zombieDarleneInfernal, .00093
+			zombieMarleneInfernal, .00093
+			zombieLumberjackInfernal, .00093
+			zombieNurseInfernal, .00093
+			zombieFatHawaiianInfernal, .00093
+			zombieBowlerInfernal, .00093
+		</entitygroup>
+
+		<entitygroup name="ZombiesSnowCommercial">
+			zombieBoe
+			zombieJoe
+			zombieSteve
+			zombieTomClark
+			zombieMoe
+			zombieYo
+			zombieBusinessMan
+			zombieArlene
+			zombieDarlene
+			zombieMarlene
+			zombieSkateboarder
+			zombieBiker, .3
+			zombiePartyGirl, .3
+			zombieUtilityWorker, .3
+			zombieJanitor, .2
+			zombieLumberjack, .2
+			zombieNurse, .3
+			zombieSteveCrawler
+			zombieFatHawaiian, .3
+			zombieBowler, .3
+			
+			zombieBoeFeral, .014
+			zombieJoeFeral, .014
+			zombieSteveFeral, .014
+			zombieTomClarkFeral, .014
+			zombieMoeFeral, .014
+			zombieYoFeral, .014
+			zombieBusinessManFeral, .014
+			zombieArleneFeral, .014
+			zombieDarleneFeral, .014
+			zombieMarleneFeral, .014
+			zombieSkateboarderFeral, .014
+			zombieBikerFeral, .014
+			zombiePartyGirlFeral, .014
+			zombieUtilityWorkerFeral, .014
+			zombieJanitorFeral, .014
+			zombieLumberjackFeral, .014
+			zombieNurseFeral, .014
+			zombieSteveCrawlerFeral, .014
+			zombieFatHawaiianFeral, .014
+			zombieBowlerFeral, .014
+			
+			zombieBoeRadiated, .007
+			zombieJoeRadiated, .007
+			zombieSteveRadiated, .007
+			zombieTomClarkRadiated, .007
+			zombieMoeRadiated, .007
+			zombieYoRadiated, .007
+			zombieBusinessManRadiated, .007
+			zombieArleneRadiated, .007
+			zombieDarleneRadiated, .007
+			zombieMarleneRadiated, .007
+			zombieSkateboarderRadiated, .007
+			zombieBikerRadiated, .007
+			zombiePartyGirlRadiated, .007
+			zombieUtilityWorkerRadiated, .007
+			zombieJanitorRadiated, .007
+			zombieLumberjackRadiated, .007
+			zombieNurseRadiated, .007
+			zombieFatHawaiianRadiated, .007
+			zombieBowlerRadiated, .007
+			
+			zombieBoeCharged, .0035
+			zombieJoeCharged, .0035
+			zombieSteveCharged, .0035
+			zombieTomClarkCharged, .0035
+			zombieYoCharged, .0035
+			zombieBusinessManCharged, .0035
+			zombieArleneCharged, .0035
+			zombieDarleneCharged, .0035
+			zombieMarleneCharged, .0035
+			zombieSkateboarderCharged, .0035
+			zombieBikerCharged, .0035
+			zombiePartyGirlCharged, .0035
+			zombieUtilityWorkerCharged, .0035
+			zombieJanitorCharged, .0035
+			zombieLumberjackCharged, .0035
+			zombieNurseCharged, .0035
+			zombieFatHawaiianCharged, .0035
+			zombieBowlerCharged, .0035
+			
+			zombieBoeInfernal, .001
+			zombieJoeInfernal, .001
+			zombieSteveInfernal, .001
+			zombieTomClarkInfernal, .001
+			zombieMoeInfernal, .001
+			zombieYoInfernal, .001
+			zombieBusinessManInfernal, .001
+			zombieArleneInfernal, .001
+			zombieDarleneInfernal, .001
+			zombieMarleneInfernal, .001
+			zombieSkateboarderInfernal, .001
+			zombieBikerInfernal, .001
+			zombiePartyGirlInfernal, .001
+			zombieUtilityWorkerInfernal, .001
+			zombieJanitorInfernal, .001
+			zombieLumberjackInfernal, .001
+			zombieNurseInfernal, .001
+			zombieFatHawaiianInfernal, .001
+			zombieBowlerInfernal, .001
+		</entitygroup>
+
+		<entitygroup name="ZombiesSnowIndustrial">
+			zombieBoe
+			zombieJoe
+			zombieSteve
+			zombieTomClark
+			zombieMoe
+			zombieYo
+			zombieBusinessMan
+			zombieArlene
+			zombieDarlene
+			zombieMarlene
+			zombieSkateboarder
+			zombieBiker, .3
+			zombiePartyGirl, .3
+			zombieUtilityWorker, .3
+			zombieJanitor, .2
+			zombieLumberjack, .2
+			zombieNurse, .3
+			zombieSteveCrawler
+			zombieFatHawaiian, .3
+			zombieBowler, .3
+			
+			zombieBoeFeral, .016
+			zombieJoeFeral, .016
+			zombieSteveFeral, .016
+			zombieTomClarkFeral, .016
+			zombieMoeFeral, .016
+			zombieYoFeral, .016
+			zombieBusinessManFeral, .016
+			zombieArleneFeral, .016
+			zombieDarleneFeral, .016
+			zombieMarleneFeral, .016
+			zombieSkateboarderFeral, .016
+			zombieBikerFeral, .016
+			zombiePartyGirlFeral, .016
+			zombieUtilityWorkerFeral, .016
+			zombieJanitorFeral, .016
+			zombieLumberjackFeral, .016
+			zombieNurseFeral, .016
+			zombieSteveCrawlerFeral, .016
+			zombieFatHawaiianFeral, .016
+			zombieBowlerFeral, .016
+			
+			zombieBoeRadiated, .008
+			zombieJoeRadiated, .008
+			zombieSteveRadiated, .008
+			zombieTomClarkRadiated, .008
+			zombieMoeRadiated, .008
+			zombieYoRadiated, .008
+			zombieBusinessManRadiated, .008
+			zombieArleneRadiated, .008
+			zombieDarleneRadiated, .008
+			zombieMarleneRadiated, .008
+			zombieSkateboarderRadiated, .008
+			zombieBikerRadiated, .008
+			zombiePartyGirlRadiated, .008
+			zombieUtilityWorkerRadiated, .008
+			zombieJanitorRadiated, .008
+			zombieLumberjackRadiated, .008
+			zombieNurseRadiated, .008
+			zombieFatHawaiianRadiated, .008
+			zombieBowlerRadiated, .008
+			
+			zombieBoeCharged, .004
+			zombieJoeCharged, .004
+			zombieSteveCharged, .004
+			zombieTomClarkCharged, .004
+			zombieYoCharged, .004
+			zombieBusinessManCharged, .004
+			zombieArleneCharged, .004
+			zombieDarleneCharged, .004
+			zombieMarleneCharged, .004
+			zombieSkateboarderCharged, .004
+			zombieBikerCharged, .004
+			zombiePartyGirlCharged, .004
+			zombieUtilityWorkerCharged, .004
+			zombieJanitorCharged, .004
+			zombieLumberjackCharged, .004
+			zombieNurseCharged, .004
+			zombieFatHawaiianCharged, .004
+			zombieBowlerCharged, .004
+			
+			zombieBoeInfernal, .00125
+			zombieJoeInfernal, .00125
+			zombieSteveInfernal, .00125
+			zombieTomClarkInfernal, .00125
+			zombieMoeInfernal, .00125
+			zombieYoInfernal, .00125
+			zombieBusinessManInfernal, .00125
+			zombieArleneInfernal, .00125
+			zombieDarleneInfernal, .00125
+			zombieMarleneInfernal, .00125
+			zombieSkateboarderInfernal, .00125
+			zombieBikerInfernal, .00125
+			zombiePartyGirlInfernal, .00125
+			zombieUtilityWorkerInfernal, .00125
+			zombieJanitorInfernal, .00125
+			zombieLumberjackInfernal, .00125
+			zombieNurseInfernal, .00125
+			zombieFatHawaiianInfernal, .00125
+			zombieBowlerInfernal, .00125
+		</entitygroup>
+
+		<entitygroup name="ZombiesSnowDowntown">
+			zombieSpider
+			zombieBoe
+			zombieJoe
+			zombieSteve
+			zombieTomClark
+			zombieMoe
+			zombieYo
+			zombieBusinessMan, 1.5
+			zombieArlene
+			zombieDarlene
+			zombieMarlene
+			zombieNurse
+			zombiePartyGirl
+			zombieFatHawaiian
+			zombieBowler, .1
+			zombieFatCop, .4
+			zombieSoldier, .4
+			zombieDemolition, .02
+			animalZombieDog, .1
+			animalDireWolf, .1
+			animalWolf, .1
+			
+			zombieSpiderFeral, .0235
+			zombieBoeFeral, .0235
+			zombieJoeFeral, .0235
+			zombieSteveFeral, .0235
+			zombieTomClarkFeral, .0235
+			zombieMoeFeral, .0235
+			zombieYoFeral, .0235
+			zombieBusinessManFeral, .0235
+			zombieArleneFeral, .0235
+			zombieDarleneFeral, .0235
+			zombieMarleneFeral, .0235
+			zombieNurseFeral, .0235
+			zombiePartyGirlFeral, .0235
+			zombieFatHawaiianFeral, .0235
+			zombieBowlerFeral, .0235
+			zombieFatCopFeral, .0235
+			zombieSoldierFeral, .0235
+			
+			zombieSpiderRadiated, .0147
+			zombieBoeRadiated, .0147
+			zombieJoeRadiated, .0147
+			zombieSteveRadiated, .0147
+			zombieTomClarkRadiated, .0147
+			zombieMoeRadiated, .0147
+			zombieYoRadiated, .0147
+			zombieBusinessManRadiated, .0147
+			zombieArleneRadiated, .0147
+			zombieDarleneRadiated, .0147
+			zombieMarleneRadiated, .0147
+			zombieNurseRadiated, .0147
+			zombiePartyGirlRadiated, .0147
+			zombieFatHawaiianRadiated, .0147
+			zombieBowlerRadiated, .0147
+			zombieFatCopRadiated, .0147
+			zombieSoldierRadiated, .0147
+			
+			zombieSpiderCharged, .0117
+			zombieBoeCharged, .0117
+			zombieJoeCharged, .0117
+			zombieSteveCharged, .0117
+			zombieTomClarkCharged, .0117
+			zombieYoCharged, .0117
+			zombieBusinessManCharged, .0117
+			zombieArleneCharged, .0117
+			zombieDarleneCharged, .0117
+			zombieMarleneCharged, .0117
+			zombieNurseCharged, .0117
+			zombiePartyGirlCharged, .0117
+			zombieFatHawaiianCharged, .0117
+			zombieBowlerCharged, .0117
+			zombieFatCopCharged, .0117
+			zombieSoldierCharged, .0117
+			
+			zombieSpiderInfernal, .0088
+			zombieBoeInfernal, .0088
+			zombieJoeInfernal, .0088
+			zombieSteveInfernal, .0088
+			zombieTomClarkInfernal, .0088
+			zombieMoeInfernal, .0088
+			zombieYoInfernal, .0088
+			zombieBusinessManInfernal, .0088
+			zombieArleneInfernal, .0088
+			zombieDarleneInfernal, .0088
+			zombieMarleneInfernal, .0088
+			zombieNurseInfernal, .0088
+			zombiePartyGirlInfernal, .0088
+			zombieFatHawaiianInfernal, .0088
+			zombieBowlerInfernal, .0088
+			zombieFatCopInfernal, .0088
+			zombieSoldierInfernal, .0088
+		</entitygroup>
+		
+		=============================================
+		== WASTELAND BIOME                        ===   
+		== ========================================== 
+
+		 WASTELAND: ZOMBIES ALL (15 Base Zombies) 
+		 Floor: Feral .24 | Rad .12 | Char .06 | Inf .02 ==
+		<entitygroup name="ZombiesAllWasteland">
+			zombieMoe
+			zombieYo
+			zombieBusinessMan
+			zombieArlene
+			zombieDarlene
+			zombieMarlene
+			zombieSkateboarder
+			zombieBiker, .3
+			zombiePartyGirl, .3
+			zombieUtilityWorker, .3
+			zombieJanitor, .2
+			zombieNurse, .3
+			zombieSteveCrawler
+			zombieFatHawaiian, .3
+			zombieBowler, .3
+			
+			 FERAL TIER (Weight per entity: .016) ==
+			zombieMoeFeral, .016
+			zombieYoFeral, .016
+			zombieBusinessManFeral, .016
+			zombieArleneFeral, .016
+			zombieDarleneFeral, .016
+			zombieMarleneFeral, .016
+			zombieSkateboarderFeral, .016
+			zombieBikerFeral, .016
+			zombiePartyGirlFeral, .016
+			zombieUtilityWorkerFeral, .016
+			zombieJanitorFeral, .016
+			zombieNurseFeral, .016
+			zombieSteveCrawlerFeral, .016
+			zombieFatHawaiianFeral, .016
+			zombieBowlerFeral, .016
+			
+			 RADIATED TIER (Weight per entity: .008) ==
+			zombieMoeRadiated, .008
+			zombieYoRadiated, .008
+			zombieBusinessManRadiated, .008
+			zombieArleneRadiated, .008
+			zombieDarleneRadiated, .008
+			zombieMarleneRadiated, .008
+			zombieSkateboarderRadiated, .008
+			zombieBikerRadiated, .008
+			zombiePartyGirlRadiated, .008
+			zombieUtilityWorkerRadiated, .008
+			zombieJanitorRadiated, .008
+			zombieNurseRadiated, .008
+			zombieFatHawaiianRadiated, .008
+			zombieBowlerRadiated, .008
+			
+			 CHARGED TIER (Weight per entity: .004) ==
+			zombieYoCharged, .004
+			zombieBusinessManCharged, .004
+			zombieArleneCharged, .004
+			zombieDarleneCharged, .004
+			zombieMarleneCharged, .004
+			zombieSkateboarderCharged, .004
+			zombieBikerCharged, .004
+			zombiePartyGirlCharged, .004
+			zombieUtilityWorkerCharged, .004
+			zombieJanitorCharged, .004
+			zombieNurseCharged, .004
+			zombieFatHawaiianCharged, .004
+			zombieBowlerCharged, .004
+			
+			 INFERNAL TIER (Weight per entity: .00133) ==
+			zombieMoeInfernal, .00133
+			zombieYoInfernal, .00133
+			zombieBusinessManInfernal, .00133
+			zombieArleneInfernal, .00133
+			zombieDarleneInfernal, .00133
+			zombieMarleneInfernal, .00133
+			zombieSkateboarderInfernal, .00133
+			zombieBikerInfernal, .00133
+			zombiePartyGirlInfernal, .00133
+			zombieUtilityWorkerInfernal, .00133
+			zombieJanitorInfernal, .00133
+			zombieNurseInfernal, .00133
+			zombieFatHawaiianInfernal, .00133
+			zombieBowlerInfernal, .00133
+		</entitygroup>
+
+		 WASTELAND: ZOMBIES ALL NIGHT (15 Base Zombies) ==
+		 Floor: Feral .32 | Rad .16 | Char .08 | Inf .03 ==
+		<entitygroup name="ZombiesAllNightWasteland">
+			zombieSpider
+			zombieBoe
+			zombieJoe
+			zombieSteve
+			zombieTomClark
+			zombieMoe
+			zombieYo
+			zombieBusinessMan
+			zombieArlene
+			zombieDarlene
+			zombieMarlene
+			zombieNurse
+			animalZombieDog, .05
+			animalDireWolf, .01
+			zombieSteveCrawler
+			zombieFatHawaiian
+			zombieBowler, .1
+			
+			 FERAL TIER (Weight per entity: .0213) ==
+			zombieSpiderFeral, .0213
+			zombieBoeFeral, .0213
+			zombieJoeFeral, .0213
+			zombieSteveFeral, .0213
+			zombieTomClarkFeral, .0213
+			zombieMoeFeral, .0213
+			zombieYoFeral, .0213
+			zombieBusinessManFeral, .0213
+			zombieArleneFeral, .0213
+			zombieDarleneFeral, .0213
+			zombieMarleneFeral, .0213
+			zombieNurseFeral, .0213
+			zombieSteveCrawlerFeral, .0213
+			zombieFatHawaiianFeral, .0213
+			zombieBowlerFeral, .0213
+			
+			 RADIATED TIER (Weight per entity: .0106) ==
+			zombieSpiderRadiated, .0106
+			zombieBoeRadiated, .0106
+			zombieJoeRadiated, .0106
+			zombieSteveRadiated, .0106
+			zombieTomClarkRadiated, .0106
+			zombieMoeRadiated, .0106
+			zombieYoRadiated, .0106
+			zombieBusinessManRadiated, .0106
+			zombieArleneRadiated, .0106
+			zombieDarleneRadiated, .0106
+			zombieMarleneRadiated, .0106
+			zombieNurseRadiated, .0106
+			zombieFatHawaiianRadiated, .0106
+			zombieBowlerRadiated, .0106
+			
+			 CHARGED TIER (Weight per entity: .0053) ==
+			zombieSpiderCharged, .0053
+			zombieBoeCharged, .0053
+			zombieJoeCharged, .0053
+			zombieSteveCharged, .0053
+			zombieTomClarkCharged, .0053
+			zombieYoCharged, .0053
+			zombieBusinessManCharged, .0053
+			zombieArleneCharged, .0053
+			zombieDarleneCharged, .0053
+			zombieMarleneCharged, .0053
+			zombieNurseCharged, .0053
+			zombieFatHawaiianCharged, .0053
+			zombieBowlerCharged, .0053
+			
+			 INFERNAL TIER (Weight per entity: .002) ==
+			zombieSpiderInfernal, .002
+			zombieBoeInfernal, .002
+			zombieJoeInfernal, .002
+			zombieSteveInfernal, .002
+			zombieTomClarkInfernal, .002
+			zombieMoeInfernal, .002
+			zombieYoInfernal, .002
+			zombieBusinessManInfernal, .002
+			zombieArleneInfernal, .002
+			zombieDarleneInfernal, .002
+			zombieMarleneInfernal, .002
+			zombieNurseInfernal, .002
+			zombieFatHawaiianInfernal, .002
+			zombieBowlerInfernal, .002
+		</entitygroup>
+
+		 WASTELAND: COMMERCIAL (19 Base Zombies) ==
+		 Floor: Feral .40 | Rad .20 | Char .10 | Inf .04 ==
+		<entitygroup name="ZombiesWastelandCommercial">
+			zombieBoe
+			zombieJoe
+			zombieSteve
+			zombieTomClark
+			zombieMoe
+			zombieYo
+			zombieBusinessMan
+			zombieArlene
+			zombieDarlene
+			zombieMarlene
+			zombieSkateboarder
+			zombieBiker, .3
+			zombiePartyGirl, .3
+			zombieUtilityWorker, .3
+			zombieJanitor, .2
+			zombieNurse, .3
+			zombieSteveCrawler
+			zombieFatHawaiian, .3
+			zombieBowler, .3
+			
+			 FERAL TIER (Weight per entity: .021) ==
+			zombieBoeFeral, .021
+			zombieJoeFeral, .021
+			zombieSteveFeral, .021
+			zombieTomClarkFeral, .021
+			zombieMoeFeral, .021
+			zombieYoFeral, .021
+			zombieBusinessManFeral, .021
+			zombieArleneFeral, .021
+			zombieDarleneFeral, .021
+			zombieMarleneFeral, .021
+			zombieSkateboarderFeral, .021
+			zombieBikerFeral, .021
+			zombiePartyGirlFeral, .021
+			zombieUtilityWorkerFeral, .021
+			zombieJanitorFeral, .021
+			zombieNurseFeral, .021
+			zombieSteveCrawlerFeral, .021
+			zombieFatHawaiianFeral, .021
+			zombieBowlerFeral, .021
+			
+			 RADIATED TIER (Weight per entity: .0105) ==
+			zombieBoeRadiated, .0105
+			zombieJoeRadiated, .0105
+			zombieSteveRadiated, .0105
+			zombieTomClarkRadiated, .0105
+			zombieMoeRadiated, .0105
+			zombieYoRadiated, .0105
+			zombieBusinessManRadiated, .0105
+			zombieArleneRadiated, .0105
+			zombieDarleneRadiated, .0105
+			zombieMarleneRadiated, .0105
+			zombieSkateboarderRadiated, .0105
+			zombieBikerRadiated, .0105
+			zombiePartyGirlRadiated, .0105
+			zombieUtilityWorkerRadiated, .0105
+			zombieJanitorRadiated, .0105
+			zombieNurseRadiated, .0105
+			zombieFatHawaiianRadiated, .0105
+			zombieBowlerRadiated, .0105
+			
+			 CHARGED TIER (Weight per entity: .0052) ==
+			zombieBoeCharged, .0052
+			zombieJoeCharged, .0052
+			zombieSteveCharged, .0052
+			zombieTomClarkCharged, .0052
+			zombieYoCharged, .0052
+			zombieBusinessManCharged, .0052
+			zombieArleneCharged, .0052
+			zombieDarleneCharged, .0052
+			zombieMarleneCharged, .0052
+			zombieSkateboarderCharged, .0052
+			zombieBikerCharged, .0052
+			zombiePartyGirlCharged, .0052
+			zombieUtilityWorkerCharged, .0052
+			zombieJanitorCharged, .0052
+			zombieNurseCharged, .0052
+			zombieFatHawaiianCharged, .0052
+			zombieBowlerCharged, .0052
+			
+			 INFERNAL TIER (Weight per entity: .0021) ==
+			zombieBoeInfernal, .0021
+			zombieJoeInfernal, .0021
+			zombieSteveInfernal, .0021
+			zombieTomClarkInfernal, .0021
+			zombieMoeInfernal, .0021
+			zombieYoInfernal, .0021
+			zombieBusinessManInfernal, .0021
+			zombieArleneInfernal, .0021
+			zombieDarleneInfernal, .0021
+			zombieMarleneInfernal, .0021
+			zombieSkateboarderInfernal, .0021
+			zombieBikerInfernal, .0021
+			zombiePartyGirlInfernal, .0021
+			zombieUtilityWorkerInfernal, .0021
+			zombieJanitorInfernal, .0021
+			zombieNurseInfernal, .0021
+			zombieFatHawaiianInfernal, .0021
+			zombieBowlerInfernal, .0021
+		</entitygroup>
+
+		 WASTELAND: INDUSTRIAL (19 Base Zombies) ==
+		 Floor: Feral .48 | Rad .24 | Char .12 | Inf .05 ==
+		<entitygroup name="ZombiesWastelandIndustrial">
+			zombieBoe
+			zombieJoe
+			zombieSteve
+			zombieTomClark
+			zombieMoe
+			zombieYo
+			zombieBusinessMan
+			zombieArlene
+			zombieDarlene
+			zombieMarlene
+			zombieSkateboarder
+			zombieBiker, .3
+			zombiePartyGirl, .3
+			zombieUtilityWorker, .3
+			zombieJanitor, .2
+			zombieNurse, .3
+			zombieSteveCrawler
+			zombieFatHawaiian, .3
+			zombieBowler, .3
+			
+			 FERAL TIER (Weight per entity: .0252) ==
+			zombieBoeFeral, .0252
+			zombieJoeFeral, .0252
+			zombieSteveFeral, .0252
+			zombieTomClarkFeral, .0252
+			zombieMoeFeral, .0252
+			zombieYoFeral, .0252
+			zombieBusinessManFeral, .0252
+			zombieArleneFeral, .0252
+			zombieDarleneFeral, .0252
+			zombieMarleneFeral, .0252
+			zombieSkateboarderFeral, .0252
+			zombieBikerFeral, .0252
+			zombiePartyGirlFeral, .0252
+			zombieUtilityWorkerFeral, .0252
+			zombieJanitorFeral, .0252
+			zombieNurseFeral, .0252
+			zombieSteveCrawlerFeral, .0252
+			zombieFatHawaiianFeral, .0252
+			zombieBowlerFeral, .0252
+			
+			 RADIATED TIER (Weight per entity: .0126) ==
+			zombieBoeRadiated, .0126
+			zombieJoeRadiated, .0126
+			zombieSteveRadiated, .0126
+			zombieTomClarkRadiated, .0126
+			zombieMoeRadiated, .0126
+			zombieYoRadiated, .0126
+			zombieBusinessManRadiated, .0126
+			zombieArleneRadiated, .0126
+			zombieDarleneRadiated, .0126
+			zombieMarleneRadiated, .0126
+			zombieSkateboarderRadiated, .0126
+			zombieBikerRadiated, .0126
+			zombiePartyGirlRadiated, .0126
+			zombieUtilityWorkerRadiated, .0126
+			zombieJanitorRadiated, .0126
+			zombieNurseRadiated, .0126
+			zombieFatHawaiianRadiated, .0126
+			zombieBowlerRadiated, .0126
+			
+			 CHARGED TIER (Weight per entity: .0063) ==
+			zombieBoeCharged, .0063
+			zombieJoeCharged, .0063
+			zombieSteveCharged, .0063
+			zombieTomClarkCharged, .0063
+			zombieYoCharged, .0063
+			zombieBusinessManCharged, .0063
+			zombieArleneCharged, .0063
+			zombieDarleneCharged, .0063
+			zombieMarleneCharged, .0063
+			zombieSkateboarderCharged, .0063
+			zombieBikerCharged, .0063
+			zombiePartyGirlCharged, .0063
+			zombieUtilityWorkerCharged, .0063
+			zombieJanitorCharged, .0063
+			zombieNurseCharged, .0063
+			zombieFatHawaiianCharged, .0063
+			zombieBowlerCharged, .0063
+			
+			// INFERNAL TIER (Weight per entity: .0026) 
+			zombieBoeInfernal, .0026
+			zombieJoeInfernal, .0026
+			zombieSteveInfernal, .0026
+			zombieTomClarkInfernal, .0026
+			zombieMoeInfernal, .0026
+			zombieYoInfernal, .0026
+			zombieBusinessManInfernal, .0026
+			zombieArleneInfernal, .0026
+			zombieDarleneInfernal, .0026
+			zombieMarleneInfernal, .0026
+			zombieSkateboarderInfernal, .0026
+			zombieBikerInfernal, .0026
+			zombiePartyGirlInfernal, .0026
+			zombieUtilityWorkerInfernal, .0026
+			zombieJanitorInfernal, .0026
+			zombieNurseInfernal, .0026
+			zombieFatHawaiianInfernal, .0026
+			zombieBowlerInfernal, .0026
+		</entitygroup>
+
+		// WASTELAND: DOWNTOWN (17 Base Zombies) 
+		// Floor: Feral .60 | Rad .35 | Char .25 | Inf .20
+		<entitygroup name="ZombiesWastelandDowntown">
+			zombieSpider
+			zombieBoe
+			zombieJoe
+			zombieSteve
+			zombieTomClark
+			zombieMoe
+			zombieYo
+			zombieBusinessMan, 1.5
+			zombieArlene
+			zombieDarlene
+			zombieMarlene
+			zombieNurse
+			zombiePartyGirl
+			zombieFatHawaiian
+			zombieBowler, .1
+			zombieFatCop, .4
+			zombieSoldier, .4
+			zombieDemolition, .05
+			animalZombieDog, .1
+			animalDireWolf, .1
+			animalWolf, .1
+			
+			// FERAL TIER (Weight per entity: .0352) 
+			zombieSpiderFeral, .0352
+			zombieBoeFeral, .0352
+			zombieJoeFeral, .0352
+			zombieSteveFeral, .0352
+			zombieTomClarkFeral, .0352
+			zombieMoeFeral, .0352
+			zombieYoFeral, .0352
+			zombieBusinessManFeral, .0352
+			zombieArleneFeral, .0352
+			zombieDarleneFeral, .0352
+			zombieMarleneFeral, .0352
+			zombieNurseFeral, .0352
+			zombiePartyGirlFeral, .0352
+			zombieFatHawaiianFeral, .0352
+			zombieBowlerFeral, .0352
+			zombieFatCopFeral, .0352
+			zombieSoldierFeral, .0352
+			
+			// RADIATED TIER (Weight per entity: .0205) 
+			zombieSpiderRadiated, .0205
+			zombieBoeRadiated, .0205
+			zombieJoeRadiated, .0205
+			zombieSteveRadiated, .0205
+			zombieTomClarkRadiated, .0205
+			zombieMoeRadiated, .0205
+			zombieYoRadiated, .0205
+			zombieBusinessManRadiated, .0205
+			zombieArleneRadiated, .0205
+			zombieDarleneRadiated, .0205
+			zombieMarleneRadiated, .0205
+			zombieNurseRadiated, .0205
+			zombiePartyGirlRadiated, .0205
+			zombieFatHawaiianRadiated, .0205
+			zombieBowlerRadiated, .0205
+			zombieFatCopRadiated, .0205
+			zombieSoldierRadiated, .0205
+			
+			// CHARGED TIER (Weight per entity: .0147) 
+			zombieSpiderCharged, .0147
+			zombieBoeCharged, .0147
+			zombieJoeCharged, .0147
+			zombieSteveCharged, .0147
+			zombieTomClarkCharged, .0147
+			zombieYoCharged, .0147
+			zombieBusinessManCharged, .0147
+			zombieArleneCharged, .0147
+			zombieDarleneCharged, .0147
+			zombieMarleneCharged, .0147
+			zombieNurseCharged, .0147
+			zombiePartyGirlCharged, .0147
+			zombieFatHawaiianCharged, .0147
+			zombieBowlerCharged, .0147
+			zombieFatCopCharged, .0147
+			zombieSoldierCharged, .0147
+			
+			// INFERNAL TIER (Weight per entity: .0117) 
+			zombieSpiderInfernal, .0117
+			zombieBoeInfernal, .0117
+			zombieJoeInfernal, .0117
+			zombieSteveInfernal, .0117
+			zombieTomClarkInfernal, .0117
+			zombieMoeInfernal, .0117
+			zombieYoInfernal, .0117
+			zombieBusinessManInfernal, .0117
+			zombieArleneInfernal, .0117
+			zombieDarleneInfernal, .0117
+			zombieMarleneInfernal, .0117
+			zombieNurseInfernal, .0117
+			zombiePartyGirlInfernal, .0117
+			zombieFatHawaiianInfernal, .0117
+			zombieBowlerInfernal, .0117
+			zombieFatCopInfernal, .0117
+			zombieSoldierInfernal, .0117
+		</entitygroup>
+	</append> 
+-->
+
+</configs>

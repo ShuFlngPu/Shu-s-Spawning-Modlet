@@ -1,0 +1,60 @@
+<config>
+	
+	<!-- Safely Append ItemsOnEnterGame string for Mod Compatibility -->
+<append xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvival']/@value">,itemLBDManual</append>
+<append xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvivalSP']/@value">,itemLBDManual</append>
+
+<!-- 
+===================================================================
+== LBD ROBOTICS FIX
+== 1. Add new <effect_group> to Junk Turrets to add the XP Packet buff.
+== 2. Modify Junk Drone to use the XP Packet buff, avoiding CVar conflict.
+===================================================================
+-->
+
+<!-- Appending NEW effect group for XP trigger -->
+<append xpath="/entity_classes/entity_class[@name='junkTurretGun']">
+	<effect_group name="GrantRoboticsXP_ToOwner_LBD">
+		<!-- Trigger when the turret damages another entity. Target 'selfOtherPlayers' routes to owner. -->
+		<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" buff="buffGrantRoboticsXP" target="selfOtherPlayers">
+			<!-- Requirement: Grant XP unless the target hit is neutral, an NPC, or another deployed object -->
+			<requirement name="!EntityTagCompare" target="other" tags="neutral,npc,turret,vehicle,drone"/>
+		</triggered_effect>
+	</effect_group>
+</append>
+
+<!-- Appending NEW effect group for XP trigger -->
+<append xpath="/entity_classes/entity_class[@name='junkTurretSledge']">
+	<effect_group name="GrantRoboticsXP_ToOwner_LBD">
+		<!-- Trigger when the turret damages another entity. Target 'selfOtherPlayers' routes to owner. -->
+		<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" buff="buffGrantRoboticsXP" target="selfOtherPlayers">
+			 <!-- Requirement: Grant XP unless the target hit is neutral, an NPC, or another deployed object -->
+		   <requirement name="!EntityTagCompare" target="other" tags="neutral,npc,turret,vehicle,drone"/>
+		</triggered_effect>
+	</effect_group>
+</append>
+
+<!--
+PATCH 3: entityJunkDrone
+This entity DOES have a vanilla <effect_group> for its stats.
+We will append our logic INSIDE its existing group to preserve it.
+-->
+<append xpath="/entity_classes/entity_class[@name='entityJunkDrone']/effect_group">
+	<!-- LBD MOD: Grant Robotics XP to owner when damaging valid targets -->
+	<!-- Using the reliable 'selfOtherPlayers' target to send the XP Packet buff -->
+	<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" buff="buffGrantRoboticsXP" target="selfOtherPlayers">
+		<!-- Requirement: Grant XP unless the target hit is neutral, an NPC, or another deployed object -->
+		<requirement name="!EntityTagCompare" target="other" tags="neutral,npc,turret,vehicle,drone"/>
+	</triggered_effect>
+</append>
+	
+<!-- This code accommodates LBDexp Threshold/Values to 0 for Hardcore Mode.-->
+<!-- Inherited by playerFemale automatically -->
+<append xpath="/entity_classes/entity_class[@name='playerMale']">
+	<effect_group name="LBD_Death_Reset_Trigger">
+		<triggered_effect trigger="onSelfDied" action="AddBuff" buff="buffLBDResetWatcher"/>
+	</effect_group>
+</append>
+
+
+</config>

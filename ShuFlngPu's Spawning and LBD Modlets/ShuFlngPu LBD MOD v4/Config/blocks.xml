@@ -1,0 +1,97 @@
+<config>
+
+<!-- Trap XP Integration -->
+<append xpath="/blocks/block[@name='bladeTrap']">
+	<property name="Buff" value="buffInjuryBleeding,buffInjuryLaceration,buffLBD_TrapsRelay"/>
+</append>
+<setattribute xpath="/blocks/block[@name='electricfencepost']/property[@name='Buff']" name="value">buffShocked,buffLBD_TrapsRelay</setattribute>
+
+<!-- Consolidated Action_OnLoot Append -->
+<append xpath="/blocks/block[
+	@name='cntGasPumpRandomLootHelper' or 
+	@name='cntMunitionsBoxArmy' or 
+	@name='cntWallSafeInsecure' or 
+	@name='cntShippingCrateShamway' or 
+	@name='cntShippingCrateHero' or 
+	contains(@name,'cntGunSafe') or 
+	contains(@name,'cntWallSafe') or 
+	@name='cntQuestInfestedT1' or 
+	contains(@name,'cntTrashPile') or 
+	@name='cntDumpster' or 
+	@name='cntTrash_can' or 
+	contains(@name,'cntBookcase') or 
+	contains(@name,'cntMailBox') or 
+	contains(@name,'cntFileCabinet') or 
+	@name='cntAmmoPileSmall' or 
+	@name='cntChemPileSmall' or 
+	@name='challenge_sinks' or 
+	@name='challenge_polymers' or 
+	@name='cntBackpack01' or 
+	@name='cntPurse01' or 
+	@name='cntSuitcase' or 
+	@name='cntShoppingBasket' or 
+	@name='cntShoppingCart' or 
+	@name='cntCabinetOldBottom' or 
+	@name='cntCabinetOldTop' or 
+	@name='cntMedicalCabinet' or 
+	@name='cntCupboardCabinetRedTop' or 
+	@name='cntCupboardCabinetRedBottom' or 
+	@name='cntNightstand' or 
+	@name='cntCooler' or 
+	@name='cntLockers' or 
+	@name='cntOfficeChair' or 
+	@name='cntStove' or 
+	@name='generatorbank' or 
+	@name='cntToolBoxRandom' or 
+	@name='cntLabEquipment' or 
+	@name='cntMicrowaveOven' or 
+	@name='cntCashRegister' or 
+	@name='cntVendingMachine'
+]">
+	<property name="Action_OnLoot" value="AddBuff(buffLootXPTrigger)"/>
+</append>
+
+<!-- Consolidated LBDLootable Tags Append -->
+<append xpath="/blocks/block[
+	@name='cntGasPumpRandomLootHelper' or 
+	@name='cntMunitionsBoxArmy' or 
+	@name='cntWallSafeInsecure' or 
+	@name='cntShippingCrateShamway' or 
+	@name='cntShippingCrateHero' or 
+	contains(@name,'cntGunSafe') or 
+	contains(@name,'cntWallSafe') or 
+	@name='cntQuestInfestedT1' or 
+	contains(@name,'cntTrashPile') or 
+	@name='cntDumpster' or 
+	@name='cntTrash_can' or 
+	contains(@name,'cntBookcase') or 
+	contains(@name,'cntMailBox') or 
+	contains(@name,'cntFileCabinet') or 
+	@name='cntAmmoPileSmall' or 
+	@name='cntChemPileSmall' or 
+	@name='challenge_sinks' or 
+	@name='challenge_polymers' or 
+	@name='cntBackpack01' or 
+	@name='cntPurse01' or 
+	@name='cntSuitcase' or 
+	@name='cntShoppingBasket' or 
+	@name='cntShoppingCart' or 
+	@name='cntCabinetOldBottom' or 
+	@name='cntCabinetOldTop' or 
+	@name='cntMedicalCabinet' or 
+	@name='cntCupboardCabinetRedTop' or 
+	@name='cntCupboardCabinetRedBottom' or 
+	@name='cntNightstand' or 
+	@name='cntCooler' or 
+	@name='cntLockers' or 
+	@name='cntOfficeChair' or 
+	@name='cntStove' or 
+	@name='generatorbank' or 
+	@name='cntToolBoxRandom' or 
+	@name='cntLabEquipment' or 
+	@name='cntMicrowaveOven' or 
+	@name='cntCashRegister' or 
+	@name='cntVendingMachine'
+]/property[@name='FilterTags']/@value">,LBDLootable</append>
+
+</config>

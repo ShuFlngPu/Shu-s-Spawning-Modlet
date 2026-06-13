@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="Shus_LearnByDoing_LBD_Modlet" />
+	<DisplayName value="ShusLBDmodlet" />
+	<Description value="Learn By Doing Progression based on Alpha 16.4" />
+	<Author value="ShuFlngPu" />
+	<Version value="4.0.0.0" />
+	<Website value="" />
+</xml>
